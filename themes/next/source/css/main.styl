@@ -1,0 +1,60 @@
+// CSS Style Guide: http://codeguide.co/#css
+
+
+
+$scheme    = hexo-config('scheme') ? hexo-config('scheme') : 'Muse';
+$variables = base $scheme custom;
+$mixins    = base $scheme custom;
+
+
+
+// Variables Layer
+// --------------------------------------------------
+for $variable in $variables
+  @import "_variables/" + $variable
+
+
+// Mixins Layer
+// --------------------------------------------------
+for $mixin in $mixins
+  @import "_mixins/" + $mixin;
+
+
+
+// Common Layer
+// --------------------------------------------------
+
+// Scaffolding
+@import "_common/scaffolding";
+
+// Layout
+@import "_common/outline";
+
+// Components
+@import "_common/components";
+
+
+// Schemes Layer
+// --------------------------------------------------
+@import "_schemes/" + $scheme;
+
+
+
+// Custom Layer
+// --------------------------------------------------
+@import "_custom/custom";
+// 翻译样式
+.skiptranslate:not(.goog-te-gadget) {
+   display: none !important;
+}
+// body 处理
+.body-class{
+  top: 0 !important;
+}
+.google_translate_element{
+  height: 34px;margin-top: -18px;padding-left: 19px;
+}
+// 滚动条
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.2);border-radius:5px;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);}
+::-webkit-scrollbar-track{background:rgba(0,0,0,0.01);border-radius:0;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);}

@@ -1,0 +1,60 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js add hexo-tag-aplayer
+
+PATH: 
+  C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\Program Files\nodejs\;C:\Program Files\Git\cmd;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\NVIDIA Corporation\NVIDIA NvDLISR;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;D:\software\green\cmder;C:\Program Files (x86)\Yarn\bin\;C:\ProgramData\chocolatey\bin;F:\flutter\flutter_windows_v1.12.13+hotfix.8-stable\flutter\bin;C:\Go\bin;C:\Users\kitety\AppData\Local\Programs\Python\Python38-32\Scripts\;C:\Users\kitety\AppData\Local\Programs\Python\Python38-32\;C:\Users\kitety\scoop\shims;C:\Users\kitety\AppData\Roaming\npm;C:\Users\kitety\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\kitety\AppData\Local\Microsoft\WindowsApps;D:\software\install\bandizip\;C:\Users\kitety\AppData\Local\Yarn\bin;F:\androidsdk\tools;F:\androidsdk\platform-tools;C:\Users\kitety\go\bin
+
+Yarn version: 
+  1.22.0
+
+Node version: 
+  13.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  Error: https://registry.npm.taobao.org/hexo: tunneling socket could not be established, cause=connect ECONNREFUSED 127.0.0.1:1080
+      at ClientRequest.onError (C:\Program Files (x86)\Yarn\lib\cli.js:152213:17)
+      at Object.onceWrapper (events.js:428:26)
+      at ClientRequest.emit (events.js:321:20)
+      at Socket.socketErrorListener (_http_client.js:432:9)
+      at Socket.emit (events.js:321:20)
+      at emitErrorNT (internal/streams/destroy.js:84:8)
+      at processTicksAndRejections (internal/process/task_queues.js:84:21)
+
+npm manifest: 
+  {
+    "name": "hexo-site",
+    "version": "0.0.0",
+    "private": true,
+    "scripts": {
+      "build": "hexo generate",
+      "clean": "hexo clean",
+      "deploy": "hexo deploy",
+      "server": "hexo server"
+    },
+    "hexo": {
+      "version": "4.2.0"
+    },
+    "dependencies": {
+      "hexo": "^4.0.0",
+      "hexo-deployer-git": "^2.1.0",
+      "hexo-generator-archive": "^1.0.0",
+      "hexo-generator-category": "^1.0.0",
+      "hexo-generator-index": "^1.0.0",
+      "hexo-generator-searchdb": "^1.2.0",
+      "hexo-generator-tag": "^1.0.0",
+      "hexo-renderer-ejs": "^1.0.0",
+      "hexo-renderer-marked": "^2.0.0",
+      "hexo-renderer-stylus": "^1.1.0",
+      "hexo-server": "^1.0.0",
+      "hexo-wordcount": "^6.0.1"
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile
