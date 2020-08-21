@@ -35,12 +35,12 @@ favicon:
   #ms_browserconfig: /images/browserconfig.xml
 
 # Set default keywords (Use a comma to separate)
-keywords: "kitety, blog"
+keywords: "kitety,blog"
 
 # Set rss to false to disable feed link.
 # Leave rss as empty to use site's feed link.
 # Set rss to specific value if you have burned your feed already.
-rss:
+rss: true
 
 footer:
   # Specify the date when the site was setup.

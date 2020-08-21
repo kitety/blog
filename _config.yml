@@ -14,10 +14,10 @@ timezone: 'Asia/Shanghai'
 url: https://kitety.github.io/
 root: /
 # permalink: :year/:month/:day/:title/
-permalink: posts/:abbrlink.html  # 此处可以自己设置，也可以直接使用 :/abbrlink
+permalink: posts/:abbrlink.html # 此处可以自己设置，也可以直接使用 :/abbrlink
 abbrlink:
-    alg: crc32   #算法： crc16(default) and crc32
-    rep: hex     #进制： dec(default) and hex
+  alg: crc32 #算法： crc16(default) and crc32
+  rep: hex #进制： dec(default) and hex
 permalink_defaults:
 pretty_urls:
   trailing_index: true # Set to false to remove trailing 'index.html' from permalinks
@@ -90,13 +90,13 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-- type: git
-  repo: git@github.com:kitety/kitety.github.io.git
-  branch: master
-  #添加本插件的配置项：
-- type: cjh_google_url_submitter
-- type: cjh_bing_url_submitter
-- type: cjh_baidu_url_submitter
+  - type: git
+    repo: git@github.com:kitety/kitety.github.io.git
+    branch: master
+    #添加本插件的配置项：
+  - type: cjh_google_url_submitter
+  - type: cjh_bing_url_submitter
+  - type: cjh_baidu_url_submitter
 search:
   path: search.xml
   field: post
@@ -107,10 +107,10 @@ lazyload:
   onlypost: true
   loadingImg: /images/giphy.gif
 baidu_url_submit:
-  count: 10               # 提交最新的多少个链接
-  host: https://kitety.github.io   # 在百度站长平台中添加的域名
-  token: nMdTVRLxht9WqNnh      # 秘钥
-  path: baidu_urls.txt   # 文本文档的地址， 新链接会保存在此文本文档里
+  count: 10 # 提交最新的多少个链接
+  host: https://kitety.github.io # 在百度站长平台中添加的域名
+  token: nMdTVRLxht9WqNnh # 秘钥
+  path: baidu_urls.txt # 文本文档的地址， 新链接会保存在此文本文档里
 baidusitemap:
   path: baidusitemap.xml
 sitemap:
@@ -151,3 +151,11 @@ hexo_submit_urls_to_search_engine:
   bing_token: 0 ## 请注意这是您的秘钥， 所以请不要把它直接发布在公众仓库里!
   google_host: https://kitety.github.io ## 在google站长平台中注册的域名
   google_key_file: Project.json #存放google key的json文件，放于网站根目录（与hexo _config.yml文件位置相同），请不要把json文件内容直接发布在公众仓库里!
+feed:
+  type: atom
+  path: atom.xml
+  limit: 0
+  hub:
+  content:
+  content_limit:
+  content_limit_delim: ' '
