@@ -105,7 +105,7 @@ search:
 lazyload:
   enable: true
   onlypost: true
-  loadingImg: /images/giphy.gif
+  loadingImg: https://cdn.jsdelivr.net/gh/kitety/blog_img/img/giphy.gif
 baidu_url_submit:
   count: 10 # 提交最新的多少个链接
   host: https://kitety.github.io # 在百度站长平台中添加的域名
