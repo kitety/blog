@@ -1,10 +1,10 @@
 {%
   set scripts = [
-    'src/affix.js',
-    'src/schemes/pisces.js'
+    'https://cdn.jsdelivr.net/gh/kitety/blog@master/themes/next/source/js/src/affix.js',
+    'https://cdn.jsdelivr.net/gh/kitety/blog@master/themes/next/source/js/src/schemes/pisces.js'
   ]
 %}
 
 {% for script in scripts %}
-  <script type="text/javascript" src="{{ url_for(theme.js) }}/{{ script }}?v={{ theme.version }}"></script>
+  <script type="text/javascript" src="{{ script }}?v={{ theme.version }}"></script>
 {% endfor %}
