@@ -39,10 +39,11 @@ var nameSpace=(function(){
 
 优点: 可以在命名空间中创建很多的内容，比如变量、函数，哪些需要提供给外面调取使用，我们才返回到最终的对象中，这也是模块化实现的一种思想。
 
-### this 作用域
+### this 作用域（浏览器中）
 
 - 可以根据函数调用前面的对象来判断。例如`a.b()`的话 this 就指向 a，没有的话就指向全局。
 - 在事件中指向触发事件的`target`
+- 立即执行函数的this指向全局
 
 ### 题目
 
@@ -78,7 +79,7 @@ var p2 = new Person('y', 12);
 ### 原型链的查找原则
 - 所有的函数数据类型都天生自带一个属性：prototype（原型），这个属性是一个对象，浏览器会默认开辟一个堆内存
 - 在浏览器给prototype开辟的堆内存中有一个天生自带的属性：constructor，这个属性指向当前函数本身。
-- 每一个对象都有一个__proto__属性，这个属性指向当前实例所属类的prototype（如果不能确定他是谁的实例，都是object的实例）。
+- 每一个对象都有一个`__proto__`属性，这个属性指向当前实例所属类的prototype（如果不能确定他是谁的实例，都是object的实例）。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200823232308.png)
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200823232322.png)
