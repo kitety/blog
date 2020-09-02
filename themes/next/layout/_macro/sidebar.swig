@@ -85,7 +85,7 @@
 
           {% if theme.rss %}
             <div class="feed-link motion-element">
-              <a href="{{ url_for(theme.rss) }}" rel="alternate">
+              <a href="{{ url_for(theme.rss) }}" rel="alternate" target="_blank" rel="noopener noreferrer">
                 <i class="fa fa-rss"></i>
                 RSS
               </a>
