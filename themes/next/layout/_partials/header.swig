@@ -54,6 +54,11 @@
               <i class="menu-item-icon fa fa-fw fa-cube"></i> <br />图床
           </a>
         </li>
+       <li class="menu-item menu-item-image-buckets">
+          <a href="https://kitety.gitee.io/blog"  target="_blank" rel="noopener noreferrer">
+              <i class="menu-item-icon fa fa-bullseye "></i> <br />博客镜像
+          </a>
+        </li>
 
       {% if hasSearch %}
         <li class="menu-item menu-item-search">
