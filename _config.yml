@@ -91,7 +91,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
   - type: git
-    repo: git@github.com:kitety/kitety.github.io.git
+    repo:
+      github: git@github.com:kitety/kitety.github.io.git
+      # gitee: git@gitee.com:kitety/kitety.gitee.io.git
     branch: master
     #添加本插件的配置项：
   - type: cjh_google_url_submitter
