@@ -55,7 +55,7 @@
           </a>
         </li>
        <li class="menu-item menu-item-image-buckets">
-          <a href="https://kitety.gitee.io/blog"  target="_blank" rel="noopener noreferrer">
+          <a href="https://kitety.gitee.io/"  target="_blank" rel="noopener noreferrer">
               <i class="menu-item-icon fa fa-bullseye "></i> <br />博客镜像
           </a>
         </li>
