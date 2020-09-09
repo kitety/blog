@@ -74,7 +74,7 @@ jobs:
           SSH_PRIVATE_KEY: ${{ secrets.ACTION_DEPLOY_KEY }}
       with:
           # 注意替换为你的 GitHub 源仓库地址
-          source-repo: "git@github.com:kitety/blog.git"
+          source-repo: "git@github.com:kitety/kitety.github.io.git"
           # 注意替换为你的 Gitee 目标仓库地址
           destination-repo: "git@gitee.com:kitety/kitety.git"
 
