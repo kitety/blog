@@ -56,7 +56,7 @@
         </li>
        <li class="menu-item menu-item-image-buckets" id="mirror-blog">
           <a href="https://kitety.gitee.io/"  target="_blank" rel="noopener noreferrer">
-              <i class="menu-item-icon fa fa-bullseye "></i> <br /> 博客镜像
+              <i class="menu-item-icon fa fa-bullseye "></i> <br /><span style="margin-left:4px";>博客镜像</span>
           </a>
         </li>
 
