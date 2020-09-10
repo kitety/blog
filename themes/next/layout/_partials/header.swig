@@ -54,9 +54,9 @@
               <i class="menu-item-icon fa fa-fw fa-cube"></i> <br />图床
           </a>
         </li>
-       <li class="menu-item menu-item-image-buckets">
+       <li class="menu-item menu-item-image-buckets" id="mirror-blog">
           <a href="https://kitety.gitee.io/"  target="_blank" rel="noopener noreferrer">
-              <i class="menu-item-icon fa fa-bullseye "></i> <br />博客镜像
+              <i class="menu-item-icon fa fa-bullseye "></i> <br /> 博客镜像
           </a>
         </li>
 

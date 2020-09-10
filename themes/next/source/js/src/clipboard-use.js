@@ -14,16 +14,25 @@
       },
     });
 
-    var clipboard = new Clipboard('.fa-clipboard');
+    var clipboard = new Clipboard(".fa-clipboard");
     try {
-      clipboard.on('success', $(function () {
-        $(".fa-clipboard").click(function () {
-          toastr.success("复制成功!");
-        });
-      }));
-    } catch (error) {
-
-    }
+      clipboard.on(
+        "success",
+        $(function () {
+          $(".fa-clipboard").click(function () {
+            toastr.success("复制成功!");
+          });
+        })
+      );
+    } catch (error) {}
   };
   initCopyCode();
+  // 镜像是否显示
+  function mirrorBlog() {
+    var isGitee = window.location.href.indexOf("gitee.io") > -1;
+    if (isGitee) {
+      $("#mirror-blog").hide();
+    }
+  }
+  mirrorBlog();
 })(window, document);

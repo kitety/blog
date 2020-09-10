@@ -67,6 +67,11 @@ jobs:
         hexo generate
         hexo deploy
 
+    - name: Wait for 5 seconds
+      uses: jakejarvis/wait-action@master
+      with:
+        time: '5s'
+
     - name: Sync to Gitee
       uses: wearerequired/git-mirror-action@master
       env:
