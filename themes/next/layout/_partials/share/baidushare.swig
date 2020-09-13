@@ -9,7 +9,7 @@
     <a href="#" class="bds_twi" data-cmd="twi" title="分享到Twitter"></a>
     <a href="#" class="bds_fbook" data-cmd="fbook" title="分享到Facebook"></a>
     <a href="#" class="bds_more" data-cmd="more"></a>
-    <a class="bds_count" data-cmd="count"></a>
+    <a class="bds_count" data-cmd="count">更多</a>
   </div>
   <script>
     window._bd_share_config = {
