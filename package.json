@@ -7,7 +7,7 @@
     "clean": "hexo clean",
     "deploy": "hexo deploy",
     "server": "hexo server",
-    "d": "hexo clean && hexo s --debug"
+    "d": "hexo clean && hexo s --debug --port=7852"
   },
   "hexo": {
     "version": "4.2.0"

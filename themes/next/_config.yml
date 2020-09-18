@@ -353,8 +353,8 @@ baidu_analytics: f5b61933887642fff88ca20c0ddf1ab6
 
 # Disqus
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: kitety
   count: true
 
 # Hypercomments
@@ -370,7 +370,7 @@ changyan:
 # You can get your appid and appkey from https://leancloud.cn
 # more info please open https://valine.js.org
 valine:
-  enable: true
+  enable: false
   appid: iGbar85pNcmueGsCObi1yCez-gzGzoHsz # your leancloud application appid
   appkey: cte7CH71cmtRBvOduGBUitD6 # your leancloud application appkey
   notify: true # mail notifier , https://github.com/xCss/Valine/wiki
