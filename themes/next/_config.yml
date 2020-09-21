@@ -806,3 +806,7 @@ sitemap:
   path: sitemap.xml
 baidusitemap:
   path: baidusitemap.xml
+
+# Online contact
+daovoice: true
+daovoice_app_id: 1e4e8331
