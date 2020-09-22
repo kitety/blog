@@ -29,5 +29,6 @@ tags:
 - [TS 中文文档](https://www.tslang.cn/docs/handbook/basic-types.html)
 - [TS 入门教程](https://ts.xcatliu.com/)
 - [高级类型](https://juejin.im/post/6844904068096196621)
+- [深入理解 TypeScript](https://jkchao.github.io/typescript-book-chinese/)
 
 ## 未完待续
