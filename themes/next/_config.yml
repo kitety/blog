@@ -28,9 +28,9 @@ override: false
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
   small: https://i.loli.net/2020/08/06/ZD7FoxUOA1tBwkJ.png
-  medium: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff8beecb3-17ca-4b4c-bcac-fc40742f33e0%2Fia_100000000192.ico?table=block&id=c3b3c133-e3e7-464f-8c99-153e35afa8c0&cache=v2
-  apple_touch_icon: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff8beecb3-17ca-4b4c-bcac-fc40742f33e0%2Fia_100000000192.ico?table=block&id=c3b3c133-e3e7-464f-8c99-153e35afa8c0&cache=v2
-  safari_pinned_tab: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff8beecb3-17ca-4b4c-bcac-fc40742f33e0%2Fia_100000000192.ico?table=block&id=c3b3c133-e3e7-464f-8c99-153e35afa8c0&cache=v2
+  medium: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
+  apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
+  safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -240,8 +240,8 @@ post_wordcount:
 
 # Reward
 reward_comment: 你有多久没有爱我了？
-wechatpay: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F3292931d-f44e-47c9-9c9b-d437d3a71ed9%2Fia_100000931.png?table=block&id=002ad54b-e340-42ca-92d4-eb4a4598cee7&width=670&cache=v2
-alipay: https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7ff55604-16eb-4136-bb03-143c95a726a7%2Fia_100000932.png?table=block&id=a4c8bb8c-4f90-48f5-b0b3-1c3e2c6ac2e9&width=790&cache=v2
+wechatpay: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862240495-image.png
+alipay: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862258262-image.png
 
 # Declare license on posts
 post_copyright:
@@ -410,7 +410,7 @@ gitment:
 #    button | slide
 # Warning: Baidu Share does not support https.
 baidushare:
- type: button
+  type: button
 
 # Share
 # This plugin is more useful in China, make sure you known how to use it.

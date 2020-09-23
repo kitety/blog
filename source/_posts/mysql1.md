@@ -20,7 +20,7 @@ tags:
 
 我这里使用的是[cmder](https://cmder.net/)，并且设置为管理员模式，加上[右键快捷打开](https://blog.csdn.net/hicoldcat/article/details/64904652)，挺方便的。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ff66deaf6-a8d9-40f9-84e7-c2ff4451191d%2Fia_10005.png?table=block&id=27d89376-6386-44e1-85cc-845f750f75e2&width=760&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200457.png)
 
 在准备工作完成之后，正式开始学习。
 
@@ -36,7 +36,7 @@ net start mysql80lzk
 net stop mysql80lzk // 停止mysql
 ```
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fab9b3a76-0613-42e1-b171-b2f4c1fbfee8%2Fia_10006.png?table=block&id=1616db5b-9e1d-4720-8121-acee7beca61a&width=560&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200506.png)
 
 - 命令行进入
 
@@ -44,15 +44,14 @@ net stop mysql80lzk // 停止mysql
 mysql -h 127.0.0.1 -P 3306 -uroot -p123456 // 安装的时候设置的(-u)账号(-p)密码
 ```
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fff215abc-916a-407b-8241-40bccf6d8aa6%2Fia_10007.png?table=block&id=21486472-f691-4aa8-8d96-6308baacb14f&width=1460&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200922.png)
 
 - 列出数据库
 
 ```bash
 show databases;
 ```
-
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4908db1f-6e69-44de-a37e-55af66f894d5%2Fia_10008.png?table=block&id=6feb8d61-bc45-4584-a9c9-7f52810472d0&width=490&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200527.png)
 
 - 查看表
 
@@ -63,7 +62,7 @@ show tables;
 show tables from mysql;
 ```
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F00f00806-7d58-4616-b795-6e7bc1e1fbb6%2Fia_10009.png?table=block&id=44ed03c0-4699-4bd6-ae3c-31db7cce4d9e&width=580&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200743.png)
 
 - 显示当前的数据库
 
@@ -83,7 +82,7 @@ DESC user; // user 是表结构中显示的
 
 #### 数据类型
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6d18c6a2-6419-4b8f-8f70-5f94ed16c15b%2FUntitled.png?table=block&id=20f9f909-e236-4ee1-acb1-79ae0dfe7282&width=1430&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200751.png)
 [Mysql 列类型](https://www.runoob.com/mysql/mysql-data-types.html)
 
 #### 默认值
@@ -141,15 +140,13 @@ CREATE TABLE `student` (
  // 修改一个字段为carchar(18)
  ALTER TABLE `student` MODIFY COLUMN `idcard` varchar(18) DEFAULT NULL;
 ```
-
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fed06bfe3-a965-4148-9aa8-135c2d126566%2Fia_1000001095.png?table=block&id=8bb5303f-2640-46ea-897e-35e2b16d1d52&width=840&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200802.png)
 ```sql
  // 删除身份证字段
  ALTER TABLE `student`DROP COLUMN `idcard`; 
 ```
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc0c58cd2-0365-4b22-b91f-9411b02142dc%2Fia_1000001096.png?table=block&id=fb91bf4a-f3ec-404b-80c5-6f93bfec6517&width=910&cache=v2)
-
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200809.png)
 #### 添加约束
 ```sql
 -- 主键约束

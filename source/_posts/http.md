@@ -6,15 +6,15 @@ abbrlink: 44c01e4f
 date: 2020-05-25 21:41:08
 ---
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fa8f51621-7ddf-4ac8-b975-ea8f07bc2331%2Fia_10006.png?table=block&id=5a63c580-80a3-4f3e-aa95-53398a7bbc46&width=1540&cache=v2)
-
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200114.png)
 ## 导学
 ### 现状
 - 现在的WEB开发不理解HTTP
 - HTTP相当的重要
 - 提升自身价值
 <!-- more -->
-#### 简单的例子
+
+### 简单的例子
 - 输入URL打开网页
 
 - AJAX获取数据
@@ -31,14 +31,12 @@ date: 2020-05-25 21:41:08
   
   - CORS跨域
   - 浏览器输入URL后HTTP请求返回全过程（下图依据performance对象）
-  ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4c6566de-178f-4401-8a07-c8de34ea322f%2Fia_10007.png?table=block&id=e4da05f6-677d-4ec3-8349-12a2aa94e826&width=2240&cache=v2)
-
-等等
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200127.png)
 
 ## 网络协议
 ### 网络模型介绍
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb3095102-cfe2-4d75-8fab-6a9fdbdb8cfd%2Fia_10008.png?table=block&id=d6639703-8522-412b-90ed-b1af226469e5&width=1640&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200237.png)
 本文主要讲HTTP（应用层），HTTP基于TCP/IP协议
 #### 底三层
 - 物理层：定义物理设备如何传输数据
@@ -109,7 +107,7 @@ HTTP就在应用层实现
   常规的客户端为主动方，服务端为被动方。但是在HTTP2有推送功能，服务端可以主动发起数据传输。常规的html网页是请求html，再请求其中的资源；HTTP2的话可以在你请求html的时候主动推送资源到客户端，达到并行的效果，提高传输效率。
 #### HTTP三次握手
 在客户端和服务器在进行HTTP的发送和返回过程中，会建立TCP connection。
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb9c7a6ce-0c44-4f0c-b21b-81ed2efb2e23%2Fia_10009.png?table=block&id=93759276-d772-43df-950f-e91025150726&width=2370&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200251.png)
 HTTP不存在连接的概念，只存在请求和响应的概念。请求和响应都传输数据包，会经过一个传输的通道，在TCP就创建了这样一个连接（通道），这个连接会保持在那里，请求是在这个基础之上发送的。在TCP连接上可以发送多个HTTP请求。
 
 这个模式在不同的版本里面有所差别
@@ -118,7 +116,7 @@ HTTP不存在连接的概念，只存在请求和响应的概念。请求和响�
 - HTTP2.0 并发HTTP请求。比如：同个用户在请求一个网页的时候只用一个TCP连接。
 ##### 三次握手时序图
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F806a70cf-4416-4888-826d-ce1ce4d075f0%2Fia_10010.png?table=block&id=c55f2578-17bb-4dcf-9c8e-2227f45329da&width=1880&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200258.png)
 1.客户端发起创建数据包的请求。SYN标志位：创建请求的数据包，Seq=X
 
 2.服务端接收，开启TCP SOCKET端口。返回给客户端：SYN标志位；ACK:接受到的Seq+1，为X+1；Seq：为服务端的Seq。
@@ -129,7 +127,7 @@ HTTP不存在连接的概念，只存在请求和响应的概念。请求和响�
 ##### 三次握手数据包举例
 
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F568caae0-7e44-498a-b5e6-edcff6c53a85%2Fia_10011.png?table=block&id=d6ca229c-1aaa-4c95-95ac-701928e54fc0&width=3100&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200307.png)
 
 #### URI、URL、URN
 - URI：统一资源标志符（Identity），用来唯一标识互联网上的信息资源，包含URL、URN
@@ -138,7 +136,7 @@ HTTP不存在连接的概念，只存在请求和响应的概念。请求和响�
   比如：http：//user:pass@host.com:80/path?query=string#hash
   ```
   具体的格式如下
-  ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F6f64a395-a938-4a4a-8cff-ca85cba74217%2Fia_10012.png?table=block&id=2ec52d91-25c6-46bc-8666-c24e32228a6e&width=2140&cache=v2)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923200317.png)
 - URN：永久统一资源定位符，资源移动之后还可以找到，目前还没有什么好的方案
 
 #### HTTP报文格式
