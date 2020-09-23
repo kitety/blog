@@ -8,12 +8,12 @@ date: 2020-05-05 10:54:01
 ## 缘起
 起初本来是看到旁边的一个同事在看**Application**面板的**Service Workers**的功能，然后想到自己虽然说是工作也接近两年了，但是Chrome开发者工具的面板自己又有多少的理解呢？
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F256e86bf-8a41-491c-8e42-e9a71ea5caf3%2Fia_10005.png?table=block&id=acab4cbd-4389-4811-9210-60d7bb3e6f88&width=1740&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923174740.png)
 
 <!-- more -->
 俗话说：工欲善其事，必先利其器。对于我们WEB开发者来说，Chrome就和我们的吃饭的工具相差无异。因此，我就想做一个系列，在[谷歌官方文档](https://developers.google.com/web/tools/chrome-devtools?hl=zh-cn)的基础上，全方位的解读DevTool的每一个面板。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fc22cb834-9c50-4553-a242-f23d2332e873%2Fia_10006.png?table=block&id=a61132ce-8a83-4099-b2ed-423694f34615&width=2550&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923174758.png)
 
 我想，这无论是对于初学者的入门，还是对于已从事WEB开发的工作人员的深入，都是很有必要的。
 

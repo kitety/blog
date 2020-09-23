@@ -52,7 +52,7 @@ comments: false
 
 5.缝纫机乐队台词(2020 年 5 月 24 日 21:25:27)
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F73a9ebe3-2e8f-4ac3-9108-3031bf663e08%2FUntitled.png?table=block&id=93a79710-3bea-439c-8b34-c211c28ab4e0&width=3830&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923175117.png)
 
 <iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=512377374&auto=0&height=66"></iframe>
 
@@ -89,7 +89,7 @@ comments: false
 
 > 不要害怕遇到问题，正视问题。
 > 分析问题，找到原因。
-> ![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F533a38d5-31ed-4853-999b-edeefc1e2b52%2FUntitled.png?table=block&id=d86e599c-1b95-4d7b-a719-2716cd5cabe2&width=1300&cache=v2)
+> ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923175138.png)
 
 8.做不了时间的主人，只能做时间的奴隶。(2020 年 7 月 4 日 10:56:56)
 

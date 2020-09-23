@@ -5,12 +5,14 @@ tags:
 abbrlink: 4a5b4c21
 date: 2020-04-06 11:24:54
 ---
-说起干海子，因为我并不玩抖音，也不刷微博，其实我并不了解。但是却不经意间去了两次了，一次是前公司2019年6月底的团建，还有一次就是昨天和朋友一起去。
+
+说起干海子，因为我并不玩抖音，也不刷微博，其实我并不了解。但是却不经意间去了两次了，一次是前公司 2019 年 6 月底的团建，还有一次就是昨天和朋友一起去。
 
 ![image.png](https://i.loli.net/2020/04/06/VkvcI1nTaeRMB28.png)
 
 <!-- more -->
-说起来还是真的挺不好意思，因为原计划的八点出发因为我的迟到不得不推迟，真是迟到害人啊，要改😂。
+
+说起来还是真的挺不好意思，因为原计划的八点出发因为我的迟到不得不推迟，真是迟到害人啊，要改 😂。
 
 一路上心情很忐忑，一是由于迟到了，二是因为这是第二次去，心里面自觉地回想去第一次的场景，想着当时是什么人，什么天气，在哪里拍了照，这次去的话一定要看看两次有什么区别。文中的图片，翠绿的是去年的，有雪的是今年的。
 
@@ -20,7 +22,7 @@ date: 2020-04-06 11:24:54
 
 ![image.png](https://i.loli.net/2020/04/06/GopHWdvsmwZY9EK.png)
 
-思绪恍惚间想起了我第一次来这边的时候，那是2015年8月底，“误打误撞”安排的来这边支教。那时候满脑子的新鲜和好奇，没见过山没见过水，瞪大了眼睛，望着这一切。
+思绪恍惚间想起了我第一次来这边的时候，那是 2015 年 8 月底，“误打误撞”安排的来这边支教。那时候满脑子的新鲜和好奇，没见过山没见过水，瞪大了眼睛，望着这一切。
 
 ![image.png](https://i.loli.net/2020/04/06/mCv8IQJ4nOTklR7.png)
 
@@ -31,10 +33,9 @@ date: 2020-04-06 11:24:54
 急忙的拿出手机，朝向了山谷那边。
 
 夏天的山果真更为翠绿啊，因为昨晚刚下过雨，太阳还没放出来，云也显得有些抑郁，灰蒙蒙的。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171741.png)
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4aa6f007-f5cb-4a7d-884f-a3e67108e2de%2Fia_10010.png?table=block&id=d9d8d360-489f-4066-836a-bb4108510d94&width=2890&cache=v2)
-
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F031a6743-9784-4815-86fe-be015a2c5ebb%2Fia_10011.png?table=block&id=68fce6b5-7389-4958-bd53-234225f4c735&width=3840&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171752.png)
 
 路过一隅，发现云也半隐半现地遮盖着山，一半暴露在阳光下面，另一半自觉地躲藏在阴影之中。
 
@@ -44,17 +45,17 @@ date: 2020-04-06 11:24:54
 
 ![image.png](https://i.loli.net/2020/04/06/gD4LRp9lAyJKzeh.png)
 
-其实我是见过这般雪的，印象是2016年的开春，到这边滑雪，看到山顶上还静静躺着白雪，还有一缕缕蒸腾的白汽换换飘向天空，随风飘荡。总看不厌，也看不烦。就像之前支教的学校的门口的大山一样，厚重又不失庄严。我想，这再美不过了。
+其实我是见过这般雪的，印象是 2016 年的开春，到这边滑雪，看到山顶上还静静躺着白雪，还有一缕缕蒸腾的白汽换换飘向天空，随风飘荡。总看不厌，也看不烦。就像之前支教的学校的门口的大山一样，厚重又不失庄严。我想，这再美不过了。
 
 到了这边，因为山路比较窄，我们换成小车继续前行，大家的心情更加期待了。
-
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fde51e27a-3181-4a7e-aa33-08f4098d1a7c%2Fia_10014.png?table=block&id=8c2cdf51-4c0e-4721-8b99-c3bdbd16abe6&width=3000&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171817.png)
 
 想起去年，我们大家是大包垒小包，自己背着露营的装备，从这里开始正式徒步前行，一人接一人，远远看去，仿佛一条长龙在慢慢蠕动着......
 
 ![image.png](https://i.loli.net/2020/04/06/wEmRI2dv6sCZ8HU.png)
 
 ## 上山
+
 当小车到达山脚的时候，我们的徒步才正式开始。下车回头一望，只见这景色俨然没有了昔日的苍翠欲滴，山体被一种棕绿打底，山顶则还还残留着点点白雪（从图中的小路可以看出来这的确是同一群山）。
 
 ![image.png](https://i.loli.net/2020/04/06/Q8vCw1XHtgZbm2u.png)
@@ -78,15 +79,16 @@ date: 2020-04-06 11:24:54
 ![image.png](https://i.loli.net/2020/04/06/YTqjBihLFRM4pcy.png)
 
 越往上走，视野越开阔，无须多言，银装素裹，此时正应吟诗一首：
+
 > 北国风光，千里冰封，万里雪飘。望长城内外，惟余莽莽；大河上下，顿失滔滔。山舞银蛇，原驰蜡象，欲与天公试比高。须晴日，看红装素裹，分外妖娆。
 
 虽然余雪不多，但是我想也应景了。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F7fa06eb3-9a6d-4a68-b85b-fe7a70aa8d70%2Fia_10023.png?table=block&id=e59502d7-f95b-477c-928c-473023d887b3&width=3360&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171902.png)
 
 近处的地方还覆盖着一层雪，薄薄的一层。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fe7976227-6e8f-40fc-9cce-f65fb7e9a737%2Fia_10024.png?table=block&id=b50e8765-d9cd-4f7f-a2c2-4e2a9185e67b&width=3370&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171913.png)
 
 来听听踩上去的声音
 
@@ -94,7 +96,7 @@ date: 2020-04-06 11:24:54
 
 这里的树木，都没有叶子，光秃秃的指着天空，沐浴着阳光。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F2507081c-036e-4e09-b827-7e3ca8237454%2Fia_10025.png?table=block&id=570c6df7-a892-4d30-98b9-4199bf061bf6&width=3370&cache=v2)
+
 
 多走两步，在山上一处平台驻足，此时的景色真的可谓是似曾相识。
 
@@ -110,9 +112,7 @@ date: 2020-04-06 11:24:54
 
 ## 山顶
 
-
 抵达山顶，风超级大。我们立马放下包裹，开始欣赏这山顶的景色。
-
 
 ![image.png](https://i.loli.net/2020/04/06/1U7zKxF2CMIJcDB.png)
 
@@ -120,7 +120,7 @@ date: 2020-04-06 11:24:54
 
 这么辽阔宽广，好想自己是一只鸟，可以在这里无忧无虑的飞，没有那么多问题思考，也不知道自己是谁。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F401cb47f-6eb7-4eb5-9868-305e62f3fe02%2Fia_10031.png?table=block&id=8abcabb9-f224-425c-8ed5-21eaa0cc44fb&width=2520&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172002.png)
 
 ![image.png](https://i.loli.net/2020/04/06/M4qOjzUL1gB6JGC.png)
 
@@ -134,8 +134,8 @@ date: 2020-04-06 11:24:54
 
 <div style="width:100%;height:0px;position:relative;padding-bottom:56.327%;margin-bottom:12px;"><iframe src="https://streamja.com/embed/B4BWn" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;"></iframe></div>
 
-
 ## 下山
+
 然后就是下山了，这一路都是石板路，已经不再是去年的泥巴路和石板路掺杂着，走到山脚，回首望去，仿佛青山幽幽，回到了去年的时光。
 
 ![image.png](https://i.loli.net/2020/04/06/gVtvXjnEpTH5hfG.png)
@@ -149,5 +149,3 @@ date: 2020-04-06 11:24:54
 我觉得最糟糕的就是没有改变，昨天什么样，今天还是什么样，明天还是什么样。没有改变就没有进步，没有进步怎么对得起这段时间呢？我已经是一个大人了啊。
 
 用一个在这个年纪该有的眼光来审视这个世界吧！
-
-

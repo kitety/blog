@@ -23,13 +23,13 @@ tags:
 
 
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fcc27e447-1206-4dd3-a0d6-1daabd3992e8%2Fia_10006.png?table=block&id=3b8925b9-2ef8-4360-8c8b-6c21770facae&width=2160&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171305.png)
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Ffc597dcc-9471-4880-9889-94fc39809142%2Fia_10007.png?table=block&id=649042b0-4b92-4a14-b09c-366b4a123b07&width=2160&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171430.png)
 
-没错我看到了了这首歌，原来这首歌的名字叫做《六月》，而我之前一直都以为叫做《六月的雨》。我当时就立马分享给了我的好友晓静，感觉找到了什么宝藏。
+没错我看到了这首歌，原来这首歌的名字叫做《六月》，而我之前一直都以为叫做《六月的雨》。我当时就立马分享给了我的好友晓静，感觉找到了什么宝藏。
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb87e3b6f-43e9-41dc-8ad6-d20e88e4ee5b%2Fia_10008.png?table=block&id=4f0d39ee-6697-4b02-9c07-d3b67f118285&width=2160&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171532.png)
 
 这一刻，感觉时间回到了久远的从前。
 

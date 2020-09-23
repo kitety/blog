@@ -18,7 +18,7 @@ docker exec -it jenkins /bin/bash
 docker login 192.168.182.4:8082
 exit;
 ```
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F83a17ab7-07da-49d4-8db1-0600b409489c%2FUntitled.png?table=block&id=79151228-403c-4fb0-a7ea-b7f8acfb7bc8&width=2180&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923180106.png)
 
 登录一次之后后续就无需登录。
 
@@ -33,7 +33,7 @@ sudo systemctl restart docker
 docker login 192.168.182.4:8082
 ```
 
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2F4063b340-ed25-459e-8bf2-f9e1016c2202%2FUntitled.png?table=block&id=8a51b6c8-fe13-49b8-b43e-21ba19e3fc7c&width=2320&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923180119.png)
 登录一次之后后续就无需登录。
 
 ### DockerFile 
@@ -51,7 +51,7 @@ WORKDIR /usr/share/nginx/html
 
 ### jenkins配置修改
 修改配置
-![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fd91c5a34-2c73-452e-9405-0784459f1a97%2FUntitled.png?table=block&id=f919b321-75e2-4f03-86ef-282c7b0322be&width=2980&cache=v2)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923180130.png)
 添加以下代码
 ```bash
 set -e
@@ -90,7 +90,7 @@ docker run -p 80:80 -itd \
 
 - 制品库的地址：172.16.81.150:8082
 - nginx的地址：192.168.182.4
-- nginx的name：nginx-test![](https://www.notion.so/image/https%3A%2F%2Fs3-us-west-2.amazonaws.com%2Fsecure.notion-static.com%2Fb6123ba0-bccf-4073-8c0f-09c1f3d28a5d%2FUntitled.png?table=block&id=51ff3f40-2167-4109-9abc-ba698c6c83c1&width=2900&cache=v2)
+- nginx的name：nginx-test![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923180145.png)
   
 ## 结语
 和之前的构建部署方式中，利用docker镜像可以很好地代码回退和迭代更新，实现了版本在生产环境更好的控制。
