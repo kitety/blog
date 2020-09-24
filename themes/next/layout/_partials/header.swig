@@ -48,12 +48,6 @@
           </a>
         </li>
       {% endfor %}
-      
-       <li class="menu-item menu-item-image-buckets">
-          <a href="https://www.notion.so/https-kitety-github-io-6e101a98b27141e6b8907c5ae7095077"  target="_blank" rel="noopener noreferrer">
-              <i class="menu-item-icon fa fa-fw fa-cube"></i> <br />图床
-          </a>
-        </li>
        <li class="menu-item menu-item-image-buckets" id="mirror-blog">
           <a href="https://kitety.gitee.io/"  target="_blank" rel="noopener noreferrer">
               <i class="menu-item-icon fa fa-bullseye "></i> <br /><span style="margin-left:4px";>博客镜像</span>
