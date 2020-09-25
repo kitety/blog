@@ -4,13 +4,13 @@
 {% if theme.motion.enable %}
   {% set html_class = html_class + ' use-motion' %}
 {% endif %}
-
 <html class="{{ html_class | lower }}" lang="{{ config.language }}">
 <head>
   <meta name="google-site-verification" content="AFckh8Qum4gkYDApoahauJPbChPexSCeRwCUwgm2gS4" />
   {% include '_partials/head.swig' %}
   <title>{% block title %}{% endblock %}</title>
   {% include '_third-party/analytics/index.swig' %}
+  <script src="https://cdn.bootcdn.net/ajax/libs/instant.page/5.1.0/instantpage.min.js" type="module" ></script>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="{{ page.lang || page.language || config.language }}" class="body-class">
