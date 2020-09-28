@@ -1,7 +1,6 @@
 {% if theme.cnzz_siteid %}
-
-  <div style="display: none;">
-    <script src="//s95.cnzz.com/z_stat.php?id={{ theme.cnzz_siteid }}&web_id={{ theme.cnzz_siteid }}" language="JavaScript"></script>
-  </div>
+<div style="display: none;">
+  <span id='cnzz_stat_icon_{{ theme.cnzz_siteid }}'></span><script src='https://v1.cnzz.com/z_stat.php?id={{ theme.cnzz_siteid }}&show=pic' type='text/javascript'></script>
+</div>
 
 {% endif %}
