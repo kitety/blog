@@ -1,46 +1,39 @@
-/*页面载入完成后，创建复制按钮*/
-!(function (e, t, a) {
-  /* code */
-  var initCopyCode = function () {
-    mirrorBlog();
-    var copyHtml = "";
-    copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
-    copyHtml += '  <i class="fa fa-globe"></i><span>copy</span>';
-    copyHtml += "</button>";
-    $(".highlight .code pre").before(copyHtml);
-    new ClipboardJS(".btn-copy", {
-      target: function (trigger) {
-        toastr.success("复制成功!");
-        return trigger.nextElementSibling;
-      },
-    });
+$(function () {
+  // 粘贴板
+  var copyHtml = "";
+  copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
+  copyHtml += '  <i class="fa fa-globe"></i><span>copy</span>';
+  copyHtml += "</button>";
+  $(".highlight .code pre").before(copyHtml);
+  new ClipboardJS(".btn-copy", {
+    target: function (trigger) {
+      toastr.success("复制成功!");
+      return trigger.nextElementSibling;
+    },
+  });
 
-    var clipboard = new Clipboard(".fa-clipboard");
-    try {
-      clipboard.on(
-        "success",
-        $(function () {
-          $(".fa-clipboard").click(function () {
-            toastr.success("复制成功!");
-          });
-        })
-      );
-    } catch (error) { }
-  };
-  initCopyCode();
-  // 镜像是否显示
-  function mirrorBlog () {
-    // 创建元素
-
-    var $h1 = $('<h1>1111</h1>');
-    $('body').append($h1);
-    var isGitee = window.location.href.indexOf("gitee.io") > -1;
-    const a = $("#mirror-blog").find('a')
-    let href = window.location.href
-    if (isGitee) {
-      href = href.replace('gitee.io', 'github.io')
+  var clipboard = new ClipboardJS(".fa-clipboard");
+  clipboard.on(
+    "success",
+    function () {
+      toastr.success("复制成功!");
     }
-    a.attr('href', href)
+  );
+  // 镜像
+  var href = window.location.href
+  var github = 'https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133738315-image.png'
+  var gitee = 'https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133761284-image.png'
+  var isGitee = href.indexOf("gitee.io") > -1;
+  const a = $("#mirror-blog").find('a')
+  var imgUrl = github
+  if (isGitee) {
+    imgUrl = gitee
+    href = href.replace('gitee.io', 'github.io')
+  } else {
+    href = href.replace('github.io', 'gitee.io')
   }
+  a.attr('href', href)
 
-})(window, document);
+  var $h1 = $('<a class="mirrorbtn"><img src="' + imgUrl + '"/></a>');
+  $('body').append($h1);
+})

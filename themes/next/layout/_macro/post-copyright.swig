@@ -14,7 +14,7 @@
   <li class="post-copyright-link">
     <strong>{{ __('post.copyright.link') + __('symbol.colon') }}</strong>
     <a href="{{ post.url | default(post.permalink) }}" title="{{ post.title }}">{{ post.url | default(post.permalink) }}</a>
-     <span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="{{ page.title+__('symbol.colon') +page.permalink }}"  aria-label="复制成功！"></i></span>
+     <span class="copy-path"><i class="fa fa-clipboard" data-clipboard-text="{{ page.title+__('symbol.colon') +page.permalink }}"  aria-label="复制成功！" id="faClipboard"></i></span>
   </li>
   <li class="post-copyright-license">
     <strong>{{ __('post.copyright.license_title') + __('symbol.colon') }} </strong>
