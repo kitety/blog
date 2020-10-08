@@ -71,7 +71,7 @@
 {% endif %}
 <link href="{{ font_awesome_uri }}" rel="stylesheet" type="text/css" />
 
-<link href="https://cdn.jsdelivr.net/gh/kitety/kitety.github.io@latest/css/main.css?c={{Date()}}" rel="stylesheet" type="text/css" />
+<link href="https://cdn.jsdelivr.net/gh/kitety/kitety.github.io@master/css/main.css?c={{Date()}}" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="//js.users.51.la/20951117.js" async></script>
 {% if theme.favicon.apple_touch_icon %}
   <link rel="apple-touch-icon" sizes="180x180" href="{{ url_for(theme.favicon.apple_touch_icon) }}?v={{ theme.version }}">
