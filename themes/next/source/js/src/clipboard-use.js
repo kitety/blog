@@ -2,6 +2,7 @@
 !(function (e, t, a) {
   /* code */
   var initCopyCode = function () {
+    mirrorBlog();
     var copyHtml = "";
     copyHtml += '<button class="btn-copy" data-clipboard-snippet="">';
     copyHtml += '  <i class="fa fa-globe"></i><span>copy</span>';
@@ -24,15 +25,22 @@
           });
         })
       );
-    } catch (error) {}
+    } catch (error) { }
   };
   initCopyCode();
   // 镜像是否显示
-  function mirrorBlog() {
+  function mirrorBlog () {
+    // 创建元素
+
+    var $h1 = $('<h1>1111</h1>');
+    $('body').append($h1);
     var isGitee = window.location.href.indexOf("gitee.io") > -1;
+    const a = $("#mirror-blog").find('a')
+    let href = window.location.href
     if (isGitee) {
-      $("#mirror-blog").hide();
+      href = href.replace('gitee.io', 'github.io')
     }
+    a.attr('href', href)
   }
-  mirrorBlog();
+
 })(window, document);
