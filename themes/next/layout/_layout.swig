@@ -95,3 +95,5 @@
 </html>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" async></script>
 <script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kitety/kitety.github.io@latest/js/src/clipboard-use.js?c={{Date()}}" async></script>
+ <script src="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.js" defer></script>
+ <link href="https://cdn.bootcdn.net/ajax/libs/toastr.js/2.1.4/toastr.min.css" rel="stylesheet">

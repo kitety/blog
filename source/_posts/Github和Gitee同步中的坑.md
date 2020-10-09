@@ -36,7 +36,7 @@ with:
 
 ```
 其中：ACTION_DEPLOY_KEY是私钥，GITEE_PASSWORD是Gitee的密码。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009155932.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009212425.png)
 
 ## 踩坑
 ### 第一次同步
