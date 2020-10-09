@@ -93,5 +93,5 @@
   {% include '_third-party/exturl.swig' %}
 </body>
 </html>
-<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" async></script>  
-<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kitety/kitety.github.io@master/js/src/clipboard-use.js?c={{Date()}}" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.6/dist/clipboard.min.js" async></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/kitety/kitety.github.io/js/src/clipboard-use.js?c={{Date()}}" async></script>
