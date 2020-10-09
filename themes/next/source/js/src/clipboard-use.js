@@ -13,27 +13,28 @@ $(function () {
   });
 
   var clipboard = new ClipboardJS(".fa-clipboard");
-  clipboard.on(
-    "success",
-    function () {
-      toastr.success("复制成功!");
-    }
-  );
+  clipboard.on("success", function () {
+    toastr.success("复制成功!");
+  });
   // 镜像
-  var href = window.location.href
-  var github = 'https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133738315-image.png'
-  var gitee = 'https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133761284-image.png'
+  var href = window.location.href;
+  var github =
+    "https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133738315-image.png";
+  var gitee =
+    "https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133761284-image.png";
   var isGitee = href.indexOf("gitee.io") > -1;
-  const a = $("#mirror-blog").find('a')
-  var imgUrl = github
+  const a = $("#mirror-blog").find("a");
+  var imgUrl = github;
   if (isGitee) {
-    imgUrl = gitee
-    href = href.replace('gitee.io', 'github.io')
+    href = href.replace("gitee.io", "github.io");
   } else {
-    href = href.replace('github.io', 'gitee.io')
+    imgUrl = gitee;
+    href = href.replace("github.io", "gitee.io");
   }
-  a.attr('href', href)
 
-  var $h1 = $('<a class="mirrorbtn"><img src="' + imgUrl + '"/></a>');
-  $('body').append($h1);
-})
+  a.attr("href", href);
+  var $h1 = $(
+    '<a class="mirrorbtn" href="' + href + '"><img src="' + imgUrl + '"/></a>'
+  );
+  $("body").append($h1);
+});
