@@ -36,7 +36,7 @@ with:
 
 ```
 其中：ACTION_DEPLOY_KEY是私钥，GITEE_PASSWORD是Gitee的密码。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009212425.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009155932.png)
 
 ## 踩坑
 ### 第一次同步
@@ -49,4 +49,4 @@ with:
 
 **解决方案**
 就是要关注`Gitee（Gitee.com）官方账号`,绑定自己的Gitee账号，后面就会有推送的提醒，这样就可以同步更新了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009160639.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009212425.png)
