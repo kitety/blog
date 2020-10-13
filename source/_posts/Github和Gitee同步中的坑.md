@@ -11,6 +11,8 @@ date: 2020-10-09 15:50:48
 
 我的博客构建使用的是Github Action，因此同步功能使用的是[`wearerequired/git-mirror-action@master`](https://github.com/wearerequired/git-mirror-action)。因为Gitee Page的并不会随着仓库更新主动更新，因此还需要[`yanglbme/gitee-pages-action@master`](https://github.com/yanglbme/gitee-pages-action)做一个build的操作。
 
+<!-- more -->
+
 [具体可以参照我的配置文件](https://github.com/kitety/blog/blob/master/.github/workflows/main.yml)，部分整体配置如下：
 ```yml
 - name: Sync to Gitee
@@ -50,3 +52,5 @@ with:
 **解决方案**
 就是要关注`Gitee（Gitee.com）官方账号`,绑定自己的Gitee账号，后面就会有推送的提醒，这样就可以同步更新了。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009212425.png)
+
+以上就是解决问题的方法了。

@@ -324,7 +324,6 @@
             <a href="{{ url_for(post.path) }}">{{ post.content }}</a>
           {% else %}
             {{ post.content }}
-            {% include '../_custom/google_adsense.swig' %}
           {% endif %}
         {% endif %}
       {% else %}
