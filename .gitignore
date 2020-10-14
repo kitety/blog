@@ -3,7 +3,7 @@
 # db.json
 # *.log
 node_modules/
-# public/
+public/
 # .deploy*/
 .deploy_git
 package-lock.json
