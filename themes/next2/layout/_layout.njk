@@ -8,7 +8,7 @@
   {{ partial('_scripts/noscript.njk', {}, {cache: theme.cache.enable}) }}
 </head>
 
-<body itemscope itemtype="http://schema.org/WebPage"{% if theme.motion.enable %} class="use-motion"{% endif %}>
+<body itemscope itemtype="http://schema.org/WebPage"{% if theme.motion.enable %} class="use-motion body-class"{% endif %}  class="body-class">
   <div class="headband"></div>
 
   <main class="main">
