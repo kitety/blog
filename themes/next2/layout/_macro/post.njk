@@ -86,6 +86,8 @@
         {%- endif %}
       {% else %}
         {{ post.content }}
+      {{ partial('_third-party/google_adsense.njk') }}
+
       {%- endif %}
     </div>
 

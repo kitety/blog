@@ -1,6 +1,6 @@
 /* global NexT, CONFIG */
 
-HTMLElement.prototype.wrap = function(wrapper) {
+HTMLElement.prototype.wrap = function (wrapper) {
   this.parentNode.insertBefore(wrapper, this);
   this.parentNode.removeChild(this);
   wrapper.appendChild(this);
@@ -8,7 +8,7 @@ HTMLElement.prototype.wrap = function(wrapper) {
 
 // https://caniuse.com/#feat=mdn-api_element_classlist_replace
 if (typeof DOMTokenList.prototype.replace !== 'function') {
-  DOMTokenList.prototype.replace = function(remove, add) {
+  DOMTokenList.prototype.replace = function (remove, add) {
     this.remove(remove);
     this.add(add);
   };
@@ -19,7 +19,7 @@ NexT.utils = {
   /**
    * Wrap images with fancybox.
    */
-  wrapImageWithFancyBox: function() {
+  wrapImageWithFancyBox: function () {
     document.querySelectorAll('.post-body :not(a) > img, .post-body > img').forEach(element => {
       const $image = $(element);
       const imageLink = $image.attr('data-src') || $image.attr('src');
@@ -42,7 +42,7 @@ NexT.utils = {
 
     $.fancybox.defaults.hash = false;
     $('.fancybox').fancybox({
-      loop   : true,
+      loop: true,
       helpers: {
         overlay: {
           locked: false
@@ -51,7 +51,7 @@ NexT.utils = {
     });
   },
 
-  registerExtURL: function() {
+  registerExtURL: function () {
     document.querySelectorAll('span.exturl').forEach(element => {
       const link = document.createElement('a');
       // https://stackoverflow.com/questions/30106476/using-javascripts-atob-to-decode-base64-doesnt-properly-decode-utf-8-strings
@@ -70,7 +70,7 @@ NexT.utils = {
   /**
    * One-click copy code support.
    */
-  registerCopyCode: function() {
+  registerCopyCode: function () {
     let figure = document.querySelectorAll('figure.highlight');
     if (figure.length === 0) figure = document.querySelectorAll('pre');
     figure.forEach(element => {
@@ -100,6 +100,7 @@ NexT.utils = {
         ta.blur(); // For iOS
         button.blur();
         document.body.removeChild(ta);
+        toastr.success("复制成功!");
       });
       element.addEventListener('mouseleave', () => {
         setTimeout(() => {
@@ -109,7 +110,7 @@ NexT.utils = {
     });
   },
 
-  wrapTableWithBox: function() {
+  wrapTableWithBox: function () {
     document.querySelectorAll('table').forEach(element => {
       const box = document.createElement('div');
       box.className = 'table-container';
@@ -117,7 +118,7 @@ NexT.utils = {
     });
   },
 
-  registerVideoIframe: function() {
+  registerVideoIframe: function () {
     document.querySelectorAll('iframe').forEach(element => {
       const supported = [
         'www.youtube.com',
@@ -139,7 +140,7 @@ NexT.utils = {
     });
   },
 
-  registerScrollPercent: function() {
+  registerScrollPercent: function () {
     const backToTop = document.querySelector('.back-to-top');
     const readingProgressBar = document.querySelector('.reading-progress-bar');
     // For init back to top in sidebar if page was scrolled after page refresh.
@@ -169,9 +170,9 @@ NexT.utils = {
 
     backToTop && backToTop.addEventListener('click', () => {
       window.anime({
-        targets  : document.scrollingElement,
-        duration : 500,
-        easing   : 'linear',
+        targets: document.scrollingElement,
+        duration: 500,
+        easing: 'linear',
         scrollTop: 0
       });
     });
@@ -180,7 +181,7 @@ NexT.utils = {
   /**
    * Tabs tag listener (without twitter bootstrap).
    */
-  registerTabsTag: function() {
+  registerTabsTag: function () {
     // Binding `nav-tabs` & `tab-content` by real time permalink changing.
     document.querySelectorAll('.tabs ul.nav-tabs .tab').forEach(element => {
       element.addEventListener('click', event => {
@@ -206,7 +207,7 @@ NexT.utils = {
     window.dispatchEvent(new Event('tabs:register'));
   },
 
-  registerCanIUseTag: function() {
+  registerCanIUseTag: function () {
     // Get responsive height passed from iframe.
     window.addEventListener('message', ({ data }) => {
       if (typeof data === 'string' && data.includes('ciu_embed')) {
@@ -217,7 +218,7 @@ NexT.utils = {
     }, false);
   },
 
-  registerActiveMenuItem: function() {
+  registerActiveMenuItem: function () {
     document.querySelectorAll('.menu-item a[href]').forEach(target => {
       const isSamePath = target.pathname === location.pathname || target.pathname === location.pathname.replace('index.html', '');
       const isSubPath = !CONFIG.root.startsWith(target.pathname) && location.pathname.startsWith(target.pathname);
@@ -225,7 +226,7 @@ NexT.utils = {
     });
   },
 
-  registerLangSelect: function() {
+  registerLangSelect: function () {
     const selects = document.querySelectorAll('.lang-select');
     selects.forEach(sel => {
       sel.value = CONFIG.page.lang;
@@ -240,7 +241,7 @@ NexT.utils = {
     });
   },
 
-  registerSidebarTOC: function() {
+  registerSidebarTOC: function () {
     this.sections = [...document.querySelectorAll('.post-toc li a.nav-link')].map(element => {
       const target = document.getElementById(decodeURI(element.getAttribute('href')).replace('#', ''));
       // TOC item animation navigate.
@@ -248,9 +249,9 @@ NexT.utils = {
         event.preventDefault();
         const offset = target.getBoundingClientRect().top + window.scrollY;
         window.anime({
-          targets  : document.scrollingElement,
-          duration : 500,
-          easing   : 'linear',
+          targets: document.scrollingElement,
+          duration: 500,
+          easing: 'linear',
           scrollTop: offset + 10
         });
       });
@@ -258,7 +259,7 @@ NexT.utils = {
     });
   },
 
-  activateNavByIndex: function(index) {
+  activateNavByIndex: function (index) {
     const target = document.querySelectorAll('.post-toc li a.nav-link')[index];
     if (!target || target.classList.contains('active-current')) return;
 
@@ -274,14 +275,14 @@ NexT.utils = {
     // Scrolling to center active TOC element if TOC content is taller then viewport.
     const tocElement = document.querySelector('.post-toc-wrap');
     window.anime({
-      targets  : tocElement,
-      duration : 200,
-      easing   : 'linear',
+      targets: tocElement,
+      duration: 200,
+      easing: 'linear',
       scrollTop: tocElement.scrollTop - (tocElement.offsetHeight / 2) + target.getBoundingClientRect().top - tocElement.getBoundingClientRect().top
     });
   },
 
-  supportsPDFs: function() {
+  supportsPDFs: function () {
     const ua = navigator.userAgent;
     const isFirefoxWithPDFJS = ua.includes('irefox') && parseInt(ua.split('rv:')[1].split('.')[0], 10) > 18;
     const supportsPdfMimeType = typeof navigator.mimeTypes['application/pdf'] !== 'undefined';
@@ -289,7 +290,7 @@ NexT.utils = {
     return isFirefoxWithPDFJS || (supportsPdfMimeType && !isIOS);
   },
 
-  getComputedStyle: function(element) {
+  getComputedStyle: function (element) {
     const clone = element.cloneNode(true);
     clone.style.position = 'absolute';
     clone.style.visibility = 'hidden';
@@ -304,7 +305,7 @@ NexT.utils = {
    * Init Sidebar & TOC inner dimensions on all pages and for all schemes.
    * Need for Sidebar/TOC inner scrolling if content taller then viewport.
    */
-  initSidebarDimension: function() {
+  initSidebarDimension: function () {
     const sidebarNav = document.querySelector('.sidebar-nav');
     const sidebarb2t = document.querySelector('.sidebar-inner .back-to-top');
     const sidebarNavHeight = sidebarNav ? sidebarNav.offsetHeight : 0;
@@ -317,7 +318,7 @@ NexT.utils = {
     document.documentElement.style.setProperty('--sidebar-wrapper-height', sidebarWrapperHeight);
   },
 
-  updateSidebarPosition: function() {
+  updateSidebarPosition: function () {
     NexT.utils.initSidebarDimension();
     if (window.screen.width < 992 || CONFIG.scheme === 'Pisces' || CONFIG.scheme === 'Gemini') return;
     // Expand sidebar on post detail page by default, when post has a toc.
@@ -332,12 +333,12 @@ NexT.utils = {
     }
   },
 
-  getScript: function(url, callback, condition) {
+  getScript: function (url, callback, condition) {
     if (condition) {
       callback();
     } else {
       let script = document.createElement('script');
-      script.onload = script.onreadystatechange = function(_, isAbort) {
+      script.onload = script.onreadystatechange = function (_, isAbort) {
         if (isAbort || !script.readyState || /loaded|complete/.test(script.readyState)) {
           script.onload = script.onreadystatechange = null;
           script = undefined;
@@ -349,7 +350,7 @@ NexT.utils = {
     }
   },
 
-  loadComments: function(selector, callback) {
+  loadComments: function (selector, callback) {
     const element = document.querySelector(selector);
     if (!CONFIG.comments.lazyload || !element) {
       callback();
