@@ -6,10 +6,10 @@ abbrlink: 73c1c21d
 date: 2020-10-14 21:21:27
 ---
 
-之前就有听说 Github 将推出在线 IDE，一搜索发现很多[结果](https://www.google.com.hk/search?q=github+ide+%E5%8F%91%E5%B8%83)。
+之前就有听说 Github 将推出在线 IDE，一搜索发现很多结果。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201014212657.png)
 
-现在 Github 的在线 IDE 发布一段时间了，官方命名为：[Github Codespaces](https://github.com/features/codespaces)，今天我们就来体验一下。
+现在 Github 的在线 IDE 发布一段时间了，官方命名为：[Github Codespaces](https://github.com/features/codespaces)（点击可以申请），今天我们就来体验一下。
 
 <!-- more -->
 
@@ -26,7 +26,7 @@ date: 2020-10-14 21:21:27
 
 ### 进入 IDE
 
-开始进入是在初始化，然后就是同步一些配置，会发现在 Vscode 的配置和插件扩展都会被同步过来（当然，前提是你本地的 VSC 吆喝自己的 Github 绑定起来，并且同步配置）。
+开始进入是在初始化，然后就是同步一些配置，会发现在 Vscode 的配置和插件扩展都会被同步过来（当然，前提是你本地的 VSC 和自己的 Github 绑定起来，并且同步配置）。
 
 ![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602682883142-image.png)
 
@@ -71,6 +71,95 @@ date: 2020-10-14 21:21:27
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-15/1602694872590-image.png)
 
-### 更多好玩的
+## 更多好玩的
 
-未完待续...
+我们的项目不仅仅是前端项目，也有可能是后端 Server，这里我就用一个[后端 Server](https://github.com/kitety/likeReddit)来简单演示一下。
+
+### 安装依赖跑起来
+
+- 全局安装 nodemon
+- 进入 server 目录安装依赖
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015152911.png)
+很明显报错，因为我们的 server 需要连接 PostgreSQL，而我们没有安装，因此报错。
+
+### 错误的安装方法
+
+找到一篇[教程](https://www.runoob.com/postgresql/linux-install-postgresql.html)，照着代码跑起来。
+
+```bash
+sudo apt-get update
+sudo apt-get install postgresql postgresql-client
+# 创建一个数据库超级用户 postgres
+sudo -i -u postgres
+```
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153252.png)
+最后，我们会卡在这里，因为我们不知道 codespace 的密码，因此安装失败
+
+### docker 出马
+
+我们可以观察到 codespace 已经为我们安装了 docker，而且在现在相当流行容器化部署，上面的那种安装方式也不够优雅。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153359.png)
+
+因此运行命令，安装 postgresql
+
+```bash
+docker run -p 5432:5432 -v /home/docker/postgresql/data:/var/lib/postgresql/data -e POSTGRES_PASSWORD=123456 -e TZ=PRC -d --name=some-postgres postgres
+//-p端口映射
+//-v将数据存到宿主服务器
+//-e POSTGRES_PASSWORD 密码（默认用户名postgres）
+//-e TZ=PRC时区，中国
+//-d后台运行
+//--name容器名称
+```
+
+运行之后，找不到镜像会自动去拉取镜像
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153646.png)
+查看下状态
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153710.png)
+现在重启 server，发现已经可以连接上了。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153818.png)
+
+### 端口
+
+我们可以在`Forwarded Ports`增加端口转发
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153909.png)
+简单演示一下 get 请求，并且是即时的，修改可以通过域名来访问。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154129.png)
+顺便说一句，如果我们在代码中写好 url 地址，就可以直接用鼠标在命令行打开对应端口，网址也会被进行替换。
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154329.png)
+
+### 注意
+
+但是也需要注意，如果我们用 postman 去请求就无法正常请求结果。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154656.png)
+如果我们访问`/graphql`,请求就会提示`Server cannot be reached`和一些跨域错误。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154819.png)
+
+## 总结
+
+### 优点
+
+俗话说，工欲善其事必先利其器。
+
+编程更重要的是一种思想，而编码更重要的是去表达思想。
+
+如果我们将配置环境，机器选择的的步骤省下来，让自己更加专注与思想表达，专注于编码的话，这样会让我们事半功倍。而现在 Github IDE 就可以看成 VSC 的网页版。如果你将 VSC 的配置同步到 Github 账户的话，你打开在线 IDE 的时候就会直接同步配置，你会很快上手。
+
+除此之外，Github 的里面预装各种环境，让你不再苦恼于环境安装，而且所处的网络环境也很棒，各种库、配置下载起来也是很快，我想这对我们的帮助也是很大的。比如再也不用纠结`node-sass`下载不下等尴尬场景。
+
+**遇到紧急的事情，一个浏览器就可以让你专注开发，这难道不香吗？**
+
+### 不足
+
+虽然 Github 在线 IDE 有很多优点,但是还是有一些不足，肯定不能和 VSC 真机比拟。比如一些接口`/graphql`，就没有本地真机开发的那么爽。除此之外，真机的 VSC 就有很多辅助扩展。比如 PicGo 来实现图片上传到 Github 做图床，在浏览器 IDE 里面经过测试是跑不通的。
+
+## 结语
+
+之前听过“阿里 云电脑”，加上现在5G的逐渐普及，说不定未来大家需要的只是一个显示器，可以完成学习、工作和娱乐，配置全部都在远端。听起来天方夜谭，说不定在未来就会实现。
+
+一个新兴事物的出来，肯定引起人们的好奇和质疑。仔细想想Github被微软收购之后，先后推出了个人无限私有仓库，免费使用Github Actions，再有Github Codespaces。而微软也先后推出TS、VSC等市场剧组轻重的开源项目。我所看到是开源界的发展和繁荣，也希望未来越来越好。
+
+撒花！
