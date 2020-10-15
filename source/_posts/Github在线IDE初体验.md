@@ -50,7 +50,7 @@ date: 2020-10-14 21:21:27
 
 首先 **全局安装 Hexo**`yarn add global hexo`，再启动项目`yarn d`.
 
-因为 github 的环境在外面，因此安装速度还是很快地，纵享丝滑。
+因为 github 的环境在外面，因此安装速度还是很快的，纵享丝滑。
 
 ![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602690553256-image.png)
 
@@ -125,7 +125,7 @@ docker run -p 5432:5432 -v /home/docker/postgresql/data:/var/lib/postgresql/data
 
 我们可以在`Forwarded Ports`增加端口转发
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153909.png)
-简单演示一下 get 请求，并且是即时的，修改可以通过域名来访问。
+简单演示一下 get 请求，并且是即时的，修改之后可以通过域名来访问。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154129.png)
 顺便说一句，如果我们在代码中写好 url 地址，就可以直接用鼠标在命令行打开对应端口，网址也会被进行替换。
 
@@ -156,10 +156,12 @@ docker run -p 5432:5432 -v /home/docker/postgresql/data:/var/lib/postgresql/data
 
 虽然 Github 在线 IDE 有很多优点,但是还是有一些不足，肯定不能和 VSC 真机比拟。比如一些接口`/graphql`，就没有本地真机开发的那么爽。除此之外，真机的 VSC 就有很多辅助扩展。比如 PicGo 来实现图片上传到 Github 做图床，在浏览器 IDE 里面经过测试是跑不通的。
 
+因为每个人所处的网络环境不同，不用高级姿势访问有可能会出现链接断开的情况，这倒是有点硬伤。🤣
+
 ## 结语
 
 之前听过“阿里 云电脑”，加上现在5G的逐渐普及，说不定未来大家需要的只是一个显示器，可以完成学习、工作和娱乐，配置全部都在远端。听起来天方夜谭，说不定在未来就会实现。
 
-一个新兴事物的出来，肯定引起人们的好奇和质疑。仔细想想Github被微软收购之后，先后推出了个人无限私有仓库，免费使用Github Actions，再有Github Codespaces。而微软也先后推出TS、VSC等市场剧组轻重的开源项目。我所看到是开源界的发展和繁荣，也希望未来越来越好。
+一个新兴事物的出来，肯定引起人们的好奇和质疑。仔细想想Github被微软收购之后，先后推出了个人无限私有仓库，免费使用Github Actions，再有Github Codespaces。而微软也先后推出TS、VSC等市场举足轻重的开源项目。我所看到是开源界的发展和繁荣，也希望未来越来越好。
 
 撒花！
