@@ -33,7 +33,7 @@ tags:
 ```html
 <div class="demo">
   <style>
-  .active:active{ color:red;}
+ .demo .active:active{ color:red;}
   </style>
   <div class="active">鼠标按下就变为红色</div>
 </div>
@@ -41,7 +41,7 @@ tags:
 </details>
 <div class="demo">
   <style>
-  .active:active{ color:red;}
+ .demo .active:active{ color:red;}
   </style>
   <div class="active">鼠标按下就变为红色</div>
 </div>
@@ -58,10 +58,10 @@ tags:
 ```html
 <div class="demo">
   <style>
- .onlyChild :only-child {
+.demo .onlyChild :only-child {
   color: red;
 }
- .onlyChild .haha::after {
+.demo  .onlyChild .haha::after {
  content:'after伪类不影响';
 }
   </style>
@@ -82,10 +82,10 @@ tags:
 </details>
 <div class="demo">
   <style>
-    .onlyChild :only-child {
+  .demo   .onlyChild :only-child {
       color: red;
     }
-    .onlyChild .haha::after {
+  .demo   .onlyChild .haha::after {
       content:'after伪类不影响';
     }
   </style>
@@ -111,11 +111,11 @@ tags:
 ```html
 <div class="demo">
   <style>
-.anyLink a:any-link {
+.demo .anyLink a:any-link {
   color: red;
 }
 /_ WebKit browsers _/
-.anyLink a:-webkit-any-link {
+.demo .anyLink a:-webkit-any-link {
 color: red;
 }
 </style>
@@ -132,11 +132,11 @@ color: red;
 </details>
 <div class="demo">
   <style>
-.anyLink a:any-link {
+.demo .anyLink a:any-link {
   color: red;
 }
 /_ WebKit browsers _/
-.anyLink a:-webkit-any-link {
+.demo .anyLink a:-webkit-any-link {
 color: red;
 }
 </style>
@@ -159,7 +159,7 @@ color: red;
 ```html
 <div class="demo">
   <style>
-  .onlyoftype :only-of-type {
+ .demo  .onlyoftype :only-of-type {
     color: red;
   }
   </style>
@@ -178,7 +178,7 @@ color: red;
 </details>
 <div class="demo">
   <style>
-  .onlyoftype :only-of-type {
+  .demo .onlyoftype :only-of-type {
     color: red;
   }
   </style>
@@ -203,13 +203,13 @@ color: red;
 ```html
 <div class="demo">
   <style>
-.blanks p {
+.demo .blanks p {
   min-height: 30px;
   width: 250px;
   background-color: lightblue;
 }
-.blanks p:blank { display: none; }
-.blanks p:-moz-only-whitespace { display: none; } /* Mozilla-only pseudo-class that works like :blank will */
+.demo .blanks p:blank { display: none; }
+.demo .blanks p:-moz-only-whitespace { display: none; } /* Mozilla-only pseudo-class that works like :blank will */
 </style>
 
   <div class="blanks">
@@ -227,13 +227,13 @@ color: red;
 </details>
 <div class="demo">
   <style>
-.blanks p {
+.demo .blanks p {
   min-height: 30px;
   width: 250px;
   background-color: lightblue;
 }
-.blanks p:blank { display: none; }
-.blanks p:-moz-only-whitespace { display: none; } /* Mozilla-only pseudo-class that works like :blank will */
+.demo .blanks p:blank { display: none; }
+.demo .blanks p:-moz-only-whitespace { display: none; } /* Mozilla-only pseudo-class that works like :blank will */
 </style>
 
   <div class="blanks">
@@ -257,12 +257,12 @@ color: red;
 ```html
 <div class="demo">
   <style>
-    .empty .box {
+   .demo  .empty .box {
         background: pink;
         height: 80px;
         width: 80px;
     }
-    .empty .box:empty {
+   .demo  .empty .box:empty {
       background: lime;
     }
 </style>
@@ -279,12 +279,12 @@ color: red;
 </details>
 <div class="demo">
   <style>
-    .empty .box {
+   .demo  .empty .box {
         background: pink;
         height: 80px;
         width: 80px;
     }
-    .empty .box:empty {
+   .demo  .empty .box:empty {
       background: lime;
     }
 </style>
@@ -307,7 +307,7 @@ color: red;
 ```html
 <div class="demo">
   <style>
-  .optional input:optional {
+ .demo  .optional input:optional {
   border: 1px dashed red;
 }
   </style>
@@ -320,7 +320,7 @@ color: red;
 </details>
 <div class="demo">
   <style>
-  .optional input:optional {
+ .demo  .optional input:optional {
   border: 1px dashed red;
 }
   </style>
@@ -339,7 +339,7 @@ color: red;
 ```html
 <div class="demo">
   <style>
-  .checked :checked {
+ .demo  .checked :checked {
     background:red;
     margin-left:20px;
     margin-right:20px;
@@ -357,7 +357,7 @@ color: red;
 </details>
 <div class="demo">
   <style>
-  .checked :checked {
+  .demo .checked :checked {
     background:red;
     margin-left:20px;
     margin-right:20px;
@@ -381,7 +381,7 @@ color: red;
 ```html
 <div class="demo">
   <style>
-  .hover:hover {
+ .demo  .hover:hover {
    color:red;
   }
   </style>
@@ -393,7 +393,7 @@ hover
 </details>
 <div class="demo">
   <style>
-  .hover:hover {
+ .demo  .hover:hover {
    color:red;
   }
   </style>
@@ -415,17 +415,17 @@ hover
   input {
     border: 1px solid black;
   }
-  .outofrange input:in-range {
+ .demo  .outofrange input:in-range {
     background-color: rgba(0, 255, 0, 0.25);
   }
-  .outofrange input:out-of-range {
+ .demo  .outofrange input:out-of-range {
     background-color: rgba(255, 0, 0, 0.25);
     border: 2px solid red;
   }
-  .outofrange input:in-range + label::after {
+ .demo  .outofrange input:in-range + label::after {
     content: 'okay.';
   }
-  .outofrange input:out-of-range + label::after {
+ .demo  .outofrange input:out-of-range + label::after {
     content: 'out of range!';
   }
   </style>
@@ -447,17 +447,17 @@ hover
   input {
     border: 1px solid black;
   }
-  .outofrange input:in-range {
+ .demo  .outofrange input:in-range {
     background-color: rgba(0, 255, 0, 0.25);
   }
-  .outofrange input:out-of-range {
+ .demo  .outofrange input:out-of-range {
     background-color: rgba(255, 0, 0, 0.25);
     border: 2px solid red;
   }
-  .outofrange input:in-range + label::after {
+  .demo .outofrange input:in-range + label::after {
     content: 'okay.';
   }
-  .outofrange input:out-of-range + label::after {
+  .demo .outofrange input:out-of-range + label::after {
     content: 'out of range!';
   }
   </style>
@@ -482,7 +482,7 @@ hover
 ```html
 <div class="demo">
   <style>
-  .indeterminate input:indeterminate, .indeterminate input:indeterminate + label {
+  .demo .indeterminate input:indeterminate, .indeterminate input:indeterminate + label {
     background: red;
   }
   </style>
@@ -503,7 +503,7 @@ hover
 </details>
 <div class="demo">
   <style>
-  .indeterminate input:indeterminate, .indeterminate input:indeterminate + label {
+  .demo .indeterminate input:indeterminate, .indeterminate input:indeterminate + label {
     background: red;
   }
   </style>
@@ -530,10 +530,10 @@ hover
 ```html
 <div class="demo">
   <style>
-    .default1 input:default {
+   .demo  .default1 input:default {
       box-shadow: 0 0 2px 1px red;
     }
-    .default1 input:default + label {
+   .demo  .default1 input:default + label {
       color: red;
     }
   </style>
@@ -549,10 +549,10 @@ hover
 </details>
 <div class="demo">
   <style>
-    .default1 input:default {
+   .demo  .default1 input:default {
       box-shadow: 0 0 2px 1px red;
     }
-    .default1 input:default + label {
+   .demo  .default1 input:default + label {
       color: red;
     }
   </style>
@@ -574,7 +574,7 @@ hover
 ```html
 <div class="demo">
   <style>
-    .placeholader input:placeholder-shown {
+   .demo  .placeholader input:placeholder-shown {
       border-color: red;
     }
   </style>
@@ -591,7 +591,7 @@ hover
 </details>
 <div class="demo">
   <style>
-    .placeholader input:placeholder-shown {
+   .demo  .placeholader input:placeholder-shown {
       border-color: red;
     }
   </style>
@@ -614,7 +614,7 @@ hover
 ```html
 <div class="demo">
   <style>
-    .invalid input:invalid {
+  .demo   .invalid input:invalid {
       background-color: red;
     }
   </style>
@@ -634,7 +634,7 @@ hover
 </details>
 <div class="demo">
   <style>
-    .invalid input:invalid {
+   .demo  .invalid input:invalid {
       background-color: red;
     }
   </style>
@@ -660,16 +660,16 @@ hover
 ```html
 <div class="demo">
   <style>
-    .readonly input:-moz-read-only {
+   .demo  .readonly input:-moz-read-only {
       background-color: #ccc;
     }
     /* Supported in Blink/WebKit/Edge without a prefix */
-  .readonly input:read-only {
+  .demo .readonly input:read-only {
       background-color: #ccc;
     }
-  .readonly p:-moz-read-only { background: lightgray; }
-  .readonly p:read-only { background: lightgray; }
-  .readonly .div:read-only { background: lightgray; }
+ .demo  .readonly p:-moz-read-only { background: lightgray; }
+ .demo  .readonly p:read-only { background: lightgray; }
+ .demo  .readonly .div:read-only { background: lightgray; }
   </style>
 
   <div class="readonly">
@@ -683,16 +683,16 @@ hover
 </details>
 <div class="demo">
   <style>
-    .readonly input:-moz-read-only {
+   .demo  .readonly input:-moz-read-only {
       background-color: #ccc;
     }
     /* Supported in Blink/WebKit/Edge without a prefix */
-  .readonly input:read-only {
+ .demo  .readonly input:read-only {
       background-color: #ccc;
     }
-  .readonly p:-moz-read-only { background: lightgray; }
-  .readonly p:read-only { background: lightgray; }
-  .readonly .div:read-only { background: lightgray; }
+.demo  .readonly p:-moz-read-only { background: lightgray; }
+.demo  .readonly p:read-only { background: lightgray; }
+.demo  .readonly .div:read-only { background: lightgray; }
   </style>
 
   <div class="readonly">
@@ -712,15 +712,15 @@ hover
 ```html
 <div class="demo">
   <style>
-    .readwrite input:read-write {
+  .demo   .readwrite input:read-write {
       background-color: #ccc;
     }
     /* Supported in Blink/WebKit/Edge without a prefix */
-  .readwrite input:read-write {
+  .demo .readwrite input:read-write {
       background-color: #ccc;
     }
-  .readwrite p:read-write { background: lightgray; }
-  .readwrite .div:read-write { background: lightgray; }
+  .demo .readwrite p:read-write { background: lightgray; }
+  .demo .readwrite .div:read-write { background: lightgray; }
   </style>
 
   <div class="readwrite">
@@ -733,15 +733,15 @@ hover
 </details>
 <div class="demo">
   <style>
-    .readwrite input:read-write {
+   .demo  .readwrite input:read-write {
       background-color: #ccc;
     }
     /* Supported in Blink/WebKit/Edge without a prefix */
-  .readwrite input:read-write {
+.demo   .readwrite input:read-write {
       background-color: #ccc;
     }
-  .readwrite p:read-write { background: lightgray; }
-  .readwrite .div:read-write { background: lightgray; }
+  .demo .readwrite p:read-write { background: lightgray; }
+  .demo .readwrite .div:read-write { background: lightgray; }
   </style>
 
   <div class="readwrite">
@@ -760,11 +760,11 @@ hover
 ```html
 <div class="demo">
   <style>
-    .disabled1 input:disabled {
+  .demo   .disabled1 input:disabled {
       background-color: #ccc;
       cursor:not-allowed;
     }
-    .disabled1 div:disabled {
+  .demo   .disabled1 div:disabled {
       background-color: #ccc;
       cursor:not-allowed;
     }
@@ -779,11 +779,11 @@ hover
 </details>
 <div class="demo">
   <style>
-    .disabled1 input:disabled {
+   .demo  .disabled1 input:disabled {
       background-color: #ccc;
       cursor:not-allowed;
     }
-    .disabled1 div:disabled {
+   .demo  .disabled1 div:disabled {
       background-color: #ccc;
       cursor:not-allowed;
     }
@@ -804,10 +804,10 @@ hover
 ```html
 <div class="demo">
   <style>
-    .enabled input:enabled {
+  .demo   .enabled input:enabled {
       background-color: red;
     }
-    .enabled div:enabled {
+  .demo   .enabled div:enabled {
       background-color: red;
     }
   
@@ -821,10 +821,10 @@ hover
 </details>
 <div class="demo">
   <style>
-    .enabled input:enabled {
+   .demo  .enabled input:enabled {
       background-color: red;
     }
-    .enabled div:enabled {
+   .demo  .enabled div:enabled {
       background-color: red;
     }
   
@@ -844,8 +844,8 @@ hover
 ```html
 <div class="demo">
   <style>
-   .lang div:lang(en) > q { background:red; }
-   .lang div:lang(fr) > q {background:green;}
+   .demo .lang div:lang(en) > q { background:red; }
+  .demo  .lang div:lang(fr) > q {background:green;}
   </style>
   <div class="lang">
     <div lang="en"><q>英语语言</q></div>
@@ -856,8 +856,8 @@ hover
 </details>
 <div class="demo">
   <style>
-   .lang div:lang(en) > q { background:red; }
-   .lang div:lang(fr) > q {background:green;}
+ .demo   .lang div:lang(en) > q { background:red; }
+ .demo   .lang div:lang(fr) > q {background:green;}
   </style>
   <div class="lang">
     <div lang="en"><q>英语语言</q></div>
@@ -874,24 +874,24 @@ hover
 ```html
 <div class="demo">
   <style>
-   .not .fancy {
+  .demo  .not .fancy {
       text-shadow: 2px 2px 3px gold;
     }
     /* 类名不是 `.fancy` 的 <p> 元素 */
-    .not p:not(.fancy) {
+   .demo  .not p:not(.fancy) {
       color: green;
     }
     /* 非 <p> 元素 */ 
-    .not  :not(p) {
+  .demo   .not  :not(p) {
       text-decoration: underline;
     }
     /* 既不是 <div> 也不是 <span> 的元素 */
-    .not  :not(div):not(span) {
+  .demo   .not  :not(div):not(span) {
       font-weight: bold;
     }
     /* 类名不是 `.crazy` 或 `.fancy` 的元素 */
     /* 注意，此语法尚未获广泛支持。 */
-    .not  :not(.crazy, .fancy) {
+  .demo   .not  :not(.crazy, .fancy) {
       color:red;
     }
   </style>
@@ -905,24 +905,24 @@ hover
 </details>
 <div class="demo">
   <style>
-   .not .fancy {
+ .demo   .not .fancy {
       text-shadow: 2px 2px 3px gold;
     }
     /* 类名不是 `.fancy` 的 <p> 元素 */
-    .not p:not(.fancy) {
+ .demo    .not p:not(.fancy) {
       color: green;
     }
     /* 非 <p> 元素 */ 
-    .not  :not(p) {
+  .demo   .not  :not(p) {
       text-decoration: underline;
     }
     /* 既不是 <div> 也不是 <span> 的元素 */
-    .not  :not(div):not(span) {
+  .demo   .not  :not(div):not(span) {
       font-weight: bold;
     }
     /* 类名不是 `.crazy` 或 `.fancy` 的元素 */
     /* 注意，此语法尚未获广泛支持。 */
-    .not  :not(.crazy, .fancy) {
+   .demo  .not  :not(.crazy, .fancy) {
       color:red;
     }
   </style>
@@ -942,7 +942,7 @@ hover
 ```html
 <div class="demo">
   <style>
-  .focus input:focus {
+.demo   .focus input:focus {
     background: red;
   }
   </style>
@@ -955,7 +955,7 @@ hover
 </details>
 <div class="demo">
   <style>
-  .focus input:focus {
+ .demo  .focus input:focus {
     background: red;
   }
   </style>
@@ -988,7 +988,7 @@ hover
 </details>
 <div class="demo">
   <style>
-  .focusWithin:focus-within {
+ .demo  .focusWithin:focus-within {
     background: red;
   }
   </style>
@@ -1006,22 +1006,22 @@ hover
 ```html
 <div class="demo">
   <style>
-  .top {
+ .demo  .top {
   margin: 15px;
 }
-.main {
+.demo .main {
   width: 100%;
   display: flex;
 }
-.right:fullscreen{
+.demo .right:fullscreen{
   background:green;
 }
-.right {
+.demo .right {
   width: 100%;
   height: 300px;
   background: #dddddd;
 }
-.right:fullscreen {
+.demo .right:fullscreen {
   background: green;
   color:red;
   font-size:20px;
@@ -1169,23 +1169,23 @@ function exitScreen() {
 ```
 </details>
 <div class="demo">
-  <style>
-  .top {
+<style>
+.demo .top {
   margin: 15px;
 }
-.main {
+.demo .main {
   width: 100%;
   display: flex;
 }
-.right:fullscreen{
+.demo .right:fullscreen{
   background:green;
 }
-.right {
+.demo .right {
   width: 100%;
   height: 300px;
   background: #dddddd;
 }
-.right:fullscreen {
+.demo .right:fullscreen {
   background: green;
   color:red;
   font-size:20px;
