@@ -5,7 +5,6 @@ NexT.utils.loadComments('#valine-comments', () => {
     new Valine(Object.assign({{ theme.valine | safedump }}, {
       el: '#valine-comments',
       path: {{ url_for(page.path) | replace(r/index\.html$/, '') | safedump }},
-      serverURLs: {{ serverURLs | safedump }}
     }));
   }, window.Valine);
 });

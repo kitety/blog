@@ -48,7 +48,7 @@ darkmode: auto
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://i.loli.net/2020/08/06/ZD7FoxUOA1tBwkJ.png
+  small: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
   medium: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
@@ -123,7 +123,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://i.loli.net/2020/08/06/ZD7FoxUOA1tBwkJ.png
+  url: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -274,8 +274,8 @@ reward:
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  #WeChat: /images/wechat_channel.jpg || fab fa-weixin
-  #RSS: /atom.xml || fa fa-rss
+  WeChat: https://cdn.jsdelivr.net/gh/kitety/blog_img/img/bdd36b4f04087667fae8e223d6cba88.jpg || fab fa-weixin
+  RSS: /atom.xml || fa fa-rss
 
 # Related popular posts
 # Dependencies: https://github.com/tea3/hexo-related-popular-posts
@@ -554,17 +554,19 @@ comments:
   style: tabs
   # Choose a comment system to be displayed by default.
   # Available values: changyan | disqus | disqusjs | gitalk | livere | valine
-  active: disqus
+  active: valine
   # Setting `true` means remembering the comment system selected by the visitor.
   storage: true
   # Lazyload all comment systems.
-  lazyload: false
+  lazyload: true
   # Modify texts or order for any navs, here are some examples.
   nav:
     disqus:
-      text: Load Disqus
+      text: 加载 Disqus
       order: -1
     valine:
+      order: -3
+    livere:
       order: -2
 
 # Disqus
@@ -597,23 +599,23 @@ changyan:
 # For more information: https://valine.js.org, https://github.com/xCss/Valine
 valine:
   enable: true
-  appId: iGbar85pNcmueGsCObi1yCez
+  appId: iGbar85pNcmueGsCObi1yCez-gzGzoHsz
   appKey: cte7CH71cmtRBvOduGBUitD6
   serverURLs: # When the custom domain name is enabled, fill it in here
-  placeholder: 请输入评论 # Comment box placeholder
+  placeholder: 昵称填写qq可以显示qq头像和昵称哦~ # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
-  lang: # Language, available values: en, zh-cn
+  lang: zh-cn # Language, available values: en, zh-cn
   visitor: false # Article reading statistic
   comment_count: false # If false, comment count will only be displayed in post page, not in home page
   recordIP: true # Whether to record the commenter IP
   enableQQ: true # Whether to enable the Nickname box to automatically get QQ Nickname and QQ Avatar
-  requiredFields: [] # Set required fields: [nick] | [nick, mail]
+  requiredFields: [nick, mail] # Set required fields: [nick] | [nick, mail]
 
 # LiveRe comments system
 # You can get your uid from https://livere.com/insight/myCode (General web site)
-livere_uid: # <your_uid>
+livere_uid: MTAyMC81MTUyNi8yODAwNw==
 
 # Gitalk
 # For more information: https://gitalk.github.io, https://github.com/gitalk/gitalk
@@ -672,9 +674,9 @@ cnzz_siteid: 1279311050
 # AppID and AppKey are recommended to be the same as valine's for counter compatibility.
 # Warning: Do not enable both `valine.visitor` and `leancloud_visitors`.
 leancloud_visitors:
-  enable: false
-  app_id: # <your app id>
-  app_key: # <your app key>
+  enable: true
+  app_id: iGbar85pNcmueGsCObi1yCez-gzGzoHsz
+  app_key: cte7CH71cmtRBvOduGBUitD6
   # Required for apps from CN region
   server_url: # <your server url>
   # Dependencies: https://github.com/theme-next/hexo-leancloud-counter-security
@@ -688,8 +690,8 @@ leancloud_visitors:
 firestore:
   enable: false
   collection: articles # Required, a string collection name to access firestore database
-  apiKey: # Required
-  projectId: # Required
+  apiKey: AIzaSyDiAoWre0echb8BWpKBh4tf70S8nZP73V8
+  projectId: kitetyblog-284107
 
 # Show Views / Visitors of the website / page with busuanzi.
 # Get more information on http://ibruce.info/2015/04/04/busuanzi
@@ -835,7 +837,7 @@ vendors:
   # The CDN provider of NexT internal scripts.
   # Available values: local | jsdelivr | unpkg | cdnjs
   # Warning: If you are using the latest master branch of NexT, please set `internal: local`
-  internal: local
+  internal: mycdn
   # The default CDN provider of third-party plugins.
   # Available values: local | jsdelivr | unpkg | cdnjs
   # Dependencies for `plugins: local`: https://github.com/next-theme/plugins
@@ -922,3 +924,8 @@ vendors:
 css: css
 js: js
 images: images
+mycdn: //cdn.jsdelivr.net/gh/kitety/kitety.github.io
+
+# Online contact
+daovoice: true
+daovoice_app_id: 1e4e8331
