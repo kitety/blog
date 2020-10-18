@@ -48,7 +48,7 @@ darkmode: auto
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
+  small: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
   medium: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
@@ -123,7 +123,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
+  url: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -250,7 +250,7 @@ symbols_count_time:
   separated_meta: true
   item_text_total: false
   symbols: true
-  time: '时间'
+  time: "时间"
   total_symbols: true
   total_time: true
   exclude_codeblock: false
@@ -937,3 +937,7 @@ mycdn: //cdn.jsdelivr.net/gh/kitety/kitety.github.io
 # Online contact
 daovoice: true
 daovoice_app_id: 1e4e8331
+
+baidushare:
+  enable: true
+  type: slide

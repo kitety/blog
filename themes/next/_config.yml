@@ -27,7 +27,7 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
+  small: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
   medium: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
   safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
@@ -152,7 +152,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: https://i.loli.net/2020/10/16/cHxOysYBZVNpCPv.png
+avatar: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
 
 # Table Of Contents in the Sidebar
 toc:

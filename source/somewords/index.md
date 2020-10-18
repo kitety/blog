@@ -1,33 +1,13 @@
 ---
 title: 一些话
 date: 2020-05-05 08:53:30
-type: 'somewords'
+type: "somewords"
 comments: false
 ---
 
-<!-- 一言API -->
-<!-- 现代写法，推荐 -->
-<!-- 兼容低版本浏览器 (包括 IE)，可移除 -->
-<script src="https://cdn.jsdelivr.net/npm/bluebird@3/js/browser/bluebird.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/whatwg-fetch@2.0.3/fetch.min.js"></script>
-<!--End-->
-<script>
-  fetch('https://v1.hitokoto.cn')
-    .then(function (res){
-      return res.json();
-    })
-    .then(function (data) {
-      var hitokoto = document.getElementById('hitokoto');
-      hitokoto.innerText = data.hitokoto + '——【' + data.from + '】';
-    })
-    .catch(function (err) {
-      console.error(err);
-    })
-</script>
-
 0.一言
 
-<p id="hitokoto">正在加载一言...</p>
+<p id="hitokoto">宇宙很大，生活更大，也许以后还有缘相见。——【三体】</p>
 
 1.[上过大学和没上大学的区别在哪？](https://www.zhihu.com/question/280100422/answer/566951310) （2020 年 5 月 5 日 09:38:43）
 
@@ -95,10 +75,9 @@ comments: false
 
 > 学会规划时间，提前安排时间。
 
-9.做好两件事。(2020年8月21日14:54:38)
-> 无论你从事什么行业，只要做好两件事就够了：一个是你的**专业**、一个是你的**人品**。专业决定了你的存在，人品决定了你的人脉；剩下的就是坚持，用善良、专业和真诚赢取更多的信任。
+9.做好两件事。(2020 年 8 月 21 日 14:54:38)
 
+> 无论你从事什么行业，只要做好两件事就够了：一个是你的**专业**、一个是你的**人品**。专业决定了你的存在，人品决定了你的人脉；剩下的就是坚持，用善良、专业和真诚赢取更多的信任。
 
 10.有些事该经历的总归要经历，没人能替你经历这个过程。
 ![image.png](https://i.loli.net/2020/09/01/EnW7bFfzVRe3Kr2.png)
-

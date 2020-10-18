@@ -1,26 +1,55 @@
 // 滚动条
-::-webkit-scrollbar{width:6px;height:6px}
-::-webkit-scrollbar-thumb{background:rgba(0,0,0,0.2);border-radius:5px;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);}
-::-webkit-scrollbar-track{background:rgba(0,0,0,0.01);border-radius:0;box-shadow:inset 0 0 5px rgba(0,0,0,0.2);}
+::-webkit-scrollbar {
+  height: 6px;
+  width: 6px;
+}
 
-@media (min-width: 992px){
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 0, 0, .2);
+  border-radius: 5px;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, .01);
+  border-radius: 0;
+  box-shadow: inset 0 0 5px rgba(0, 0, 0, .2);
+}
+
+@media (min-width: 992px) {
   // body 处理
-  .body-class{
-    top: 0 !important;
-    background: url(https://api.ixiaowai.cn/gqapi/gqapi.php);
-    background-repeat: no-repeat;
+  .body-class {
+    background: url('https://api.ixiaowai.cn/gqapi/gqapi.php'); // api.ixiaowai.cn/gqapi/gqapi.php);
     background-attachment: fixed;
     background-position: 50% 50%;
+    background-repeat: no-repeat;
     background-size: cover;
-    .github-corner{
-      display:block !important;
+    top: 0 !important;
+
+    .github-corner {
+      display: block !important;
     }
   }
 }
 
 #nprogress .bar {
-background: #f70000 !important;
+  background: #f70000 !important;
 }
 
-.hidden
-{display: none}
+.hidden {
+  display: none;
+}
+
+.mirrorbtn {
+  border: none;
+  bottom: 90px;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  text-decoration: none;
+}
+
+.mirrorbtn img {
+  height: 40px;
+  width: 40px;
+}
