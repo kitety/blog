@@ -3,12 +3,12 @@
 ## Source: https://github.com/hexojs/hexo/
 # Site
 title: 别样
-subtitle: '独特为佳'
-description: '一个人的美丽是认真'
+subtitle: "独特为佳"
+description: "一个人的美丽是认真"
 keywords: blog,kitety
 author: kitety
 language: zh-CN
-timezone: 'Asia/Shanghai'
+timezone: "Asia/Shanghai"
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://kitety.github.io/
@@ -38,7 +38,7 @@ titlecase: false # Transform title into titlecase
 external_link:
   enable: true # Open external links in new tab
   field: site # Apply to the whole site
-  exclude: ''
+  exclude: ""
 filename_case: 0
 render_drafts: false
 post_asset_folder: false
@@ -48,7 +48,7 @@ highlight:
   enable: true
   line_number: true
   auto_detect: true
-  tab_replace: ''
+  tab_replace: ""
   wrap: true
   hljs: true
 # Home page setting
@@ -56,7 +56,7 @@ highlight:
 # per_page: Posts displayed per page. (0 = disable pagination)
 # order_by: Posts order. (Order by date descending by default)
 index_generator:
-  path: ''
+  path: ""
   per_page: 6
   order_by: -date
 # Category & Tag
@@ -105,8 +105,9 @@ search:
   format: html
   limit: 10000
 lazyload:
-  enable: false
+  enable: true
   onlypost: true
+  isSPA: true
   loadingImg: https://cdn.jsdelivr.net/gh/kitety/blog_img/img/giphy.gif
 baidu_url_submit:
   count: 10 # 提交最新的多少个链接
@@ -128,7 +129,7 @@ neat_html:
 neat_css:
   enable: true
   exclude:
-    - '**/*.min.css'
+    - "**/*.min.css"
 # 压缩 js
 neat_js:
   enable: true
@@ -136,9 +137,9 @@ neat_js:
   output:
   compress:
   exclude:
-    - '**/*.min.js'
-    - '**/jquery.fancybox.pack.js'
-    - '**/index.js'
+    - "**/*.min.js"
+    - "**/jquery.fancybox.pack.js"
+    - "**/index.js"
 hexo_submit_urls_to_search_engine:
   submit_condition: count #链接被提交的条件，可选值：count | period 现仅支持count
   count: 20 # 提交最新的10个链接
@@ -160,4 +161,4 @@ feed:
   hub:
   content:
   content_limit:
-  content_limit_delim: ' '
+  content_limit_delim: " "

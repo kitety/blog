@@ -21,11 +21,9 @@ $(function () {
   );
   $("body").append($h1);
 
-
   // pjax
   // Pjax 完成后，重新加载上面的函数
   document.addEventListener("pjax:complete", function () {
-    console.log(1)
     // 重载整个 JS 文件
     $("script.pjax-reload").each(function () {
       $(this).parent().append($(this).remove());
