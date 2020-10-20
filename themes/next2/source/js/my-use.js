@@ -1,3 +1,12 @@
+function fancyBoxFix() {
+  setTimeout(() => {
+    $(document)
+      .find("img[data-original]")
+      .each(function () {
+        $(this).parent().attr("href", $(this).attr("data-original"));
+      });
+  });
+}
 $(function () {
   // 镜像
   var href = window.location.href;
@@ -20,6 +29,7 @@ $(function () {
     '<a class="mirrorbtn" href="' + href + '"><img src="' + imgUrl + '"/></a>'
   );
   $("body").append($h1);
+  fancyBoxFix();
 
   // pjax
   // Pjax 完成后，重新加载上面的函数
@@ -28,5 +38,6 @@ $(function () {
     $("script.pjax-reload").each(function () {
       $(this).parent().append($(this).remove());
     });
+    fancyBoxFix();
   });
 });

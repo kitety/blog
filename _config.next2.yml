@@ -932,7 +932,7 @@ vendors:
 css: css
 js: js
 images: images
-mycdn: //cdn.jsdelivr.net/gh/kitety/kitety.github.io@latest
+mycdn: //cdn.jsdelivr.net/gh/kitety/kitety.github.io
 
 # Online contact
 daovoice: true
