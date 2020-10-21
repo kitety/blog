@@ -48,7 +48,7 @@ date: 2020-10-14 21:21:27
 
 #### 启动项目
 
-首先 **全局安装 Hexo**`yarn add global hexo`，再启动项目`yarn d`.
+首先 **全局安装 Hexo**`yarn global add hexo`，再启动项目`yarn d`.
 
 因为 github 的环境在外面，因此安装速度还是很快的，纵享丝滑。
 
