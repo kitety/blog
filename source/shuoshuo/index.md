@@ -10,8 +10,9 @@ comments: false
 <div id="artitalk_main"></div>
 <script>
 new Artitalk({
-    appId: 'iGbar85pNcmueGsCObi1yCez-gzGzoHsz', // Your leancloud appId
-    appKey: 'cte7CH71cmtRBvOduGBUitD6' // Your leancloud appKey
+    appId: 'AL2qc8mR3D1gcLYeQWEWNh62-MdYXbMMI', // Your leancloud appId
+    appKey: '7oWMi8af1pHJeuxeDGsjEson', // Your leancloud appKey
+    pageSize: 20,
 })
 </script>
 </body>
