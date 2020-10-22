@@ -87,6 +87,7 @@ menu:
   #sitemap: /sitemap.xml || sitemap
   #commonweal: /404/ || heartbeat
   somewords: /somewords||fa-heartbeat fa
+  shuoshuo: /shuoshuo||fa-heartbeat fa
 
 # Enable / Disable menu icons / item badges.
 menu_settings:
@@ -610,7 +611,7 @@ valine:
   appId: iGbar85pNcmueGsCObi1yCez-gzGzoHsz
   appKey: cte7CH71cmtRBvOduGBUitD6
   serverURLs: # When the custom domain name is enabled, fill it in here
-  placeholder: 昵称填写qq可以显示qq头像和昵称哦~ # Comment box placeholder
+  placeholder: 图片可以直接粘贴，昵称填写qq可以显示qq头像和昵称哦~ # Comment box placeholder
   avatar: mm # Gravatar style
   meta: [nick, mail, link] # Custom comment header
   pageSize: 10 # Pagination size
