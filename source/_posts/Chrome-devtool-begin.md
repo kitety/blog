@@ -3,6 +3,7 @@ title: Chrome开发者工具总览
 tags:
   - Chrome
 abbrlink: 3d51b662
+translate_title: overview-of-chrome-developer-tools
 date: 2020-05-05 10:54:01
 ---
 ## 缘起

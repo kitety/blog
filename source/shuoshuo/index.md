@@ -1,6 +1,7 @@
 ---
 title: 一些话
 comments: false
+translate_title: some-words
 ---
 
 <body>

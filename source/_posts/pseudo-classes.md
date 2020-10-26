@@ -1,9 +1,10 @@
 ---
 title: CSS 伪类合集分享
 abbrlink: a54a0322
-date: 2020-06-28 10:32:54
 tags:
   - CSS
+translate_title: css-pseudoclass-collection-sharing
+date: 2020-06-28 10:32:54
 ---
 
 <!-- demo的样式 -->

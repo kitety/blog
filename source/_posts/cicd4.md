@@ -1,9 +1,10 @@
 ---
 title: CICD实战之Nginx搭建
 abbrlink: 342a6d66
-date: 2020-07-29 10:50:34
 tags:
   - CICD
+translate_title: cicd-actual-combat-nginx-construction
+date: 2020-07-29 10:50:34
 ---
 
 ## 目的

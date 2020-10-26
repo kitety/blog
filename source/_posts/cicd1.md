@@ -1,9 +1,10 @@
 ---
 title: CICD实战之基本介绍
 abbrlink: '444099e9'
-date: 2020-07-24 23:25:19
 tags:
-- CICD
+  - CICD
+translate_title: basic-introduction-to-cicd-combat
+date: 2020-07-24 23:25:19
 ---
 
 ## 什么是CI/CD

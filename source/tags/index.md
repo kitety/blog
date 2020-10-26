@@ -1,6 +1,7 @@
 ---
-title: "tags"
+title: tags
 type: tags
-layout: "tags"
+layout: tags
 comments: false
+translate_title: tags
 ---

@@ -3,6 +3,8 @@ title: CICD实战之Jenkins构建前端镜像并上传到制品库
 tags:
   - CICD
 abbrlink: dc1bbeba
+translate_title: >-
+  cicd-actual-combat-jenkins-builds-a-frontend-image-and-uploads-it-to-the-product-library
 date: 2020-08-09 18:41:29
 ---
 ## 目的

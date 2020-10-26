@@ -3,6 +3,7 @@ title: Github在线IDE初体验
 tags:
   - Github
 abbrlink: 73c1c21d
+translate_title: github-online-ide-first-experience
 date: 2020-10-14 21:21:27
 ---
 

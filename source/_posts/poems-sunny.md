@@ -3,6 +3,7 @@ title: 春日的太阳
 tags:
   - 小诗
 abbrlink: 9b338b9
+translate_title: spring-sun
 date: 2020-03-24 23:44:30
 ---
 > 我们可能不经意间想起

@@ -1,9 +1,10 @@
 ---
 title: CICD实战之Nexus制品库的介绍与安装
 abbrlink: da240c4a
-date: 2020-08-08 23:25:46
 tags:
   - CICD
+translate_title: introduction-and-installation-of-nexus-product-library-cicd-actual-combat
+date: 2020-08-08 23:25:46
 ---
 
 ## 目的

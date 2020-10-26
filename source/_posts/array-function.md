@@ -4,6 +4,7 @@ tags:
   - 翻译
   - 前端
 abbrlink: b1d6e1fd
+translate_title: three-consecutive-questions-about-js-arrow-functions-why-how-and-when
 date: 2020-03-22 09:42:08
 ---
 在现代JS中最让人期待的特性就是关于箭头函数，用`=>`来标识。箭头函数有两个主要的优点：其一是非常简明的语法，另外就是直观的作用域和`this`的绑定。

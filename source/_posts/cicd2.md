@@ -3,6 +3,7 @@ title: CICD实战之Jenkins搭建
 tags:
   - CICD
 abbrlink: bc65362f
+translate_title: cicd-actual-combat-jenkins-construction
 date: 2020-07-25 16:29:10
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: TS学习及type-challenges实操
 abbrlink: c1f75643
-date: 2020-09-22 12:48:14
 tags:
   - TypeScript
+translate_title: ts-learning-and-typechallenges-practice
+date: 2020-09-22 12:48:14
 ---
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200922125418.png)

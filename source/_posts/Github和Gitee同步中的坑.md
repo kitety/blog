@@ -3,6 +3,7 @@ title: Github和Gitee同步中的坑
 tags:
   - Hexo
 abbrlink: be3db861
+translate_title: pitfalls-in-github-and-gitee-synchronization
 date: 2020-10-09 15:50:48
 ---
 最近在做Github Pages到Gitee Pages的同步操作，做个镜像备份

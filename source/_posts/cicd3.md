@@ -1,9 +1,10 @@
 ---
 title: CICD实战之Gitlab搭建
 abbrlink: aa4ef8c5
-date: 2020-07-26 12:05:29
 tags:
   - CICD
+translate_title: cicd-actual-combat-gitlab-construction
+date: 2020-07-26 12:05:29
 ---
 
 ## 目的

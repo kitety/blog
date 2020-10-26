@@ -3,6 +3,7 @@ title: Chrome Elements面板解析
 tags:
   - Chrome
 abbrlink: 9430c0ea
+translate_title: chrome-elements-panel-analysis
 date: 2020-05-05 11:00:03
 ---
 

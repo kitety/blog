@@ -1,8 +1,9 @@
 ---
 title: 一些话
-date: 2020-05-05 08:53:30
-type: 'somewords'
+type: somewords
 comments: false
+translate_title: some-words
+date: 2020-05-05 08:53:30
 ---
 
 <!-- 一言API -->

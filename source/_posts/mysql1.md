@@ -1,9 +1,10 @@
 ---
 title: mysql基础知识（一）
 abbrlink: 4545161d
-date: 2020-07-24 11:57:01
 tags:
   - Mysql
+translate_title: mysql-basic-knowledge-1
+date: 2020-07-24 11:57:01
 ---
 
 ### 目的

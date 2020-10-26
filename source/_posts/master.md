@@ -1,9 +1,10 @@
 ---
 title: 培养自己的主人翁意识
 abbrlink: f2b706b7
-date: 2020-07-02 21:09:11
 tags:
-- 心得
+  - 心得
+translate_title: cultivate-your-own-sense-of-ownership
+date: 2020-07-02 21:09:11
 ---
 ## 缘起
 

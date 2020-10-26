@@ -1,9 +1,10 @@
 ---
 title: 一首找了五年的歌
 abbrlink: 6707eb52
-date: 2020-07-02 21:10:29
 tags:
-- 心得
+  - 心得
+translate_title: a-song-that-has-been-searched-for-five-years
+date: 2020-07-02 21:10:29
 ---
 
 

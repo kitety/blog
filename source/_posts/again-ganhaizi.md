@@ -3,6 +3,7 @@ title: 走，再走一波干海子
 tags:
   - 干海子
 abbrlink: 4a5b4c21
+translate_title: go-another-wave-of-dry-sea
 date: 2020-04-06 11:24:54
 ---
 

@@ -3,6 +3,7 @@ title: HTTP协议原理笔记
 tags:
   - HTTP
 abbrlink: 44c01e4f
+translate_title: http-protocol-principle-notes
 date: 2020-05-25 21:41:08
 ---
 

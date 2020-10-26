@@ -1,9 +1,10 @@
 ---
 title: 再学一次JS原型
 abbrlink: 982386de
-date: 2020-08-23 16:09:51
 tags:
   - JS
+translate_title: learn-js-prototype-again
+date: 2020-08-23 16:09:51
 ---
 
 ## 忘却的知识需要复习

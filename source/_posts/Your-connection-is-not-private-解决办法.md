@@ -1,9 +1,10 @@
 ---
 title: Your connection is not private | 您的连接不是私密连接的解决办法
 abbrlink: 610b560b
-date: 2020-06-19 11:41:33
 tags:
   - Chrome
+translate_title: your-connection-is-not-private-solution
+date: 2020-06-19 11:41:33
 ---
 
 随着 Chrome 的升级会推荐使用 https 的模式开发，当我们使用 https 的模式进行开发时让然会出现以下提示：

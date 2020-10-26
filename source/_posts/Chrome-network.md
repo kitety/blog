@@ -1,9 +1,10 @@
 ---
 title: Chrome Network面板解析
 abbrlink: 1eb8bb25
-date: 2020-06-14 19:15:20
 tags:
   - Chrome
+translate_title: chrome-network-panel-analysis
+date: 2020-06-14 19:15:20
 ---
 
 Chrome Console 面板解析

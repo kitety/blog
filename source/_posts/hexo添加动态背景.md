@@ -1,9 +1,10 @@
 ---
 title: hexo添加动态背景
 abbrlink: 8201a32f
-date: 2020-09-04 15:07:33
 tags:
   - Hexo
+translate_title: hexo-add-dynamic-background
+date: 2020-09-04 15:07:33
 ---
 
 ## 发现
