@@ -941,3 +941,6 @@ daovoice_app_id: 1e4e8331
 baidushare:
   enable: true
   type: slide
+
+background:
+  enable: true
