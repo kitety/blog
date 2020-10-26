@@ -1,8 +1,9 @@
 ---
-title: CICD实战之Jenkins + Gitlab 实现前端构建
+title: CICD实战之Jenkins Gitlab 实现前端构建
 tags:
   - CICD
 abbrlink: d26a2f6b
+translate_title: cicd-actual-combat-jenkins-gitlab-to-achieve-frontend-construction
 date: 2020-08-01 16:20:01
 ---
 
