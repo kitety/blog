@@ -19,7 +19,7 @@
       <a href="#" class="bds_more" data-cmd="more"></a>
       <a class="bds_count" data-cmd="count">更多</a>
     </div>
-    <script>
+    <script class="pjax-reload">
       window._bd_share_config = {
         "common": {
           "bdText": "",
@@ -47,7 +47,7 @@
       }
     </script>
   {% elseif theme.baidushare.type === "slide" %}
-    <script>
+    <script class="pjax-reload">
       window._bd_share_config = {
         "common": {
           "bdText": "",
@@ -76,8 +76,8 @@
       }
     </script>
   {% endif %}
-  <script>
-    with (document)
+  <script class="pjax-reload">
+    with (document) 
       0 [
         (getElementsByTagName('head')[0] || body)
           .appendChild(createElement('script'))
