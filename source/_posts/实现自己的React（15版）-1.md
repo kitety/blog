@@ -20,7 +20,7 @@ date: 2020-10-27 20:54:36
 
 ### JSX 的了解
 
-在实际的编写代码中，我们使用最多的就是`JSX`。实际上根据官网的解释：
+在实际的编写代码中，我们使用最多的就是`JSX`。实际上根据中文官网的解释：
 
 > JSX 仅仅只是 React.createElement(component, props, ...children) 函数的语法糖
 
@@ -33,12 +33,12 @@ date: 2020-10-27 20:54:36
 
 <!-- 事件的绑定和解绑简单的 demo 可以看下面的 demo。 -->
 
-### DOM 的 id 属性
+### DOM 的属性
 
-我们的网页将会被浏览器解析为各种 Tree，我们比较熟悉的就是 DOM Tree。在我们的这个简单的 React 中也是一样。将为每个 DOM 节点都添加一个唯一的 id 属性（并不是被 id 选择器选择的那个 id），方便的后续的更新。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201027225232.png)
+我们的网页将会被浏览器解析为各种 Tree，我们比较熟悉的就是 DOM Tree。在我们的这个简单的 React 中也是一样。将为每个 DOM 节点都添加一个唯一的 data-reactid 属性，方便的后续的更新。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201028193346.png)
 
-如图所示，第一个为 0，递进一级，就添加一个`-`,像数组下标一样从 0 开始逐渐增加。
+如图所示，第一个为 0，递进一级，就添加一个`.`,像数组下标一样从 0 开始逐渐增加。
 
 ## 环境搭建
 
@@ -55,6 +55,22 @@ yarn add jquery
 ### 文件操作
 
 删除 src 里面的文件，创建 index.js 修改文件的引入方式，我们简单渲染一个字符串，挂在在 root 上。
+
+#### 目录结构
+
+```
+E:\study\my-react-15.x
+├── package.json
+├── public
+├── README.md
+├── src
+|  ├── index.js
+|  └── react
+|     └── index.js
+└── yarn.lock
+```
+
+#### 代码
 
 ```tsx
 //  src/index.js
