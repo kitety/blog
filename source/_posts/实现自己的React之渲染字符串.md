@@ -1,7 +1,7 @@
 ---
-title: 实现自己的React之渲染DOM元素
+title: 实现自己的React之渲染字符串和数字
 abbrlink: 8bb7b5c2
-translate_title: realize-your-own-react-rendering-dom-elements
+translate_title: realize-your-own-react-rendering-strings-and-numbers
 date: 2020-10-28 19:59:23
 tags:
 ---
@@ -33,9 +33,9 @@ tags:
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201028202228.png)
 
-## 渲染阶段
+## 渲染字符串和数字
 
-### 渲染字符串和数字
+**字符串和数字是一样的逻辑，因此我就用字符串举例**
 
 修改目录结构
 
@@ -117,4 +117,11 @@ class TextUint extends Unit {
 ```
 
 然后再暴露出这个工厂函数，在 index.js 引入就可以跑起来了。
-**[代码地址](https://github.com/kitety/my-react-15.x/tree/9ee49e3356fe330cebecd7b189efddc8db1bca19)**
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-29/1603947047283-image.png)
+
+[代码地址](https://github.com/kitety/my-react-15.x/tree/9ee49e3356fe330cebecd7b189efddc8db1bca19)
+
+## 结语
+
+至此，我们用比较规整的方式实现了渲染字符串和数字，接下来我们将渲染原生 DOM。
