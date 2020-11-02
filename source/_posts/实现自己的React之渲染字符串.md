@@ -4,6 +4,7 @@ abbrlink: 8bb7b5c2
 translate_title: realize-your-own-react-rendering-strings-and-numbers
 date: 2020-10-28 19:59:23
 tags:
+  - React
 ---
 
 ## 前言
@@ -53,7 +54,7 @@ E:\study\my-react-15.x
 └── yarn.lock
 ```
 
-#### index.js
+### index.js
 
 我们先修改 react/index.jsx 下面的 render 方法
 
@@ -69,11 +70,11 @@ function render(element, container) {
 }
 ```
 
-#### unit.js
+### unit.js
 
 我们这个文件就是根据传入的 element，根据类型返回对象实例。
 
-##### 工厂函数
+#### 工厂函数
 
 首先我们创建 createUnit 工厂函数
 
@@ -86,7 +87,7 @@ function createUnit(element) {
 }
 ```
 
-##### TextUint
+#### TextUint
 
 我们是要根据不同的类型来处理，因此最少有三种类型，我们在这里用一个 Unit 的 class 作为基类，有点像 TS 的抽象类，具体的实现用具体的类去继承。
 
