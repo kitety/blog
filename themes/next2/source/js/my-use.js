@@ -39,5 +39,9 @@ $(function () {
       $(this).parent().append($(this).remove());
     });
     fancyBoxFix();
+    if (ga) {
+      ga("set", "location", window.location.href);
+      ga("send", "pageview");
+    }
   });
 });
