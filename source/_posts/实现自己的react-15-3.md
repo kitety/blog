@@ -10,7 +10,7 @@ date: 2020-10-29 20:27:21
 ## 前言
 
 之前我们已经用比较规范的方式实现了字符串和数字的渲染，接下来我们将渲染原生 DOM。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102221255.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-3/1604368409871-image.png)
 
 <!-- more -->
 
@@ -170,14 +170,14 @@ class NativeUint extends Unit {}
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102214813.png)
 我们之前说过，我们的 getMarkup 函数需要传入一个**key**，然后返回一个**字符串**。对这就是最直观的理解，而返回的字符串可能就是下面的样子。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102215219.png)
-我们最终需要的字符串大概为：`<span data-reactid="0.1" class="test" id="thisisaspan"><span data-reactid="0.1.0">hehe</span></span>`，包含了一个闭合的 tag，上面还有一些属性，我们就需要便利添加属性，还要添加对应的唯一 id，还要对 children 子元素做处理。
+我们最终需要的字符串大概为：`<span data-reactid="0.1" class="test" id="thisisaspan"><span data-reactid="0.1.0">hehe</span></span>`，包含了一个闭合的 tag，上面还有一些属性，我们就需要遍历添加属性，还要添加对应的唯一 id，还要对 children 子元素做处理。
 
 我们理一下：
 
 - 原生 DOM,要根据渲染对应的 tag
 - style 等 css 处理
 - class 等属性梳理
-- 事件绑定
+- 事件绑定 **为什么要事件委托，因为开始的时候元素还只是个字符串，无法绑定事件**
 - children 的处理
 - 其他属性
 
@@ -207,7 +207,7 @@ class NativeUint extends Unit {}
       if (/^on[A-Z]/.test(propName)) {
         // 需要绑定事件，取出真实的事件，
         let eventName = propName.slice(2).toLowerCase()
-        // 委托到的document上面
+        // 委托到的document上面 元素还只是个字符串，无法绑定事件
         $(document).on(`${eventName}.${reactId}`, `[data-reactid="${reactId}"]`, props[propName])
       } else if (propName === 'style') {
         // 样式，取出样式的对象
@@ -259,8 +259,8 @@ $(container).html(markUp);
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102220641.png)
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102220726.png)
-顺着以上的思路，我们成功渲染了原生 DOM,事件、样式、类名等等都一一成功渲染出来。而原生 DOM 的渲染看起来还是有点点复杂，就是深度优先，直接递归，知道没有元素方才完成使命。
+顺着以上的思路，我们成功渲染了原生 DOM,事件、样式、类名等等都一一成功渲染出来。而原生 DOM 的渲染看起来还是有点点复杂，就是深度优先，直接递归，直到没有元素方才完成使命。
 
 **[代码地址](https://github.com/kitety/my-react-15.x/tree/c772a7af8a909e21ff2ba280ee1cea69ced95b13)**
 
-今天，我们成功完成了原生 DOM 的渲染，接下来我们将处理 Class Component，敬请期待吧
+今天，我们成功完成了原生 DOM 的渲染，接下来我们将处理 Class Component，敬请期待吧！
