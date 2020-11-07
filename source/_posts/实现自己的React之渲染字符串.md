@@ -121,7 +121,7 @@ class TextUint extends Unit {
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-29/1603947047283-image.png)
 
-[代码地址](https://github.com/kitety/my-react-15.x/tree/9ee49e3356fe330cebecd7b189efddc8db1bca19)
+本节代码地址：[代码地址](https://github.com/kitety/my-react-15.x/tree/9ee49e3356fe330cebecd7b189efddc8db1bca19)
 
 ## 结语
 

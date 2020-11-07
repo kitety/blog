@@ -261,6 +261,6 @@ $(container).html(markUp);
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102220726.png)
 顺着以上的思路，我们成功渲染了原生 DOM,事件、样式、类名等等都一一成功渲染出来。而原生 DOM 的渲染看起来还是有点点复杂，就是深度优先，直接递归，直到没有元素方才完成使命。
 
-**[代码地址](https://github.com/kitety/my-react-15.x/tree/c772a7af8a909e21ff2ba280ee1cea69ced95b13)**
+本节代码地址：**[代码地址](https://github.com/kitety/my-react-15.x/tree/c772a7af8a909e21ff2ba280ee1cea69ced95b13)**
 
 今天，我们成功完成了原生 DOM 的渲染，接下来我们将处理 Class Component，敬请期待吧！

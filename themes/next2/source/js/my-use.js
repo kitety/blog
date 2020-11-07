@@ -38,8 +38,6 @@ $(function () {
   document.addEventListener("pjax:complete", function () {
     // 链接完善
     $("a.mirrorbtn").attr('href', window.getHerf().href)
-    // 背景完善
-    $('.body-class').css('background', 'url(https://api.ixiaowai.cn/gqapi/gqapi.php?' + Math.random() + ')')
     // 重载整个 JS 文件
     $("script.pjax-reload").each(function () {
       $(this).parent().append($(this).remove());

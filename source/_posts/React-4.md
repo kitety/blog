@@ -72,8 +72,8 @@ const ele = React.createElement(Counter, { name: "haha" });
 
 ### 步骤理解
 
-我们这次渲染 Class Component，区别就是调用 React.creareElement 返回的对象的 type 属性数个函数（也是个类）。我们拿到这样一个类之后，发现 render 方法返回的就是渲染的元素，因此我们实例化这个类，拿到了我们渲染的元素。拿到的元素之后，他可能是原生 DOM、Class Component 或者字符串数字，因此我们要不断的递归调用，直到渲染出字符串。
-除此之外，React 中写类我们要继承 React.Component ，那么我们至少要新建这个类。还有我们在处理人的函数的时候，要注意到还有生命周期，我们要在合适的时候调用。
+我们这次渲染 Class Component，区别就是调用 React.creareElement 返回的对象的 type 属性数个函数（也是个类）。我们拿到这样一个类之后，发现 render 方法返回的就是渲染的元素，因此我们实例化这个类，执行 render 方法拿到了我们渲染的元素。拿到的元素之后，他可能是原生 DOM、Class Component 或者字符串数字，因此我们要不断的递归调用 createUnit 生成 unit，调用 getmarkUp 自己去转换直到渲染出字符串。
+除此之外，React 中写类我们要继承 React.Component ，那么我们至少要新建这个类。还有我们在处理 class 函数的时候，要注意到还有生命周期，我们要在合适的时候调用。
 
 因此我们可以整理出这幅顺序图
 
@@ -100,6 +100,7 @@ const ele = React.createElement(Counter, { name: "haha" });
 我们创建 component.js，然后在里面添加代码
 
 ```js
+// src\react\component.js
 // 初始化这个类
 class Component {
   constructor(props) {
@@ -116,6 +117,7 @@ export { Component };
 我们在渲染 Class 的时候，仍然是经过了 React.createElement 返回，我们可以和原生 DOM 类似来判断。
 
 ```js
+// src\react\unit.js
 function createUnit (element) {
   if (['number', 'string'].includes(typeof element)) {
     return new TextUint(element)
@@ -132,6 +134,7 @@ function createUnit (element) {
 ### 创建 CompositeUnit 类
 
 ```js
+// src\react\unit.js
 class CompositeUnit extends Unit {}
 ```
 
@@ -140,6 +143,7 @@ class CompositeUnit extends Unit {}
 我们添加 getMarkup 方法，接下来我们来讲解代码
 
 ```js
+// src\react\unit.js
 class CompositeUnit extends Unit {
   /**
    *
@@ -153,15 +157,17 @@ class CompositeUnit extends Unit {
     // 取出类和props
     let { type: Component, props } = this._currentElement;
     // 实例化 后面还会用到
+    // 赋值到this的部分暂且可以忽略
     let componentInstance = (this._componentInstance = new Component(props));
     // 让组件的实例的currentUnit等于当前的unit
+    // 赋值到this的部分暂且可以忽略
     componentInstance.currentUnit = this;
     // 渲染前要componentWillMount
     componentInstance.componentWillMount &&
       componentInstance.componentWillMount();
     // 调render方法 得到渲染的元素
     let renderElement = componentInstance.render();
-    // 得到render的元素对应的unit
+    // 得到render的元素创建对应的unit
     let renderedInstance = (this._renderedInstance = createUnit(renderElement));
     // 调用方法 返回字符串
     let renderedMarkup = renderedInstance.getMarkUp(reactId);
@@ -175,6 +181,49 @@ class CompositeUnit extends Unit {
   }
 }
 ```
+
+#### 子元素处理
+
+得到 render 的元素创建对应的 unit。因为不知道 render 返回的元素是什么类型，字符串、原生 DOM、class 都有可能，因此直接调用封装好的工厂函数，工厂函数里面统一分情况处理，需要递归就递归。这个已经封装好了的，直接使用。
+
+#### 生命周期
+
+对于以下的代码
+
+```js
+
+class  extends React.Component{
+  render(){
+  	return <div/>
+  }
+}
+class Counter2 extends React.Component{
+  render(){
+  	return <div><Counter1/></div>
+  }
+}
+
+```
+
+```bash
+
+
+执行顺序如下
+//ComWillMount2
+   <div>--Counter2
+     //ComWillMount1
+        <div></div>--Counter1
+     //ComDidMount1
+   </div>
+//ComDidMount2
+顺序 ComWillMount2 - ComWillMount1 - ComDidMount1 - ComDidMount2
+```
+
+简单说来就是父子间先 willmount，但是子组件先 didmount。所以 willmount 在子元素处理之前调用，didmount 在子元素处理之后绑定事件
+
+#### 触发 ComponentDidMount
+
+我们在获取 render 元素的字符串之后，再在 document 上面绑定 didmount 事件，依次处理完之后，在**最后渲染**阶段 trigger mounted 事件来触发。触发的顺序和绑定的顺序一样的，这样就实现了 ComponentDidMount 的顺序执行。
 
 ### 最后渲染
 
@@ -193,11 +242,12 @@ $(document).trigger("mounted");
 
 ## 结语
 
+本节代码地址：[代码地址](https://github.com/kitety/my-react-15.x/tree/aac6872c1376b79e303baf4d17bdbfc2d44366cd)
 我们现在实现了 Class Componet 组件的渲染，结合以前的文章实现了字符串、数字、原生 DOM、Class 的渲染了。可能有人想问不是还有函数是组件吗？我们来做个简单的分析。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106234658.png)
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106234750.png)
 
-从上面的两张图可以看到，你会发现函数式组件和 class 组件很像甚至更为简单，拿到函数之后传递参数执行即可。主要就是判断是 class 还是是函数，这里的函数指的是仅仅是函数。我们可以简单使用[这个答案](https://stackoverflow.com/a/29094209)，来判断，这里就不详细书写了。
+从上面的两张图可以看到，你会发现函数式组件和 class 组件很像甚至更为简单，拿到函数之后传递参数执行即可。主要就是判断是 class 还是是函数，这里的函数指的是仅仅是函数。我们可以简单使用[这个答案](https://stackoverflow.com/a/29094209)来判断，这里就不详细书写了。
 
 我们点击按钮想触发事件，发现会报错。这也正常我们还没有写更新。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106235140.png)
