@@ -47,5 +47,10 @@ $(function () {
       ga("set", "location", window.location.href);
       ga("send", "pageview");
     }
+    // 一些话页面的刷新
+    if (location.href.indexOf('shuoshuo') > -1 && location.href.indexOf("#reloaded") == -1) {
+      location.href = location.href + "#reloaded";
+      location.reload();
+    }
   });
 });
