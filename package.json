@@ -9,6 +9,11 @@
     "server": "hexo server",
     "d": "hexo clean && hexo s --debug --port=7859"
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "node ./mdlint.js"
+    }
+  },
   "hexo": {
     "version": "5.2.0"
   },
@@ -38,5 +43,9 @@
     "hexo-translate-title-kitety": "^1.0.0",
     "hexo-word-counter": "^0.0.2",
     "hexo-wordcount": "^6.0.1"
+  },
+  "devDependencies": {
+    "husky": "^4.3.5",
+    "tslint": "^6.1.3"
   }
 }
