@@ -8,7 +8,7 @@ date: 2020-10-14 21:21:27
 ---
 
 之前就有听说 Github 将推出在线 IDE，一搜索发现很多结果。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201014212657.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201014212657.png)
 
 现在 Github 的在线 IDE 发布一段时间了，官方命名为：[Github Codespaces](https://github.com/features/codespaces)（点击可以申请），今天我们就来体验一下。
 
@@ -21,23 +21,23 @@ date: 2020-10-14 21:21:27
 ### 创建 IDE
 
 在 Clone 的按钮选择`Open With Codespaces`
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602682721438-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602682721438-image.png)
 进入之后会列出已有的 IDE 列表，没有的话点击下面的新建就是了。
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602682784043-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602682784043-image.png)
 
 ### 进入 IDE
 
 开始进入是在初始化，然后就是同步一些配置，会发现在 Vscode 的配置和插件扩展都会被同步过来（当然，前提是你本地的 VSC 和自己的 Github 绑定起来，并且同步配置）。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602682883142-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602682883142-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602683153389-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602683153389-image.png)
 **并且可以看到，IDE 可以自动识别 package.json 安装依赖，进来就自动安装好了。**
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602682955735-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602682955735-image.png)
 
 点击查看日志还可以查看初始化的日志。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602683024095-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602683024095-image.png)
 
 ### 基本使用
 
@@ -45,7 +45,7 @@ date: 2020-10-14 21:21:27
 
 简单的几行代码 我们可以发现 IDE 已经预装了 node、docker、npm、git、python 等等基础开发环境。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602690279501-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602690279501-image.png)
 
 #### 启动项目
 
@@ -53,24 +53,24 @@ date: 2020-10-14 21:21:27
 
 因为 github 的环境在外面，因此安装速度还是很快的，纵享丝滑。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602690553256-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602690553256-image.png)
 
 **外部端口的打开**
 
 如果我们的页面需要启动本地端口，IDE 也会提示出来有外部端口。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-14/1602690647172-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-14/1602690647172-image.png)
 
 我们也可以在`Remote Explorer`看到全部的端口映射情况
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-15/1602694549227-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-15/1602694549227-image.png)
 
 我们点击在浏览器打开，然后就可以看到页面了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-15/1602694402020-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-15/1602694402020-image.png)
 
 当我们修改之后，在侧边栏至直接提交就是了，简单快捷。也不用任何的设置。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-15/1602694872590-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-15/1602694872590-image.png)
 
 ## 更多好玩的
 
@@ -81,7 +81,7 @@ date: 2020-10-14 21:21:27
 - 全局安装 nodemon
 - 进入 server 目录安装依赖
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015152911.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015152911.png)
 很明显报错，因为我们的 server 需要连接 PostgreSQL，而我们没有安装，因此报错。
 
 ### 错误的安装方法
@@ -95,13 +95,13 @@ sudo apt-get install postgresql postgresql-client
 sudo -i -u postgres
 ```
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153252.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153252.png)
 最后，我们会卡在这里，因为我们不知道 codespace 的密码，因此安装失败
 
 ### docker 出马
 
 我们可以观察到 codespace 已经为我们安装了 docker，而且在现在相当流行容器化部署，上面的那种安装方式也不够优雅。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153359.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153359.png)
 
 因此运行命令，安装 postgresql
 
@@ -116,28 +116,28 @@ docker run -p 5432:5432 -v /home/docker/postgresql/data:/var/lib/postgresql/data
 ```
 
 运行之后，找不到镜像会自动去拉取镜像
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153646.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153646.png)
 查看下状态
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153710.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153710.png)
 现在重启 server，发现已经可以连接上了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153818.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153818.png)
 
 ### 端口
 
 我们可以在`Forwarded Ports`增加端口转发
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015153909.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015153909.png)
 简单演示一下 get 请求，并且是即时的，修改之后可以通过域名来访问。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154129.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015154129.png)
 顺便说一句，如果我们在代码中写好 url 地址，就可以直接用鼠标在命令行打开对应端口，网址也会被进行替换。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154329.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015154329.png)
 
 ### 注意
 
 但是也需要注意，如果我们用 postman 去请求就无法正常请求结果。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154656.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015154656.png)
 如果我们访问`/graphql`,请求就会提示`Server cannot be reached`和一些跨域错误。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201015154819.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201015154819.png)
 
 ## 总结
 
@@ -161,8 +161,8 @@ docker run -p 5432:5432 -v /home/docker/postgresql/data:/var/lib/postgresql/data
 
 ## 结语
 
-之前听过“阿里 云电脑”，加上现在5G的逐渐普及，说不定未来大家需要的只是一个显示器，可以完成学习、工作和娱乐，配置全部都在远端。听起来天方夜谭，说不定在未来就会实现。
+之前听过“阿里 云电脑”，加上现在 5G 的逐渐普及，说不定未来大家需要的只是一个显示器，可以完成学习、工作和娱乐，配置全部都在远端。听起来天方夜谭，说不定在未来就会实现。
 
-一个新兴事物的出来，肯定引起人们的好奇和质疑。仔细想想Github被微软收购之后，先后推出了个人无限私有仓库，免费使用Github Actions，再有Github Codespaces。而微软也先后推出TS、VSC等市场举足轻重的开源项目。我所看到是开源界的发展和繁荣，也希望未来越来越好。
+一个新兴事物的出来，肯定引起人们的好奇和质疑。仔细想想 Github 被微软收购之后，先后推出了个人无限私有仓库，免费使用 Github Actions，再有 Github Codespaces。而微软也先后推出 TS、VSC 等市场举足轻重的开源项目。我所看到是开源界的发展和繁荣，也希望未来越来越好。
 
 撒花！

@@ -20,7 +20,7 @@ date: 2020-07-25 16:29:10
 
 最终终端图
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929878617-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929878617-image.png)
 
 <!-- more -->
 
@@ -30,7 +30,7 @@ date: 2020-07-25 16:29:10
 
 #### docker 介绍
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929893064-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929893064-image.png)
 
 现在都流行容器化部署，想了解 docker 的点[维基百科](https://zh.wikipedia.org/wiki/Docker)和[菜鸟教程](https://www.runoob.com/docker/docker-tutorial.html)
 
@@ -56,7 +56,7 @@ yum install docker-ce
 
 安装成功再 `docker -v`查看
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929914636-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929914636-image.png)
 
 #### 基本命令
 
@@ -71,9 +71,9 @@ systemctl enable docker 建立连接
 
 在对应`/etc/docker/daemon.json`添加内容就是了
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929928364-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929928364-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929936276-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929936276-image.png)
 
 ```bash
 sudo mkdir -p /etc/docker
@@ -107,11 +107,11 @@ systemctl reload firewalld
 - firewalld:[firewall 简单使用](https://blog.csdn.net/s_p_j/article/details/80979450)
 - ip 的那个地方，我是使用的是的本地虚拟机，因此我配置的本地虚拟机的
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929958983-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929958983-image.png)
 
 **必须配置**，否则会之后的 docker 启动服务失败
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929979697-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929979697-image.png)
 
 #### docker in docker
 
@@ -124,7 +124,7 @@ Docker 采用的是 C/S（即 Client/Server）架构。我们在执行 `docker x
 > \*.sock 文件：sock 文件是 UNIX 域套接字，它可以通过文件系统（而非网络地址）进行寻址和访问。
 > 因此，只要把宿主机的 Docker 套接字通过 Docker 数据卷挂载到容器内部，就能实现在容器内使用 Docker 命令（如下图）。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600929989131-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600929989131-image.png)
 
 **使用方式**：`docker run ... -v /var/run/docker.sock:/var/run/docker.sock`
 
@@ -153,13 +153,13 @@ RUN echo "docker:x:${dockerGid}:jenkins" >> /etc/group
 
 文件创建后，执行`docker build -t local/jenkins .`(名字为:local/jenkins)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930061853-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930061853-image.png)
 
 如果提示 Successfully tagged local/jenkins:latest 则构建成功。
 
 此处为第二次构建，第二次构建就会非常快，大概流程如下。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930070420-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930070420-image.png)
 
 ### 创建镜像和容器
 
@@ -183,7 +183,7 @@ docker run -itd --name jenkins -p 8080:8080 -p 50000:50000 \
 
 创建成功
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930078755-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930078755-image.png)
 
 ### 启动 Jenkins
 
@@ -199,7 +199,7 @@ systemctl reload firewalld
 
 然后在`宿主机IP:8080`就可以看到界面了
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930091448-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930091448-image.png)
 
 #### 设置源
 
@@ -216,7 +216,7 @@ exit;
 
 初始化完成需要我们输入密码
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930101097-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930101097-image.png)
 
 我们执行命令
 
@@ -225,33 +225,33 @@ docker exec -it jenkins /bin/bash //进入命令行
 cat /var/jenkins_home/secrets/initialAdminPassword
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930114355-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930114355-image.png)
 
 密码输入之后就是进入插件安装
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930124287-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930124287-image.png)
 
 设置源之后插件安装就很丝滑流畅
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930131849-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930131849-image.png)
 
 再就是设置管理员了，我这里使用的是：使用 admin 账户继续。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930141714-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930141714-image.png)
 
 进入就是我们熟悉的界面了
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930151106-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930151106-image.png)
 
 #### 小试牛刀
 
 左侧新建 Item
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930158573-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930158573-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930168607-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930168607-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930174874-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930174874-image.png)
 
 输入代码
 
@@ -262,11 +262,11 @@ cat /var/jenkins_home/secrets/initialAdminPassword
 
 保存再触发立即构建就可以看到效果了。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930183638-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930183638-image.png)
 
 可以在控制台看到对应的输出就大功告成了。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930190482-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930190482-image.png)
 
 ## 结语
 

@@ -14,7 +14,7 @@ new Artitalk({
     appId: 'AL2qc8mR3D1gcLYeQWEWNh62-MdYXbMMI', // Your leancloud appId
     appKey: '7oWMi8af1pHJeuxeDGsjEson', // Your leancloud appKey
     pageSize: 2000000,
-    avatarPla:"https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png"
+    avatarPla:"https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-17/1602950338964-image.png"
 })
 </script>
 </body>

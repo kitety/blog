@@ -12,7 +12,7 @@ date: 2020-10-27 20:54:36
 现在的工作中已经用过[React](https://reactjs.org/)一段时间了，然后就想好好深入学习一下，尝试着写一个简单的 demo 来体验一下。
 学习事物都有个过程，大概是了解、熟悉、深入。自己做到理解只是第一步，**真正的掌握是能够完全向别人讲清楚**。因此我就想写下笔记，争取向别人讲清楚，也激励自己学习。
 **注意，本次会先实现简单的 React 15.x 版本，React Fiber 版本会在后面推出**
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201027205937.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201027205937.png)
 
 <!-- more -->
 
@@ -24,7 +24,7 @@ date: 2020-10-27 20:54:36
 
 > JSX 仅仅只是 React.createElement(component, props, ...children) 函数的语法糖
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201027211058.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201027211058.png)
 由图可知，JSX 会经过 babel 转换为 React.createElement 的语句，它只是个语法糖。在后续的过程中，我们实现了自己的 React.createElement，我们也可以写`JSX`语句来调试。
 
 ### jquery 的使用
@@ -36,7 +36,7 @@ date: 2020-10-27 20:54:36
 ### DOM 的属性
 
 我们的网页将会被浏览器解析为各种 Tree，我们比较熟悉的就是 DOM Tree。在我们的这个简单的 React 中也是一样。将为每个 DOM 节点都添加一个唯一的 data-reactid 属性，方便的后续的更新。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201028193346.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201028193346.png)
 
 如图所示，第一个为 0，递进一级，就添加一个`.`,像数组下标一样从 0 开始逐渐增加。
 

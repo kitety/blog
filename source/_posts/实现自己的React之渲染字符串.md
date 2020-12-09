@@ -11,7 +11,7 @@ tags:
 
 在上一篇文章中我们已经渲染了我们的字符串到 id 为 root 的元素上，但是用的是直接操作 DOM，我们会在后面逐渐的完善它。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201028205234.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201028205234.png)
 
 <!-- more -->
 
@@ -32,7 +32,7 @@ tags:
 
 大体示意图如下
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201028202228.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201028202228.png)
 
 ## 渲染字符串和数字
 
@@ -119,7 +119,7 @@ class TextUint extends Unit {
 
 然后再暴露出这个工厂函数，在 index.js 引入就可以跑起来了。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-29/1603947047283-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-29/1603947047283-image.png)
 
 本节代码地址：[代码地址](https://github.com/kitety/my-react-15.x/tree/9ee49e3356fe330cebecd7b189efddc8db1bca19)
 

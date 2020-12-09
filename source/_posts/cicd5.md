@@ -21,35 +21,35 @@ Jenkins + Gitlab 实现前端构建
 
 #### 在 Jenkins 插件管理中心搜索 NodeJS
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930571244-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930571244-image.png)
 
 <!-- more -->
 
 我这里已经安装了
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930582615-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930582615-image.png)
 
 没有安装的话应给在可选插件的 Tab,勾选之后选择直接安装即可。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930592193-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930592193-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930598660-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930598660-image.png)
 
 #### 全局配置
 
 在系统设置--系统工具设置可以为全局配置 NodeJS。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930606080-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930606080-image.png)
 
 选择好对应的版本之后保存即可。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930617174-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930617174-image.png)
 
 #### 使用
 
 我们只需要在任务的“配置”中，找到“构建环境”，选中 “Provide Node & npm bin/ folder to PATH” ，选择刚才配置好的 NodeJS 即可。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930630463-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930630463-image.png)
 
 第一次执行会下载对应的 Node 版本，后续不会下载。
 
@@ -66,29 +66,29 @@ docker exec -it jenkins /bin/bash
 ssh-keygen -t rsa
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930645747-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930645747-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930652308-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930652308-image.png)
 
 #### Gitlab 配公钥
 
 将公钥存入即可
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930663266-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930663266-image.png)
 
 #### Jenkins 配私钥
 
 在系统管理，管理凭证。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930669759-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930669759-image.png)
 
 在全局添加凭证
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930675896-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930675896-image.png)
 
 类型为 “SSH Username with private key.”，ID 为此凭据在 Jenkins 的标识符，UserName 为你的 Gitlab 用户名，PrivateKey 为你的服务器私钥。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930684117-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930684117-image.png)
 
 **配置完之后最好还是重启一下 jenkins 和 gitlab**
 
@@ -100,7 +100,7 @@ ssh-keygen -t rsa
 
 选择：构建一个自由风格的软件项目，我这里用的 ssh-way
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930692858-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930692858-image.png)
 
 #### 配置任务
 
@@ -108,24 +108,24 @@ ssh-keygen -t rsa
 
 进入任务配置，在任源码管理这里选择 Git
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930700725-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930700725-image.png)
 
 注意
 
 > 仓库地址为 gitlat 的 ssh 方式
-> ![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930709305-image.png)
+> ![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930709305-image.png)
 
 > 直接复制的地址有两个端口号，要改为 ssh 的 333 端口。[端口为 333 是在之前配置的这个端口号。](https://kitety.github.io/posts/aa4ef8c5.html#%E4%BF%AE%E6%94%B9SSH%E7%AB%AF%E5%8F%A3)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930718459-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930718459-image.png)
 
 选择对应的 NodeJS 版本
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930729006-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930729006-image.png)
 
 构建选择--执行 Shell
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930737265-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930737265-image.png)
 
 填写基本的 shell
 
@@ -139,7 +139,7 @@ npm run build
 
 保存再立即构建一波。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930745105-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930745105-image.png)
 
 看到 Finished: SUCCESS，完美。
 
@@ -166,7 +166,7 @@ scp -p /root/.ssh/id_rsa.pub root@192.168.182.4:/root/.ssh/authorized_keys
 
 第一次需要输入密码，后续都不需要了。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930763078-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930763078-image.png)
 
 #### 发布到 Nginx
 
@@ -178,21 +178,21 @@ scp -p /root/.ssh/id_rsa.pub root@192.168.182.4:/root/.ssh/authorized_keys
 scp -o "StrictHostKeyChecking no" -r dist/* root@192.168.182.4:/home/nginx/html
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930771190-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930771190-image.png)
 
 #### 修改测试
 
 修改了，提交了，我们构建一下。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930781689-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930781689-image.png)
 
 构建成功
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930787947-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930787947-image.png)
 
 完美
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930793990-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930793990-image.png)
 
 ## 结语
 

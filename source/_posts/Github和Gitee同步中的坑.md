@@ -6,15 +6,17 @@ abbrlink: be3db861
 translate_title: pitfalls-in-github-and-gitee-synchronization
 date: 2020-10-09 15:50:48
 ---
-最近在做Github Pages到Gitee Pages的同步操作，做个镜像备份
+
+最近在做 Github Pages 到 Gitee Pages 的同步操作，做个镜像备份
 
 ## 仓库同步
 
-我的博客构建使用的是Github Action，因此同步功能使用的是[`wearerequired/git-mirror-action@master`](https://github.com/wearerequired/git-mirror-action)。因为Gitee Page的并不会随着仓库更新主动更新，因此还需要[`yanglbme/gitee-pages-action@master`](https://github.com/yanglbme/gitee-pages-action)做一个build的操作。
+我的博客构建使用的是 Github Action，因此同步功能使用的是[`wearerequired/git-mirror-action@master`](https://github.com/wearerequired/git-mirror-action)。因为 Gitee Page 的并不会随着仓库更新主动更新，因此还需要[`yanglbme/gitee-pages-action@master`](https://github.com/yanglbme/gitee-pages-action)做一个 build 的操作。
 
 <!-- more -->
 
 [具体可以参照我的配置文件](https://github.com/kitety/blog/blob/master/.github/workflows/main.yml)，部分整体配置如下：
+
 ```yml
 - name: Sync to Gitee
 uses: wearerequired/git-mirror-action@master
@@ -38,20 +40,24 @@ with:
   gitee-repo: kitety/kitety
 
 ```
-其中：ACTION_DEPLOY_KEY是私钥，GITEE_PASSWORD是Gitee的密码。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009155932.png)
+
+其中：ACTION_DEPLOY_KEY 是私钥，GITEE_PASSWORD 是 Gitee 的密码。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201009155932.png)
 
 ## 踩坑
+
 ### 第一次同步
+
 第一次同步的时候必须先再自己的电脑上提交上去，就是不要用上面的命令行做第一次提交。
 
 ### 登陆问题
-开始我的也是跑Github Action没有问题，看起正常。但是在gitee的博客内容不更新，每次跑的时候还有短信的异地登录提醒。
 
-后来发现有人也有相同的[问题](https://github.com/yanglbme/gitee-pages-action/issues/6),仔细看了解决。 
+开始我的也是跑 Github Action 没有问题，看起正常。但是在 gitee 的博客内容不更新，每次跑的时候还有短信的异地登录提醒。
+
+后来发现有人也有相同的[问题](https://github.com/yanglbme/gitee-pages-action/issues/6),仔细看了解决。
 
 **解决方案**
-就是要关注`Gitee（Gitee.com）官方账号`,绑定自己的Gitee账号，后面就会有推送的提醒，这样就可以同步更新了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201009212425.png)
+就是要关注`Gitee（Gitee.com）官方账号`,绑定自己的 Gitee 账号，后面就会有推送的提醒，这样就可以同步更新了。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201009212425.png)
 
 以上就是解决问题的方法了。

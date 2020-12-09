@@ -13,18 +13,18 @@ date: 2020-06-04 22:48:15
 - 在 DevTool 的其他面板按 ESC 键打开面板（在开发者工具获得焦点的情况下）
 - 在右上角的菜单打开（setting--show--console--drawer）
 - 输入快捷键`Ctrl+Shift+P`，再输入 `Console`
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10006.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10006.gif)
 
 <!-- more -->
 
 ### 初识面板
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172121.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172121.png)
 
 #### 面板分析
 
 上面部分为工具栏
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172130.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172130.png)
 
 下面部分为命令区
 
@@ -34,7 +34,7 @@ date: 2020-06-04 22:48:15
 
 ![ia_10009.gif](https://i.loli.net/2020/09/23/NwpqoC8jKfMcB41.gif)
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172330.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172330.png)
 
 点击可以切换侧边栏的展示和隐藏，点击一栏可以对命令区的进行过滤。默认是以关闭的，就不会对信息进行过滤。
 
@@ -54,12 +54,12 @@ date: 2020-06-04 22:48:15
 
 前面会显示该栏目总的日志数量，具体的信息会显示在该栏目的子栏目上，比如文件路径，产生日志数量，文件名等
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172403.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172403.png)
 点击对应的消息会在右侧展示过滤的结果。
 
 #### 清空命令行
 
-点击这个图标<img src="https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172422.png" width="26px" style="display:inline;" class="nofancybox"/>可以清空命令行
+点击这个图标<img src="https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172422.png" width="26px" style="display:inline;" class="nofancybox"/>可以清空命令行
 
 列举出可以清空命令行的一些操作
 
@@ -77,22 +77,22 @@ date: 2020-06-04 22:48:15
 源代码:[源代码 1](https://codesandbox.io/s/upbeat-frog-c6n68?file=/index.html)和[源代码 2](https://codesandbox.io/s/focused-tesla-7q43c?file=/index.html)
 
 当我进入 iframe 的上下文的时候就可以打印出 iframe 里面的数据
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10012.gif)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10012.gif)
 
 #### 实时表达式
 
 Live Expressions 实时执行的表达式,可以创建多个表达式，失去焦点就会保存，创建之后也可以删除。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10013.gif)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10013.gif)
 
 #### 过滤选项
 
 可以输入文本、正则等对打印的信息进行搜索和过滤。
-![ia_10014](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600854061519-ia_10014.gif)
+![ia_10014](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600854061519-ia_10014.gif)
 
 #### 打印级别过滤
 
 打印级别过滤有如下选项：
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172458.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172458.png)
 
 > Default: 默认为警告信息和错误
 > Verbose: 冗长的的打印
@@ -100,39 +100,39 @@ Live Expressions 实时执行的表达式,可以创建多个表达式，失去�
 
 当过滤级别不是全部展示的话会在右侧显示被隐藏的条数。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172507.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172507.png)
 
 #### 设置
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172514.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172514.png)
 
 - Hide Network
 
   是否对有关网络的日志进行隐藏
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10018.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10018.gif)
 
 - Log XmlHttpRequests
 
   是否打印 XHR 请求
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10019.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10019.gif)
 
 - Preserve Log
   是否保留日志，每次刷新是否自动清空日志。
 - Selected Context Only
   是否只显示当前的上下文环境的日志信息
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10020.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10020.gif)
 
 - Group Similar
 
 * Eager Evaluation
 
   及时显示执行结果
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10021.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10021.gif)
 
 - Autocomplete From History
 
   根据历史记录自动完成命令
-  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_10022.gif)
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_10022.gif)
 
 - Group Similar
   相同日志归到一个组里面，此选项在禁用日志时间戳事才有效
@@ -147,7 +147,7 @@ Live Expressions 实时执行的表达式,可以创建多个表达式，失去�
 
 #### 右键菜单
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172532.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172532.png)
 
 - Clear console
 
@@ -189,7 +189,4 @@ Live Expressions 实时执行的表达式,可以创建多个表达式，失去�
 
 ### 参考资源
 
-> https://developers.google.com/web/tools/chrome-devtools/console/utilities
-> https://developer.mozilla.org/zh-CN/docs/Web/API/Console
-> https://segmentfault.com/a/1190000002511877
-> https://zhuanlan.zhihu.com/p/80751021
+> https://developers.google.com/web/tools/chrome-devtools/console/utilities > https://developer.mozilla.org/zh-CN/docs/Web/API/Console > https://segmentfault.com/a/1190000002511877 > https://zhuanlan.zhihu.com/p/80751021

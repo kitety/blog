@@ -108,7 +108,7 @@ lazyload:
   enable: true
   onlypost: true
   isSPA: true
-  loadingImg: https://cdn.jsdelivr.net/gh/kitety/blog_img/img/giphy.gif
+  loadingImg: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/giphy.gif
 baidu_url_submit:
   count: 10 # 提交最新的多少个链接
   host: https://kitety.github.io # 在百度站长平台中添加的域名
@@ -164,12 +164,12 @@ feed:
   content_limit_delim: " "
 
 translate_title:
-  translate_way: google  # google,youdao,baidu_with_appid,baidu_no_appid
-  youdao_api_key: '' # Your youdao_api_key
+  translate_way: google # google,youdao,baidu_with_appid,baidu_no_appid
+  youdao_api_key: "" # Your youdao_api_key
   youdao_keyfrom: xxxx-blog # Your youdao_keyfrom
-  is_need_proxy: false     # true | false
+  is_need_proxy: false # true | false
   proxy_url: http://localhost:7890 # Your proxy_url
-  baidu_appid: '' # Your baidu_appid
-  baidu_appkey: '' # Your baidu_appkey
+  baidu_appid: "" # Your baidu_appid
+  baidu_appkey: "" # Your baidu_appkey
   rewrite: false # is rewrite true | false
   actions: true

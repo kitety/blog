@@ -7,7 +7,7 @@ tags:
   - Git
 ---
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607320222725-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320222725-image.png)
 
 ## 背景
 
@@ -20,7 +20,7 @@ tags:
 ### 准备环境
 
 我们先初始化一个仓库，里面提交一些 commit。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607320677223-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320677223-image.png)
 我这里是有五次提交，分别添加：a,b,c,d,e。
 
 ### 修改最近一次的 Commit
@@ -31,14 +31,14 @@ git commit --amend
 
 输入之后我们可以进入 vi 编辑模式对 Git Commit 信息进行编辑
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607320804092-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320804092-image.png)
 我们输入`i`编辑，退出是：按键 esc，再在底部输入`:x`即可。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607320903950-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320903950-image.png)
 
 可以看到，此时最后一个的 commit message 已经修改了。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607320937476-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320937476-image.png)
 
 ### 修改非最后一次的 Commit 信息
 
@@ -52,7 +52,7 @@ git rebase -i 8f9a167（目标提交的前一个提交的hash）
 
 我们就可以进入一个 vi 编辑的模式
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607321359580-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321359580-image.png)
 我对下面的提示做个简单的翻译
 
 ```bash
@@ -74,25 +74,22 @@ git rebase -i 8f9a167（目标提交的前一个提交的hash）
 
 可以发现我们使用`r, reword`就可以达到目的了。
 我们修改 b 的操作 tag 为 r，这个时候不用修改 commit 信息，在后面修改。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607321592158-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321592158-image.png)
 接下来会自动进入页面，我们修改 b 的 commit 信息
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607321620974-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321620974-image.png)
 验证下结果，明显成功了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607321637038-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321637038-image.png)
 
 ### 删除一个 commit 信息
 
 比如此处我要删除 C 的提交信息，**但是保留 C 的文件修改**。我们经过上一步，我们使用 f 就是了。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607322289030-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607322289030-image.png)
 结果如下：
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-7/1607322295320-image.png)
-发现 C 提交的信息的删除了，但是 C 提交的文件修改还是存在的，所造成的文件修改最终归于C的上一个提交：`b-edit`去了。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607322295320-image.png)
+发现 C 提交的信息的删除了，但是 C 提交的文件修改还是存在的，所造成的文件修改最终归于 C 的上一个提交：`b-edit`去了。
 
-
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-12-8/1607407070868-image.png)
-
-
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-8/1607407070868-image.png)
 
 ## 结语
 

@@ -34,9 +34,9 @@ date: 2020-04-06 11:24:54
 急忙的拿出手机，朝向了山谷那边。
 
 夏天的山果真更为翠绿啊，因为昨晚刚下过雨，太阳还没放出来，云也显得有些抑郁，灰蒙蒙的。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171741.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923171741.png)
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171752.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923171752.png)
 
 路过一隅，发现云也半隐半现地遮盖着山，一半暴露在阳光下面，另一半自觉地躲藏在阴影之中。
 
@@ -49,7 +49,7 @@ date: 2020-04-06 11:24:54
 其实我是见过这般雪的，印象是 2016 年的开春，到这边滑雪，看到山顶上还静静躺着白雪，还有一缕缕蒸腾的白汽换换飘向天空，随风飘荡。总看不厌，也看不烦。就像之前支教的学校的门口的大山一样，厚重又不失庄严。我想，这再美不过了。
 
 到了这边，因为山路比较窄，我们换成小车继续前行，大家的心情更加期待了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171817.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923171817.png)
 
 想起去年，我们大家是大包垒小包，自己背着露营的装备，从这里开始正式徒步前行，一人接一人，远远看去，仿佛一条长龙在慢慢蠕动着......
 
@@ -85,19 +85,17 @@ date: 2020-04-06 11:24:54
 
 虽然余雪不多，但是我想也应景了。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171902.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923171902.png)
 
 近处的地方还覆盖着一层雪，薄薄的一层。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923171913.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923171913.png)
 
 来听听踩上去的声音
 
 <div style="width:100%;height:0px;position:relative;padding-bottom:56.327%;margin-bottom:12px;"><iframe src="https://streamja.com/embed/3n0Rq" frameborder="0" width="100%" height="100%" allowfullscreen style="width:100%;height:100%;position:absolute;"></iframe></div>
 
 这里的树木，都没有叶子，光秃秃的指着天空，沐浴着阳光。
-
-
 
 多走两步，在山上一处平台驻足，此时的景色真的可谓是似曾相识。
 
@@ -121,7 +119,7 @@ date: 2020-04-06 11:24:54
 
 这么辽阔宽广，好想自己是一只鸟，可以在这里无忧无虑的飞，没有那么多问题思考，也不知道自己是谁。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923172002.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923172002.png)
 
 ![image.png](https://i.loli.net/2020/04/06/M4qOjzUL1gB6JGC.png)
 

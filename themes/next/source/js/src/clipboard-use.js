@@ -19,9 +19,9 @@ $(function () {
   // 镜像
   var href = window.location.href;
   var github =
-    "https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133738315-image.png";
+    "https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-8/1602133738315-image.png";
   var gitee =
-    "https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-8/1602133761284-image.png";
+    "https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-8/1602133761284-image.png";
   var isGitee = href.indexOf("gitee.io") > -1;
   const a = $("#mirror-blog").find("a");
   var imgUrl = github;

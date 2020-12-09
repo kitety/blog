@@ -10,7 +10,7 @@ date: 2020-10-29 20:27:21
 ## 前言
 
 之前我们已经用比较规范的方式实现了字符串和数字的渲染，接下来我们将渲染原生 DOM。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-3/1604368409871-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-11-3/1604368409871-image.png)
 
 <!-- more -->
 
@@ -49,23 +49,23 @@ date: 2020-10-29 20:27:21
 </div>
 ```
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102210123.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102210123.png)
 
 而如果我们直接在代码中打印这个 `element` 会是什么样子呢？代码可以[看这里](https://codesandbox.io/s/cool-cloud-vfbkc?file=/src/App.js)
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102210351.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102210351.png)
 
 可以看到，打印出来是一个对象，里面有`$$typeof、key、type、props` 等等很多属性。而我们需要关注的是 `type` 属性和 `props` 属性，甚至可以可以看到，`props` 里面有个 `children` 属性，而且可以继续展开，里面就是层层递进的 `children` 子元素。其实这个对象就是**虚拟 DOM**，在后面更新的时候我们也会说到。
 
 至此我们也有了一个大概的流程。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102211725.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102211725.png)
 
 和之前的字符串的渲染对比得知，我们这次渲染的是 `React.createElement` 的返回值，它的返回值是一个实例，我们现在称为 `Element` 实例。
 
 ## 动手实现
 
 经过上述的分析，我们得到此次渲染原生 DOM 我们需要做的事情后大致如下
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102212917.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102212917.png)
 我们这次渲染的代码为
 
 ```js
@@ -167,9 +167,9 @@ class NativeUint extends Unit {}
 ### 调用实例 getMarkUp
 
 在这一步我们需要调用 getMarkUp。我们先想想我们这个步骤的大概流程。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102214813.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102214813.png)
 我们之前说过，我们的 getMarkup 函数需要传入一个**key**，然后返回一个**字符串**。对这就是最直观的理解，而返回的字符串可能就是下面的样子。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102215219.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102215219.png)
 我们最终需要的字符串大概为：`<span data-reactid="0.1" class="test" id="thisisaspan"><span data-reactid="0.1.0">hehe</span></span>`，包含了一个闭合的 tag，上面还有一些属性，我们就需要遍历添加属性，还要添加对应的唯一 id，还要对 children 子元素做处理。
 
 我们理一下：
@@ -257,8 +257,8 @@ $(container).html(markUp);
 
 ## 结语
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102220641.png)
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201102220726.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102220641.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201102220726.png)
 顺着以上的思路，我们成功渲染了原生 DOM,事件、样式、类名等等都一一成功渲染出来。而原生 DOM 的渲染看起来还是有点点复杂，就是深度优先，直接递归，直到没有元素方才完成使命。
 
 本节代码地址：**[代码地址](https://github.com/kitety/my-react-15.x/tree/c772a7af8a909e21ff2ba280ee1cea69ced95b13)**

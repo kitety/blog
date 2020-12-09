@@ -48,10 +48,10 @@ darkmode: auto
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
-  medium: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
-  apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
-  safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862209457-image.png
+  small: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-17/1602950338964-image.png
+  medium: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
+  apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
+  safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -123,7 +123,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-10-17/1602950338964-image.png
+  url: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-17/1602950338964-image.png
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
@@ -274,15 +274,15 @@ reward:
   #alipay: /images/alipay.png
   #paypal: /images/paypal.png
   #bitcoin: /images/bitcoin.png
-  wechatpay: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862240495-image.png
-  alipay: https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-23/1600862258262-image.png
+  wechatpay: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862240495-image.png
+  alipay: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862258262-image.png
 
 # Subscribe through Telegram Channel, Twitter, etc.
 # Usage: `Key: permalink || icon` (Font Awesome)
 follow_me:
   #Twitter: https://twitter.com/username || fab fa-twitter
   #Telegram: https://t.me/channel_name || fab fa-telegram
-  WeChat: https://cdn.jsdelivr.net/gh/kitety/blog_img/img/bdd36b4f04087667fae8e223d6cba88.jpg || fab fa-weixin
+  WeChat: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/bdd36b4f04087667fae8e223d6cba88.jpg || fab fa-weixin
   RSS: /atom.xml || fa fa-rss
 
 # Related popular posts

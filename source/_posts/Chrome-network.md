@@ -16,14 +16,14 @@ Chrome Console 面板解析
 
 ## 初识面板
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923175812.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923175812.png)
 
 <!-- more -->
 
 ## 工具栏
 
 工具栏差不多有十个按钮，每个按钮都有不同的功能。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923175847.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923175847.png)
 
 ### 启用网络记录
 
@@ -37,18 +37,21 @@ Chrome Console 面板解析
 
 点击此按钮会出现过滤栏，接下来对过滤栏进行分析
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200923175907.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200923175907.png)
 
 #### 过滤输入框
 
 #### 类型过滤
-##### Hide Data URLs
-含义：前缀为 data: 协议的URL，其允许内容创建者向文档中嵌入小文件。简单的例子：用base64展示图片
-[demo](https://www.w3docs.com/tools/code-editor/10848)
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/ia_1900000653.gif)
-##### 具体类型
-后面展示了一些具体的类型All(全部)、XHR(XMLHttpRequest和fetch)、CSS(样式表)、Img(图片资源)、Media(媒体资源)、Font(字体资源)、WS(WebSocket)、MainFest()
 
+##### Hide Data URLs
+
+含义：前缀为 data: 协议的 URL，其允许内容创建者向文档中嵌入小文件。简单的例子：用 base64 展示图片
+[demo](https://www.w3docs.com/tools/code-editor/10848)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/ia_1900000653.gif)
+
+##### 具体类型
+
+后面展示了一些具体的类型 All(全部)、XHR(XMLHttpRequest 和 fetch)、CSS(样式表)、Img(图片资源)、Media(媒体资源)、Font(字体资源)、WS(WebSocket)、MainFest()
 
 ### 请求搜索
 

@@ -7,7 +7,7 @@ translate_title: ts-learning-and-typechallenges-practice
 date: 2020-09-22 12:48:14
 ---
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20200922125418.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20200922125418.png)
 之前朋友分享过一个仓库叫做[type-challenges](https://github.com/type-challenges/type-challenges)，里面的内容类似于用 TS 来“做题”，简而言之就是类型编程。
 
 因为我之前也学习过 TypeScript，在工作也使用过，因此想借此机会巩固一番。

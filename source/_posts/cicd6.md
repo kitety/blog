@@ -27,7 +27,7 @@ date: 2020-08-08 23:25:46
 docker pull sonatype/nexus3
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931105737-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931105737-image.png)
 
 ### 启动容器
 
@@ -37,7 +37,7 @@ docker pull sonatype/nexus3
 mkdir /home/nexus && chown -R 200 /home/nexus
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931112564-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931112564-image.png)
 
 #### 创建容器
 
@@ -49,7 +49,7 @@ docker run -d -p 8081:8081 -p 8082:8082 \
 sonatype/nexus3
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931118609-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931118609-image.png)
 
 - Nexus 主服务端口，我们设置为 8081,；但是还需要新分配一个端口为服务端口，这里采用的是 8082
 
@@ -63,19 +63,19 @@ firewall-cmd --zone=public --add-port=8082/tcp --permanent
 systemctl reload firewalld
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931126380-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931126380-image.png)
 
 ### 访问 Nexus
 
 打开浏览器地址栏，访问 Nexus 的服务地址，这里是 ip:8001。启动时间比较长，可以使用`docker logs -f nexus`查看日志，如果显示以下文字**Started Sonatype Nexus OSS 3.25.1-04**就代表成功
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931136526-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931136526-image.png)
 
 ### 配置 Nexus
 
 我们访问`ip:8001`就可以看到界面了。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931149190-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931149190-image.png)
 
 #### 登录
 
@@ -83,7 +83,7 @@ systemctl reload firewalld
 
 注意不包含#号
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931157535-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931157535-image.png)
 
 当我们初次进入之后会让我们设置一下初始密码，和登录的权限。
 
@@ -91,17 +91,17 @@ systemctl reload firewalld
 
 设置密码之后需要设置访问性,**我们在任何没有登录的情况下，拉取（推送）制品到制品库，都算匿名访问。**,在实际生产中是**不安全**的，我们测试可以开启。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931164943-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931164943-image.png)
 
 #### 创建一个 Docker 私服
 
 点击设置，选择左侧菜单中的 Repositories ，点击 Create repository
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931174237-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931174237-image.png)
 
 使用搜索 docker 可以快速定位
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931182519-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931182519-image.png)
 
 **制品库的类型**
 
@@ -111,11 +111,11 @@ systemctl reload firewalld
 
 这里我们采用 hosted 类型，点击创建会看到一些输入框，这里做简单的解释。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931190366-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931190366-image.png)
 
 同时我们还要设置一下权限，在 Security-Realms 的 Docker Bearer Token Realm 选择到右边的激活状态。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931200624-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931200624-image.png)
 
 ### 小试牛刀-登录
 
@@ -127,7 +127,7 @@ systemctl reload firewalld
 
 我们在 gitlab 配置文件，`vim /etc/docker/daemon.json`
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931210306-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931210306-image.png)
 
 ```bash
 "insecure-registries" : [
@@ -147,7 +147,7 @@ systemctl reload firewalld
 docker login 服务IP:端口
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931223439-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931223439-image.png)
 
 ### 小试牛刀-推送镜像到制品库
 
@@ -163,13 +163,13 @@ docker 在推送一个镜像时，镜像的 Tag (名称:版本号) 必须开头�
 
 2.使用 docker tag 命令给已有的镜像打个标签：推荐使用，会将已有的镜像归位某个镜像库内。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931234544-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931234544-image.png)
 
 ```bash
 docker tag 28c624ccaacf    192.168.182.4:8082/local/jenkins
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931242511-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931242511-image.png)
 
 #### 推送
 
@@ -177,11 +177,11 @@ docker tag 28c624ccaacf    192.168.182.4:8082/local/jenkins
 docker push 192.168.182.4:8082/local/jenkins
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931252036-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931252036-image.png)
 
 在仓库可以看到上传的
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600931260957-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600931260957-image.png)
 
 ## 结语
 

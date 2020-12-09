@@ -21,7 +21,7 @@ docker pull gitlab/gitlab-ce
 
 我这网速的确感人啊
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930371197-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930371197-image.png)
 
 <!-- more -->
 
@@ -41,7 +41,7 @@ docker run -itd -p 443:443 \
 gitlab/gitlab-ce
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930382739-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930382739-image.png)
 
 关于：
 
@@ -60,7 +60,7 @@ systemctl reload firewalld
 
 我们可以看下现在的运行状况
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930391115-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930391115-image.png)
 
 ### 修改 Gitlab 配置文件
 
@@ -84,9 +84,9 @@ gitlab_rails['gitlab_shell_ssh_port'] = SSH端口
 
 我的虚拟机是 192.168.182.3，因此我的填写如下
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930401361-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930401361-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930406859-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930406859-image.png)
 
 #### 修改 SSH 端口
 
@@ -98,9 +98,9 @@ vim /assets/sshd_config
 vim /etc/ssh/sshd_config
 ```
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930425027-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930425027-image.png)
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930430871-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930430871-image.png)
 
 #### 重启 Gitlab
 
@@ -110,17 +110,17 @@ docker restart gitlab
 
 访问我们的地址端口。如果显示 502 ，则代表正在启动中。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930439978-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930439978-image.png)
 
 初始化完成就好了
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930448387-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930448387-image.png)
 
 接下来就是改密码和登录了，登陆之后就进入页面，gitlab 也终于露出了庐山真面目。注意：管理员的账号是**root**。
 
 最后，我们就进入 gitlab 了。
 
-![image](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-9-24/1600930458016-image.png)
+![image](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-24/1600930458016-image.png)
 
 ## 结语
 

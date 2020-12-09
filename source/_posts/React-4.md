@@ -10,7 +10,7 @@ tags:
 
 之前我们已经实现了字符串和数字、原生 DOM 的渲染，接下来我们将渲染 Class Component。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-5/1604586613544-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-11-5/1604586613544-image.png)
 
 <!-- more -->
 
@@ -65,9 +65,9 @@ const ele = React.createElement(Counter, { name: "haha" });
 
 经过 babel 转换和在[CRA 项目中](https://codesandbox.io/s/cool-cloud-vfbkc?file=/src/App.js)打印 Class Component，我们可以看到下面的结果。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-5/1604587310842-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-11-5/1604587310842-image.png)
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-5/1604587472964-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-11-5/1604587472964-image.png)
 从上面两张图我们看到，这个组件会经过 React.creareElement 渲染，这个和我们的渲染原生 DOM 的方式的调用是一样的。回忆我们讲的渲染原生 DOM，区别就在于原生 DOM 经 React.creareElement 返回的对象的 type 是字符串，**这次返回的 type 是个函数，其实也就是个类**，类也是函数。
 
 ### 步骤理解
@@ -77,7 +77,7 @@ const ele = React.createElement(Counter, { name: "haha" });
 
 因此我们可以整理出这幅顺序图
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/2020-11-5/1604589129707-image.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-11-5/1604589129707-image.png)
 
 我们简单理一下步骤
 
@@ -238,18 +238,18 @@ $(document).trigger("mounted");
 
 ### 渲染结果
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106234204.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201106234204.png)
 
 ## 结语
 
 本节代码地址：[代码地址](https://github.com/kitety/my-react-15.x/tree/aac6872c1376b79e303baf4d17bdbfc2d44366cd)
 我们现在实现了 Class Componet 组件的渲染，结合以前的文章实现了字符串、数字、原生 DOM、Class 的渲染了。可能有人想问不是还有函数是组件吗？我们来做个简单的分析。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106234658.png)
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106234750.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201106234658.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201106234750.png)
 
 从上面的两张图可以看到，你会发现函数式组件和 class 组件很像甚至更为简单，拿到函数之后传递参数执行即可。主要就是判断是 class 还是是函数，这里的函数指的是仅仅是函数。我们可以简单使用[这个答案](https://stackoverflow.com/a/29094209)来判断，这里就不详细书写了。
 
 我们点击按钮想触发事件，发现会报错。这也正常我们还没有写更新。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img/img/20201106235140.png)
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201106235140.png)
 
 在下面的文章我们会写 diff 更新，大家一起期待吧！
