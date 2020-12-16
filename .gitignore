@@ -8,4 +8,4 @@ public/
 .deploy_git
 package-lock.json
 yarn.lock
-/debug.log
+debug.log
