@@ -10,7 +10,7 @@ date: 2020-12-16 11:46:52
 
 ## 前言
 
-我们在编码过程中，会经常遇到调试的场景。VSCODE 是我经常使用的编辑器，接下来我就将简单记录几种调试的方式，如果想看完整的 VSCODE 调试内容请前往[官方地址](https://code.visualstudio.com/docs/editor/debugging)。
+我们在编码过程中，会经常遇到调试的场景。VSCODE 是我经常使用的编辑器，接下来我就将简单记录几种 VSCODE 调试的方式，如果想看完整的 VSCODE 调试内容请前往[官方地址](https://code.visualstudio.com/docs/editor/debugging)。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608099048983-image.png)
 
@@ -22,11 +22,11 @@ date: 2020-12-16 11:46:52
 
 #### 直接调试
 
-我假如有个单文件，我们在左侧可以打好断点，我们想直接调试，我们直接`F5`就会让选择调试环境，这里我们选择`NODE`环境就可以开始调试。
+假如我有个单文件，我们在左侧可以打好断点，我们想直接调试，我们直接`F5`就会让选择调试环境，这里我们选择`NODE`环境就可以开始调试。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608099600518-image.png)
 
-然后在左侧侧边栏可以查看运行变量，watch 值，调用栈，执行的脚本，断点信息等等；在底部的 debug console 也可以查看输出信息。
+然后在左侧侧边栏可以查看运行变量，watch 值，调用栈，执行的脚本，断点信息等等；在底部的 `debug console` 也可以查看输出信息。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608099760624-image.png)
 
@@ -55,14 +55,14 @@ date: 2020-12-16 11:46:52
 }
 ```
 
-关于`program`这个字段，我们可以简单设置为如下字段：
+关于`program`这个字段，我们可以如下变量字段：
 
 - workspaceFolder 工作目录，可以自己拼接路径，默认寻找 index.\*等文件
 - file 当前打开并且激活的文件
 
 ### 项目调试
 
-比如现在我有一个[umi 的项目](https://github.com/kitety/Actual_Combat_Demos/tree/master/15-umi3)，我想调试 umi 的运行过程这要怎么做呢。
+上述为单文件，但是一些脚手架该怎么调试呢，比如`webpack`等。比如现在我有一个[umi 的项目](https://github.com/kitety/Actual_Combat_Demos/tree/master/15-umi3)，我想调试 umi 的运行过程这要怎么做呢。
 
 ### npm script 脚本方式
 
@@ -84,7 +84,7 @@ date: 2020-12-16 11:46:52
 
 #### launch.json
 
-我们生成 launch.json，点击添加配置，选择`Launch via NPM`就可以生成对应的配置，
+我们生成 `launch.json`，点击添加配置，选择`Launch via NPM`就可以生成对应的配置，
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608104176834-image.png)
 点击生成模板代码，我们更改 runtimeArgs 第二个参数为定义在 scripts 中对应的脚本就可以了。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608104265528-image.png)
@@ -97,7 +97,7 @@ date: 2020-12-16 11:46:52
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608104823254-image.png)
 
-上述的方式也有一定的局限性，比如我们这个 umi 的例子，他会在运行的时候会产生子进程，这样我们无法断点调试子进程了，因此就有了命令行的方式。
+上述的方式也有一定的局限性，比如我们这个 umi 的例子，他会在运行的时候会产生**子进程**，这样我们无法断点调试子进程了，因此就有了命令行的方式。
 
 #### --inspect-brk [详细](https://nodejs.org/en/docs/guides/debugging-getting-started/)
 
@@ -143,10 +143,10 @@ date: 2020-12-16 11:46:52
 - F5 启用调试进入断点
   ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608105814771-image.png)
 
-我们这次使用的是命令行的方式，umi 在开启子进程的时候也会暴露对应的断后以便调试。
+我们这次使用的是命令行的方式，umi 在开启子进程的时候也会暴露对应的端口以便调试。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608106070629-image.png)
-执行结束之后，发现子进程已经开启了，我们就要连接到这个 9230 子进程。
+执行结束之后，发现子进程已经开启了，我们就要连接到这个新开的 9230 子进程。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-16/1608106336580-image.png)
 
