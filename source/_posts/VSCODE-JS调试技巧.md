@@ -1,7 +1,7 @@
 ---
 title: VSCODE JS调试技巧
 tags:
-  - 调试
+  - DEBUG
   - VSCODE
 abbrlink: cc3b8a8b
 translate_title: vscode-js-debugging-skills

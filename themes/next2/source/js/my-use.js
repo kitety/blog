@@ -13,7 +13,6 @@ $(function () {
   // Pjax 完成后，重新加载上面的函数
   document.addEventListener("pjax:complete", function () {
     // 链接完善
-    $("a.mirrorbtn").attr("href", window.getHerf().href);
     // 重载整个 JS 文件
     $("script.pjax-reload").each(function () {
       $(this).parent().append($(this).remove());
