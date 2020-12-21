@@ -39,6 +39,37 @@ date: 2020-06-14 19:15:20
 
 #### 过滤输入框
 
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201221173352.png)
+
+我们可以利用输入框来进行过滤搜索，允许通过:`key:value`的形式来进行过滤，多个条件之间使用**空格**进行分隔，并且支持正则匹配。
+
+输入框支持一些默认字段来增强功能，比如`mime-type:image/gif larger-than:1K`可以过滤出大于 1KB 的 GIF 图片。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201221173802.png)
+当我们输入对应的键之后，Chrome 会智能将一些可以选择的值作为下拉列表展示出来。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201221174610.png)
+
+具体的字段如下：
+
+- cookie-domain cookie 所在的域
+- cookie-name cookie 的键的名字
+- cookie-path cookie 所在的目录
+- cookie-value cookie 的值
+- domain 只展示具体的域名的资源
+- has-response-header 显示包含指定 HTTP 响应标头的资源
+- is 使用`is:running`匹配`WebSocket`资源
+- larger-than 过滤出资源比指定值大的资源
+- method 请求方法过滤
+- mime-type MIME type 过滤
+- mixed-content HTTP 和 HTTPS 混合页面过滤[相关](https://developer.mozilla.org/zh-TW/docs/Web/Security/Mixed_content#Mixed_active_content)
+- priority 优先级与指定值匹配
+- resource-type 资源类型过滤
+- scheme HTTP/HTTPS 过滤
+- set-cookie-domain 根据 set-Cookie 的 Domain 过滤
+- set-cookie-name 根据 set-Cookie 的 name 过滤
+- set-cookie-value 根据 set-Cookie 的 value 过滤
+- status-code 状态码过滤
+- url 请求 URL 过滤
+
 #### 类型过滤
 
 ##### Hide Data URLs
@@ -53,7 +84,7 @@ date: 2020-06-14 19:15:20
 
 ### 请求搜索
 
-点击搜索按钮，将会出现搜索侧边栏。
+点击搜索按钮，或者在 Network 面板按快捷键`Ctrl+F`,将会出现搜索侧边栏。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-21/1608537844605-image.png)
 侧边栏不仅可以搜索`请求地址`、`请求参数`、`头信息`，还可以搜索`响应数据`，简单说来就是可以搜索**请求的所有信息**，感觉还比讲到的`Filter`还要强大，但是不能够针对响应的文件类型做过滤。
@@ -68,7 +99,7 @@ date: 2020-06-14 19:15:20
 
 ### 保留请求日志
 
-`Preserve Log`:是否保留日志，一般的是关闭，代表每次刷新就会清空请求的数据；勾选代表一直保留。
+`Preserve Log`:是否保留日志，一般的是关闭，代表每次刷新就会清空请求的数据；勾选代表一直保留，可以跨页面保留。
 
 ### 禁用缓存
 
@@ -121,9 +152,30 @@ date: 2020-06-14 19:15:20
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-21/1608540251524-image.png)
 
-按住`Ctrl`再点击图片，可以看到当当前帧所发出的请求。
+按住`Ctrl`再点击图片，可以看到当前帧所发出的请求。
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-21/1608540509955-scr1.gif)
 
 ## 信息总览栏
 
+信息总览栏列出了一些页面加载情况的参数和指标，一共有`requests`、`transferred`、`resources`、`Finish`、`DOMContentLoaded`、`Load`等字段。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201221171308.png)
+
+### 含义解析
+
+- requests 记录的是请求的数量
+- transferred 所有资源的压缩大小
+- resources 所有资源未压缩的大小
+- Finish 页面上所有 http 请求发送到响应完成的时间总和
+- DOMContentLoaded DOM 树构建完成。
+- Load 页面加载完毕。
+
+### Filter
+
+当与`Filter`搭配的时候，可以过滤出当前类型的所占全部请求的数据。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/20201221171911.png)
+
 ## 请求区
+
+## 引用地址
+
+> > > [https://developers.google.com/web/tools/chrome-devtools/network/reference](https://developers.google.com/web/tools/chrome-devtools/network/reference)
