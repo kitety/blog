@@ -11,8 +11,7 @@ $(function () {
   fancyBoxFix();
   // pjax
   // Pjax 完成后，重新加载上面的函数
-  document.addEventListener("pjax:complete", function () {
-    // 链接完善
+  document.addEventListener("pjax:complete", function (e) {
     // 重载整个 JS 文件
     $("script.pjax-reload").each(function () {
       $(this).parent().append($(this).remove());
@@ -29,6 +28,9 @@ $(function () {
     ) {
       location.href = location.href + "#reloaded";
       location.reload();
+    }
+    if (e && e.title === "请求的资源找不到了！| 别样") {
+      window.location.reload();
     }
   });
 });
