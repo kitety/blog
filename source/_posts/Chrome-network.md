@@ -176,6 +176,138 @@ date: 2020-06-14 19:15:20
 
 ## 请求区
 
+请求区总体可以看似一个表格，其中表头的列可以进行拖拽直到达到你想展示的效果，表头的项目是可以进行筛选和排序的。
+
+### 表头分析
+
+在表头右键可以展示出表头项目（在请求区域右键也可以调出）,可以通过单击来切换是否展示表头项。
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609744994318-image.png)
+
+#### 基本表头
+
+具体含义如下:
+
+| 表头 | 表头 |
+| :----: | :----: |
+| Name | 资源的文件名或者唯一标识符 |
+| Path | 请求路径 |
+| Url | 请求完整地址 |
+| Method | 请求方法 |
+| Status | HTTP 状态码 |
+| Protocol | 请求协议 |
+| Scheme | 请求方法 http/https 等等 |
+| Domain | 域名 |
+| Remote Address | 远程地址 |
+| Type | 请求资源的 MIME type |
+| Initator | 发起请求的对象或者流程（Html Parser、http 重定向、JS 函数、其他-比如新网址输入） |
+| Cookies | 发送 cookie 数量 |
+| Set Cookies | 请求的响应设置 cookie 数量 |
+| Size | 响应头的大小和响应体的大小，若从缓存中获取会显示 disk cache/memory cache 等 |
+| Time | 请求开始到响应中最后一个字节接收的总持续时间 |
+| Priority | 优先级 |
+| Waterfall | 每个请求活动的可视化分解 |
+| Connection ID | 链接 ID |
+
+##### 其他释义
+
+- Sort By 设置排序的依据，可以是表头中的项目，这个和双击表头项目的作用是一样的。
+- Reset Columns 重置表头的宽度
+- Response Headers
+
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609745184616-image.png)
+  可以在表头显示 Cache-Control 等响应头信息，你还可以点击底部的`Manage Header Columns`编辑头信息
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609745286619-image.png)
+
+- Waterfall
+  展示的是请求的时间分布，用柱状的形式展示出来。目前可以展示出以下的时间，具体的释义在后面有详细的阐述。
+
+  - Start Time 开始时间
+  - Response Time 响应时间
+  - End Time 结束时间
+  - Total Duration 总共耗时
+  - Latency 延迟
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609745498940-image.png)
+
+### 请求区分析
+
+#### 请求区概览
+
+下图是访问谷歌官网的实例，其中大多数项目是可以像 Name 一样，hover 就可以看到详情。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609746895024-image.png)
+其中：
+
+- Initator hover 的时候会显示具体的触发调用栈
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609747118058-image.png)
+- Waterfall hover 的时候会显示一些指标
+
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609748268570-image.png)
+
+
+#### Waterfall 指标
+|表头|表头|
+|:----:|:----:|
+|Queuedat|执行到Initator的时间|
+|Startedat|开始请求流程的时间|
+|Queueing|排队：已有高优先级的请求、已经达到了TCP链接数量、浏览器正在磁盘缓存中短暂分配空间|
+|Stalled|由于排队而停下来等待的时间|
+|DNSLookup|DNS查找IP|
+|Initialconnection|初始化链接|
+|Proxynegotiation|代理协商|
+|Requestsent|请求发送|
+|ServiceWorkerPreparation|浏览器准备启动ServiceWorker|
+|RequesttoServiceWorker|向ServiceWorker发送请求|
+|Waiting(TTFB)|第一个字节返回的时间。TTFB代表到第一个字节的时间。此时间包括一次往返延迟和服务器准备响应所花费的时间。|
+|ContentDownload|浏览器正在接收响应|
+|ReceivingPush|浏览器正在通过HTTP/2服务器推送接收数据|
+|ReadingPush|浏览器正在读取先前接收的本地数据|
+#### 单个请求选中分析
+当我们选择一个请求事，右侧面板会展示出这个请求的信息。
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609749026512-image.png)
+一共有以下几项：
+- Headers 请求的头信息，包含Query参数和Post数据，请求头响应头等详见[HTTP Header](https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers)
+- Preview 对返回的数据格式化预览
+- Response 展示返回的原始数据
+- Initator 同表头Initator
+- Cookies 同表头Cookies
+- Timing 同Waterfall
+#### 单个请求右键分析
+当我们选择一个请求右键的时候会弹出菜单
+
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609750559655-image.png)
+我们来具体分析：
+- Open in new tab 在新窗口打开，这个和双击某个请求的行为是一样的，都是打开新窗口GET请求
+- Clear browser cache 清楚浏览器缓存
+- Clear browser cookies 清楚浏览器cookies
+- Copy 复制此请求，会展开二级菜单
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609751200913-image.png)
+  - Copy link address 复制链接地址
+  - Copy as Powershell 复制为Powershell 命令
+  - Copy as fetch 复制为fetch函数
+  - Copy as Nodejs fetch 复制为Nodejs fetch函数
+  - Copy as cURl(cmd) 复制cmd执行的命令
+  - Copy as cURl(bash) 复制bash执行的命令
+  - ... 后面五个为将全部的请求复制为对应的模式
+  - Copy all as HAR 将所有请求复制为HAR内容格式（还是文本）
+- Block request URL 禁止请求此地址，禁止之后在相同位置可以启用，禁止之后无法访问该请求。
+  
+  可以进入`network request blocking`面板查看已经禁止的请求
+  ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2021-1-4/1609752010644-image.png)
+- Block request Domain 禁止请求此域名
+  可以进入`network request blocking`面板查看已经禁止的域名
+- Replay XHR 重发此请求
+- Sort By 设置排序依据
+- Header Options 设置表头项目
+- Save all as HAR with content 同“导出”功能，将请求导出为HAR文件
+
+
+
+
+
+
+
 ## 引用地址
 
-> > > [https://developers.google.com/web/tools/chrome-devtools/network/reference](https://developers.google.com/web/tools/chrome-devtools/network/reference)
+> [https://developers.google.com/web/tools/chrome-devtools/network/reference](https://developers.google.com/web/tools/chrome-devtools/network/reference)
