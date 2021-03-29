@@ -42,7 +42,7 @@ date: 2020-09-04 15:07:33
   // body 处理
   .body-class{
     /* 背景图片的地址 */
-    background: url(https://api.ixiaowai.cn/gqapi/gqapi.php);
+    background: url(https://api.dujin.org/bing/1920.php);
     /* 不重复 */
     background-repeat: no-repeat;
     /* 背景图像的位置固定 */
