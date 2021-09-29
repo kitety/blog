@@ -48,7 +48,7 @@ darkmode: auto
 # ---------------------------------------------------------------
 
 favicon:
-  small: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-17/1602950338964-image.png
+  small: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/2.jpg
   medium: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
   apple_touch_icon: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
   safari_pinned_tab: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862209457-image.png
@@ -123,7 +123,7 @@ sidebar:
 # Sidebar Avatar
 avatar:
   # Replace the default image and set the url here.
-  url: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-10-17/1602950338964-image.png
+  url: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/2.jpg
   # If true, the avatar will be dispalyed in circle.
   rounded: false
   # If true, the avatar will be rotated with the cursor.
