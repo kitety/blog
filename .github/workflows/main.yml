@@ -18,10 +18,10 @@ jobs:
         with:
           python-version: "3.7"
 
-      - name: Use Node.js 10.x
+      - name: Use Node.js 14.x
         uses: actions/setup-node@v1
         with:
-          node-version: "10.x"
+          node-version: "14.x"
 
       - name: Setup
         env:
@@ -40,7 +40,7 @@ jobs:
           ssh-keyscan github.com >> ~/.ssh/known_hosts
 
           # set git information
-          git config --global user.name 'kitety' 
+          git config --global user.name 'kitety'
           git config --global user.email 'aizaizuori@foxmail.com'
 
           # prepare blog
@@ -57,6 +57,7 @@ jobs:
         run: |
           git clone git@github.com:kitety/blog_config.git tem
           cp ./tem/Project.json Project.json
+          ls -l
 
       - name: Deploy
         run: |
