@@ -22,15 +22,15 @@ canonical: true
 # ---------------------------------------------------------------
 # Google Webmaster tools verification setting
 # See: https://www.google.com/webmasters/
-google_site_verification:
+google_site_verification: AFckh8Qum4gkYDApoahauJPbChPexSCeRwCUwgm2gS4
 
 # Bing Webmaster tools verification setting
 # See: https://www.bing.com/webmaster/
-bing_site_verification:
+bing_site_verification: hexo-generator-sitemap
 
 # Baidu Webmaster tools verification setting
 # See: https://ziyuan.baidu.com/site/
-baidu_site_verification:
+baidu_site_verification: nMdTVRLxht9WqNnh
 
 # 360 Webmaster tools verification setting
 # see http://zhanzhang.so.com/
@@ -53,7 +53,7 @@ menu:
   home: / || fas fa-home
   archives: /archives/ || fas fa-folder-open
   # categories: /categories/ || fas fa-layer-group
-  # tags: /tags/ || fas fa-tags
+  tags: /tags/ || fas fa-tags
   # You can add a secondary menu like follow.
   # xxx1: javascript:; || fa(s|r|l|d|b) fa-xxx
 
@@ -75,8 +75,8 @@ menu_settings:
 # ---------------------------------------------------------------
 
 favicon:
-  small: /images/icons/favicon-16x16.png
-  medium: /images/icons/favicon-32x32.png
+  small: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/2.jpg
+  medium: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/2.jpg
   # ! --------------------------------------------------
   # ! If you don't know the following, please ignore it.
   # ! --------------------------------------------------
@@ -130,10 +130,10 @@ layout:
 
 # The header of site.
 header:
-  enable: true
+  enable: false
   show_on:
     # Whether to show on the article page.
-    post: true
+    post: false
   # If you set a percentage, it will be calculated based on the height of screen (Supports all CSS units)
   height: 80%
   # Background image of site header.
@@ -273,7 +273,7 @@ back2top:
 sidebar:
   enable: true
   # Optional values: left | right
-  position: right
+  position: left
   # The distance from the top of the page when the sidebar is fixed (Only `px` unit is supported)
   offsetTop: 20px
   # Whether to show horizon line.
@@ -286,16 +286,16 @@ author:
     # In theme directory (source/images): /images/avatar.png
     # In site directory (source/uploads): /uploads/avatar.png
     # You can also use a link of image.
-    url: /images/icons/stun-logo.svg
+    url: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/img/2.jpg
     # If true, the avatar would be displayed in a circle.
     rounded: false
     # Opacity of avatar (value: 0 ~ 1)
     opacity: 1
     # Mouse hover animation
     # Optional values: turn | shake
-    animation: turn
+    animation: false
   # Your favorite motto.
-  motto: hello world
+  motto: 独特为佳
 
 # Social links
 # Value before `||` is the target link, value after `||` is the name of FontAwesome icon.
@@ -304,19 +304,20 @@ author:
 # If you can`t find a suitable icon, you can choose to display text by adding the `origin:` prefix.
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
-  github: https://github.com/ || fab fa-github
-  google: https://plus.google.com/ || fab fa-google
-  twitter: https://twitter.com/ || fab fa-twitter
-  youtube: https://youtube.com/ || fab fa-youtube
+  github: https://github.com/kitety || fab fa-github
+  Gmail: mailto:aizaizuori@gmail.com || origin:Gmail
+  # google: https://plus.google.com/ || fab fa-google
+  # twitter: https://twitter.com/ || fab fa-twitter
+  # youtube: https://youtube.com/ || fab fa-youtube
   # segmentfault: https://segmentfault.com/ || origin:sf
   # weibo: https://weibo.com/ || fab fa-weibo
   # zhihu: https://www.zhihu.com/ || origin:知
-  # wechat: yournumber || fab fa-weixin
+  # wechat: llty27 || fab fa-weixin
   # telegram: yournumber || fab fa-telegram
   # qq: yournumber || fab fa-qq
 
 social_setting:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: true
 
@@ -372,10 +373,10 @@ heading_line: true
 
 # Reward QR Code
 reward:
-  enable: false
+  enable: true
   # Your QR code for collecting money.
-  alipay:
-  wechat:
+  alipay: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862258262-image.png
+  wechat: https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-9-23/1600862240495-image.png
 
 # ---------------------------------------------------------------
 # Post config
@@ -437,7 +438,7 @@ post_widget:
     horizon_line: true
   # Article sharing
   share:
-    enable: false
+    enable: true
     # The text displayed before the share button.
     label: "Share to: "
     # Optional values: qzone | qq | weibo | wechat | douban | linkedin | facebook | twitter | google
@@ -553,8 +554,8 @@ livere:
 # Disqus
 # See: https://disqus.com/
 disqus:
-  enable: false
-  shortname:
+  enable: true
+  shortname: kitety
   count: true
 
 # Utterances
@@ -562,9 +563,9 @@ disqus:
 utterances:
   enable: false
   # Github username.
-  owner:
+  owner: kitety
   # Github repository.
-  repo:
+  repo: https://github.com/kitety/blog
   # Choose the mapping between blog posts and GitHub issues.
   # Optional values: pathname | url | title | og:title
   mapping: title
@@ -607,7 +608,7 @@ fbcomments:
 # Busuanzi statistics
 # See: https://busuanzi.ibruce.info/
 busuanzi:
-  enable: false
+  enable: true
   # Only show by icon.
   icon_only: false
   # Number of unique visitor to the entire site.
@@ -626,11 +627,11 @@ busuanzi:
 
 # Google analytics ID
 # See: https://analytics.google.com/
-google_analytics:
+google_analytics: UA-161566224-1
 
 # Baidu analytics ID
 # See: https://tongji.baidu.com/
-baidu_analytics:
+baidu_analytics: f5b61933887642fff88ca20c0ddf1ab6
 
 # Tencent analytics ID
 # See: https://v2.ta.qq.com/
@@ -654,7 +655,7 @@ algolia_search:
 # Local Search
 # See: https://github.com/wzpan/hexo-generator-search/
 local_search:
-  enable: false
+  enable: true
 
 # Auxiliary search buttons
 # ! -----------------------------------------------------------------------------------------
@@ -676,7 +677,7 @@ assist_search:
 # Canvas-ribbon
 # Dependency: https://github.com/hustcc/ribbon.js
 canvas_ribbon:
-  enable: false
+  enable: true
   # The width of the ribbon.
   size: 120
   # The transparency of the ribbon.
@@ -732,7 +733,7 @@ math:
 
 # Fancybox
 # See: https://fancyapps.com/fancybox/3/
-fancybox: false
+fancybox: true
 
 # Click to enlarge picture.
 zoom_image:
@@ -756,14 +757,14 @@ gallery_waterfall:
 # Lazy load the images of post.
 # See: https://github.com/tuupola/lazyload
 lazyload:
-  enable: false
+  enable: true
   # Optional values: gif | block
   placeholder: gif
 
 # Quicklink support
 # See: https://github.com/GoogleChromeLabs/quicklink/
 quicklink:
-  enable: false
+  enable: true
   # Quicklink (quicklink.umd.js script) is loaded on demand.
   # Add `quicklink: true` in Front-matter of the page or post you need.
   # Home page and archive page can be controlled through home and archive options below.
@@ -790,7 +791,7 @@ quicklink:
 # Pjax
 # See: https://github.com/MoOx/pjax/
 pjax:
-  enable: false
+  enable: true
   # When switching pages, scroll to the bottom of the top image.
   avoid_banner: false
   # ! --------------------------------------------------
@@ -812,8 +813,8 @@ pjax:
 
 # Google AdSense
 google_adsense:
-  enable: false
-  client:
+  enable: true
+  client: ca-pub-4938003046784968
   js_src: https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js
 
 # The links with `target="_blank"` attribute.
@@ -832,7 +833,7 @@ shortcuts:
   # `Ctrl + ←` is the shortcuts to prev post.
   # `Ctrl + →` is the shortcuts to next post.
   switch_post:
-    enable: false
+    enable: true
 
 # Tag cloud
 # If not used, comment it or ignore it.

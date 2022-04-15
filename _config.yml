@@ -173,3 +173,6 @@ translate_title:
   baidu_appkey: "" # Your baidu_appkey
   rewrite: false # is rewrite true | false
   actions: true
+
+
+all_minifier: true
