@@ -804,8 +804,8 @@ pjax:
   switchesOptions:
   history: true
   # If you enable this, you must set `avoid_banner: false` firstly.
-  scrollTo: false
-  scrollRestoration: false
+  scrollTo: 0
+  scrollRestoration: true
   cacheBust: false
   debug: false
   currentUrlFullReload: false
