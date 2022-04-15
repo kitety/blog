@@ -46,5 +46,15 @@ if theme.busuanzi.enable
 if footer.custom.enable
   div!= footer.custom.text
 
+- var CountTotal = symbolsCountTotal(site)
+div
+  <span class="post-meta-item-icon">
+    <i class="fa fa-chart-area"></i>
+  </span>
+  span 字数统计： #{CountTotal}
 <span id="jinrishici-sentence">正在加载今日诗词....</span>
 <script src="https://sdk.jinrishici.com/v2/browser/jinrishici.js" charset="utf-8"></script>
+
+
+
+

@@ -305,7 +305,7 @@ author:
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
   github: https://github.com/kitety || fab fa-github
-  Gmail: mailto:aizaizuori@gmail.com || origin:Gmail
+  mail: mailto:aizaizuori@gmail.com || fa fa-envelope
   # google: https://plus.google.com/ || fab fa-google
   # twitter: https://twitter.com/ || fab fa-twitter
   # youtube: https://youtube.com/ || fab fa-youtube
@@ -314,7 +314,7 @@ social:
   # zhihu: https://www.zhihu.com/ || origin:知
   # wechat: llty27 || fab fa-weixin
   # telegram: yournumber || fab fa-telegram
-  # qq: yournumber || fab fa-qq
+  qq: 1048444579 || fab fa-qq
 
 social_setting:
   enable: true
@@ -963,7 +963,7 @@ cdn:
   # See: https://busuanzi.ibruce.info/
   # Example:
   # busuanzi: //cdn.jsdelivr.net/gh/sukkaw/busuanzi@latest/bsz.pure.mini.js
-  busuanzi:
+  busuanzi: //busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js
 
   # Using version: 2.1.1
   # See: https://busuanzi.ibruce.info/

@@ -26,7 +26,7 @@ doctype html
 html(lang=config.language)
   head
     include ./_partials/head/head.pug
-  body
+  body.body
     div#container.container
       header#header.header
         div.header-inner(class=`${isNoHeader ? 'header-inner--height header-inner--bgcolor' : ''}`)
@@ -80,3 +80,10 @@ html(lang=config.language)
 
     include ./_third-party/comments/index.pug
     include ./_scripts/stun.pug
+  link(rel='stylesheet' href='https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.css')
+  script(src='https://cdn.jsdelivr.net/npm/aplayer@1.10.1/dist/APlayer.min.js')
+  // require MetingJS
+  script(src='https://cdn.jsdelivr.net/npm/meting@1.2.0/dist/Meting.min.js')
+  // 如果将本体放在body里面，导致页面加载出现问题，请尝试放到body体后面
+  .aplayer(data-id='5197008428' data-server='netease' data-type='playlist' data-fixed='true' data-order='random' data-volume='0.65' data-autoplay='false' date-preload='auto' data-theme='#cc543a')
+

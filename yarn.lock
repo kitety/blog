@@ -2247,6 +2247,13 @@ hexo-submit-urls-to-search-engine@^2.1.0:
     request "^2.88.2"
     xmlhttprequest "^1.8.0"
 
+hexo-symbols-count-time@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.npmmirror.com/hexo-symbols-count-time/-/hexo-symbols-count-time-0.7.1.tgz#7d41c549827071756bd2730047eea027f6dfd631"
+  integrity sha512-Zw19uxRIT/3VCvMQytG6HfBJc/IvfFJYui8cg6vyFAtDxkPOoZ1UlsPjrBRXYAqO6VjLc/vRi+Jthj38pKNPlw==
+  dependencies:
+    hexo-util "1.9.0"
+
 hexo-tag-aplayer@^3.0.4:
   version "3.0.4"
   resolved "https://registry.npmmirror.com/hexo-tag-aplayer/-/hexo-tag-aplayer-3.0.4.tgz#e1c3bdac82a1a01d97c8cf77ab653114505b1179"
@@ -2276,6 +2283,22 @@ hexo-translate-title-kitety@^1.0.0:
   dependencies:
     request "2.88.0"
     request-promise "4.2.2"
+
+hexo-util@1.9.0:
+  version "1.9.0"
+  resolved "https://registry.npmmirror.com/hexo-util/-/hexo-util-1.9.0.tgz#0018429319720599253b2a3ddde0c5e4e4cfc652"
+  integrity sha512-WXv8IYd9HFtP6u/y7uoI//Fmg88uhKKDto9KeNNRdWf4HG/bRh/1NcSQZWu81DOZNshWD1rvFU8OKb7bUnX1WA==
+  dependencies:
+    bluebird "^3.5.2"
+    camel-case "^4.0.0"
+    cross-spawn "^7.0.0"
+    deepmerge "^4.2.2"
+    highlight.js "^9.13.1"
+    htmlparser2 "^4.0.0"
+    prismjs "^1.17.1"
+    punycode.js "^2.1.0"
+    strip-indent "^3.0.0"
+    striptags "^3.1.1"
 
 hexo-util@2.1.0:
   version "2.1.0"

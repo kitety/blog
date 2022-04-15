@@ -46,6 +46,7 @@ social:
   wechat: Wechat
   telegram: Telegram
   qq: QQ
+  email: Email
 
 # Article
 post:
@@ -69,7 +70,7 @@ post:
 algolia_search:
   input_placeholder: Search for Posts
   hits_empty: "We didn't find any results for the search: ${query}"
-  hits_stats: '${hits} results found in ${time} ms'
+  hits_stats: "${hits} results found in ${time} ms"
 
 # Local search
 local_search:
