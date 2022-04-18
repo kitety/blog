@@ -56,6 +56,7 @@ menu:
   tags: /tags/ || fas fa-tags
   # You can add a secondary menu like follow.
   # xxx1: javascript:; || fa(s|r|l|d|b) fa-xxx
+  somewords: /shuoshuo||fa-heartbeat fa
 
 # Secondary menu
 submenu:
@@ -305,7 +306,7 @@ author:
 # e.g. `origin:sf`, so `sf` will be displayed.
 social:
   github: https://github.com/kitety || fab fa-github
-  mail: mailto:aizaizuori@gmail.com || fa fa-envelope
+  Gmail: mailto:aizaizuori@gmail.com || origin:Gmail
   # google: https://plus.google.com/ || fab fa-google
   # twitter: https://twitter.com/ || fab fa-twitter
   # youtube: https://youtube.com/ || fab fa-youtube
@@ -314,7 +315,7 @@ social:
   # zhihu: https://www.zhihu.com/ || origin:知
   # wechat: llty27 || fab fa-weixin
   # telegram: yournumber || fab fa-telegram
-  qq: 1048444579 || fab fa-qq
+  qq: tencent://message?uin=1048444579 || fab fa-qq
 
 social_setting:
   enable: true
@@ -688,7 +689,7 @@ canvas_ribbon:
 # Canvas-nest
 # Dependency: https://github.com/hustcc/canvas-nest.js
 canvas_nest:
-  enable: false
+  enable: true
   # Color of lines.
   # RGB values, use `,` to separate.
   color: "0,0,0"

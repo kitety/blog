@@ -16,6 +16,7 @@ menu:
   categories: 分类
   tags: 标签
   about: 关于
+  somewords: 一些话
 
 # 归档页、分类页、标签页
 page:
@@ -46,7 +47,7 @@ social:
   wechat: 微信
   telegram: Telegram
   qq: QQ
-  email: Email
+  Gmail: Email
 
 # 文章
 post:
