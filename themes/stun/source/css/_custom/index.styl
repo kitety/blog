@@ -2,7 +2,7 @@
 // You should always modify the style here, not in the source code.
 // Otherwise, when the theme is updated, the code you modified will be overwritten.
 .body {
-  background: url('https://unsplash.it/1920/1080/?random') #efefef;
+  background: url("https://unsplash.it/1920/1080/?random") #efefef;
   background-attachment: fixed;
   background-position: 50% 50%;
   background-repeat: no-repeat;
@@ -10,5 +10,26 @@
   top: 0 !important;
   .github-corner {
     display: block !important;
+  }
+}
+
+#google_translate_element {
+  float: right;
+  height: 100%;
+  padding: 0 0.5rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  img {
+    display: inline;
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+  }
+}
+// google 翻译横条
+.skiptranslate {
+  iframe {
+    display: none !important;
   }
 }
