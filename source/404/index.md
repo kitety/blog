@@ -43,7 +43,7 @@ translate_title: 404-not-found-the-page-cannot-be-displayed
   <div class="container1">
     <div class="container1-item"><a href="/" title="回到首页">回到首页</a></div>
     <div class="container1-item"><a href="/archives/" title="看文章归档目录">看文章归档目录</a></div>
-    <div class="container1-item popup-trigger" style="cursor:pointer;">直接搜索文章内容</div>
+    <div class="container1-item popup-trigger" style="cursor:pointer;">或者顶部直接搜索文章内容</div>
   </div>
   </div>
 
