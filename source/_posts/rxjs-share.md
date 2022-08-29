@@ -2,7 +2,7 @@
 title: RXJS入门分享之Observable、Operators
 abbrlink: 54f05674
 date: 2022-08-29 23:25:25
-translate_title: Observable-and-Operators-shared-by-RXJS-entry
+translate_title: observable-and-operators-shared-by-rxjs-entry
 tags:
 - RXJS
 - 前端
