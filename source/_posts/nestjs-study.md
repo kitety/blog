@@ -10,9 +10,7 @@ tags:
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/image/20220830000642.png)
 
-[nestjs 项目实战 (1)](https://www.notion.so/nestjs-1-e0a54fbadf6143b9ad32bed875831d40)
 
-[nestjs (1)](https://www.notion.so/nestjs-1-50823f01c3194e4faf0ba223b6425b90)
 
 # mysql 的安装信息
 
@@ -28,8 +26,6 @@ tags:
 输入net start mysql或sc start mysql
 
 启动mysql服务
-
-[https://www.codenong.com/cs122058079/](https://www.codenong.com/cs122058079/)
 
 ALTER USER 'root'@'localhost' IDENTIFIED WITH mysql_native_password BY '123456';
 <!-- more -->
@@ -101,8 +97,6 @@ nest generate controller messages/messages --flat 不会产生新的文件夹
 ![Untitled](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/image/Untitled%2028.png)
 
 ![Untitled](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/image/Untitled%2029.png)
-
-[https://www.notion.so](https://www.notion.so)
 
 ![Untitled](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/image/Untitled%2030.png)
 

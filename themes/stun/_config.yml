@@ -401,7 +401,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   reading_time:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-clock
     # Set reading speed to count reading time.
@@ -414,7 +414,7 @@ post_meta:
   # Dependency: https://github.com/willin/hexo-wordcount/
   # !!! Don't enable this before install dependency by `npm install hexo-wordcount --save` in hexo root directory.
   word_count:
-    enable: false
+    enable: true
     # Icon name in FontAwesome, see: https://fontawesome.com/icons
     icon: far fa-file-word
 
