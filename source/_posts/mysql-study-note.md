@@ -2780,7 +2780,7 @@ alter table test3 add index idx_name(id) ## 创建索引
 drop index 索引名称 on 表名
 ```
 
-## 56 索引算法
+## 索引算法
 
 1.什么是索引算法？
 
@@ -2804,7 +2804,7 @@ BTree索引是基于平衡多叉排序树实现的,能够缩短查找的次数
 
 哈希索引是基于哈希表实现的,只能用于memory存储引擎,可以一次性定位到指定数据
 
-## 57 Node与Mysql
+## Node与Mysql
 
 1.如何在Node程序中操作MySOL数据库？
 
@@ -2835,3 +2835,143 @@ npm install mysql2
 ```sql
 ALTER USER ‘ root‘ @‘ localhost‘ IDENT IFIED WITH mysgl native password BY root
 ```
+
+## Sequelize
+
+1.什么是Sequelize？
+
+Sequelize是一个基于Promise的NodeJS ORM模块
+
+2.什么是ORM？
+
+ORM (Object-Relational-Mapping) 是对象关系映射
+
+对象关系映射可以把JS中的类和对象，和数据库中的表和数据进行关系映射映射
+
+之后我们就可以直接通过类和对象来操作数据表和数据了，就不用编写SQL
+
+ORM有效的解决了直接在NodeJS中编写SQL不够直观，不够高效，容易出错等问题
+
+3.如何映射？
+
+在Sequelize中Js中的一个类(一个模型） 就对应数据库中的一张表
+
+在Sequelize中JS中的一个对象就对应表中的一条数据（一条记录） 
+
+在Sequelize中Js中的一个对象的属性就对应一条数据的一个字段
+
+## Sequelize基本使用
+
+1.Sequelize基本使用
+
+[https://sequelize.org/](https://sequelize.org/)
+
+2.什么是数据库连接池？
+
+默认情况下有一个人要使用数据库，那么就必须创建一个连接
+
+默认情况下有一个人不用数据库了，为了不占用资源，那么就必须销毁一个连接
+
+但是频繁的创建和销毁连接是非常消耗服务器性能的，所以为了提升服务器性能就有了连接池
+
+数据库连接池是负责分配、管理和释放数据库连接
+
+它允许应用程序重复使用一个现有的数据库连接，而不是再重新建立一个
+![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/image/20220905163945.png)
+
+## Sequelize创建表
+
+```sql
+const User = sequelize.define('User', {
+  username: DataTypes.STRING,
+  birthday: DataTypes.DATE,
+});
+```
+
+1.sequelize在根据模型创建表的时候，会自动将我们指定的表的名称变成复数
+
+2.sequelize在根据模型创建表的时候，会自动增加两个字段 createAt/updateAt
+
+## Sequelize-CLI创建数据库
+
+1.什么是Sequelize-CLI？
+
+在编程开发中为了能够更好的管理代码，我们可以使用Git来管理我们的代码，
+
+实现对代码变更的追踪，实现在各个不同版本之间切换
+
+在数据库开发中为了能够更好的管理数据库，我们也可以使用数据库迁移工具来管理我们的数据库， 实现对数据库变更的追踪，实现在各个不同版本之间切换
+
+Sequelize-CLI就是一款数据库迁移工具，能够让我们追踪数据库的变更，在各个不同版本之间随意切换
+
+2.如何使用Sequelize-CLI？
+
+```sql
+npm i sequelize sequelize-cli mysgl2 -s
+
+npx sequelize --help
+```
+
+3.初始化Sequelize-CLI
+
+```sql
+npx sequelize-cli init
+```
+
+config：数据库配置文件，用于告诉CLI如何连接数据库
+
+models：数据库模型文件，用于告诉CLI如何创建表
+
+migrations：数据库迁移文件，用于记录用户不同版本操作
+
+seeders：数据库种子文件，用于编写测试数据
+
+修改环境变量 
+
+```sql
+set NODE_ENV=test
+```
+
+4.创建
+
+```sql
+npx sequelize db:create
+```
+
+## Sequelize-CLI创建表
+
+1.创建模型
+
+```sql
+npx sequelize model: generate -name XXX --attributes key: type
+```
+
+2.根据模型创建表
+
+```sql
+npx sequelize db:migrate
+```
+
+3.回退到某个时刻
+
+```sql
+npx sequelize db:migrate:undo // 回退到上一个版本
+
+npx sequelize db:migrate:undo:a11// 回退所有
+
+npx sequelize db:migrate:undo -name-20200329045955-create-book. js // 回退指定操作
+```
+
+## Sequelize-CLI修改表
+
+1.如何修改表？
+
+使用Sequelize-CL1管理数据库的目的就是为了监控数据库的变化所以我们不能直接修改表的结构，如果要修改，必须通过migration文件修改这样我们就能记录修改操作，就能追踪修改过程，就能回退到指定版本
+
+2.修改表步骤
+
+2.1 通过 migration：generate 创建迁移文件
+
+2.2 在迁移文件中编写修改的内容
+
+2.3 通过 db：migrate 执行编写好的迁移文件
