@@ -1,5 +1,5 @@
 window.onload = function () {
-    if(!$) return;
+    if (!$) return;
     function load() {
         $.get("https://v1.hitokoto.cn", function (data, status) {
             if (status == 'success') {
@@ -7,11 +7,17 @@ window.onload = function () {
 
             }
         });
+
     }
+  
 
 
     $(document).on('pjax:complete', function () {
-       load()
+        load()
+        //  reward
+        Stun.utils.registerShowReward()
+        // 添加判断条件
+        socialShare('.social-share, .share-component')
     })
     load()
 }
