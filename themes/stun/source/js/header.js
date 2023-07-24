@@ -230,7 +230,7 @@ $(document).ready(function () {
     }
   }
   $.confirm({
-    boxWidth: "500px",
+    boxWidth: Math.min(500, document.body.clientWidth),
     useBootstrap: false,
     autoClose: "cancel|10000",
     closeIcon: true,
