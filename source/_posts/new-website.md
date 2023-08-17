@@ -5,6 +5,7 @@ date: 2022-11-20 14:21:57
 translate_title: blog-change-url
 tags:
 ---
-# 博客更换网址了
-[新的网址换为https://www.kitety.life了](https://www.kitety.life/)
 
+# 博客更换网址了
+
+[新的网址换为 https://www.kitety.net 了](https://www.kitety.net/)
