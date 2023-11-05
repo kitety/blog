@@ -8,4 +8,4 @@ tags:
 
 # 博客更换网址了
 
-[新的网址换为 https://www.kitety.net 了](https://www.kitety.net/)
+[新的网址换为 https://www.kitety.com 了](https://www.kitety.com/)
