@@ -20,7 +20,7 @@ tags:
 ### 准备环境
 
 我们先初始化一个仓库，里面提交一些 commit。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320677223-image.png)
+![](https://s21.ax1x.com/2024/06/06/pkYo9Fx.png)
 我这里是有五次提交，分别添加：a,b,c,d,e。
 
 ### 修改最近一次的 Commit
@@ -38,7 +38,7 @@ git commit --amend
 
 可以看到，此时最后一个的 commit message 已经修改了。
 
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607320937476-image.png)
+![](https://s21.ax1x.com/2024/06/06/pkYoklD.png)
 
 ### 修改非最后一次的 Commit 信息
 
@@ -78,7 +78,7 @@ git rebase -i 8f9a167（目标提交的前一个提交的hash）
 接下来会自动进入页面，我们修改 b 的 commit 信息
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321620974-image.png)
 验证下结果，明显成功了。
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607321637038-image.png)
+![](https://s21.ax1x.com/2024/06/06/pkYoA6e.png)
 
 ### 删除一个 commit 信息
 
@@ -86,7 +86,7 @@ git rebase -i 8f9a167（目标提交的前一个提交的hash）
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607322289030-image.png)
 结果如下：
-![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-7/1607322295320-image.png)
+![](https://s21.ax1x.com/2024/06/06/pkYoUkq.png)
 发现 C 提交的信息的删除了，但是 C 提交的文件修改还是存在的，所造成的文件修改最终归于 C 的上一个提交：`b-edit`去了。
 
 ![](https://cdn.jsdelivr.net/gh/kitety/blog_img@master/2020-12-8/1607407070868-image.png)
