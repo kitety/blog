@@ -3,6 +3,8 @@ extends ./_layout.pug
 block content
   // Just used to judge whether it is an article page
   div#is-post
+    .new-site
+      a(href='https://www.kitety.com/' target='_blank') 博客更换网址了，点击访问！
   div.post
     include ./_mixins/post-header.pug
     include ./_mixins/gallery.pug
